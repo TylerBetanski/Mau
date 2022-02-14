@@ -7,16 +7,19 @@ public class PlayerController : MonoBehaviour {
     [SerializeField] int maxHealth = 5;
     [SerializeField] float acceleration = 6.0f;
     [SerializeField] float jumpHeight = 3.0f;
+    [SerializeField] bool canDoubleJump;
 
     CharacterController2D charController;
     PlayerInputController input;
 
+    bool secondJump = true;
     int health;
 
     private void Awake()
     {  
         charController = GetComponent<CharacterController2D>();
         input = GetComponent<PlayerInputController>();
+        canDoubleJump = true;
     }
 
     private void Die() 
@@ -54,11 +57,17 @@ public class PlayerController : MonoBehaviour {
     {
         if (charController.Grounded) {
             charController.AddVelocity( new Vector2 (0, Mathf.Sqrt(-2 * charController.Gravity * jumpHeight)));
+        } else if (canDoubleJump && secondJump) {
+            charController.AddVelocity(new Vector2(0, Mathf.Sqrt(-2 * charController.Gravity * jumpHeight)));
+            secondJump = false;
         }
     }
 
     private void FixedUpdate()
     {
+        if (charController.Grounded) { 
+        secondJump = true;
+        }
         charController.AddVelocity(new Vector2(input.HorizontalAxis * acceleration, 0)) ;
     }
 
