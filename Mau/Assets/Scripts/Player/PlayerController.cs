@@ -7,7 +7,7 @@ public class PlayerController : MonoBehaviour {
     [SerializeField] int maxHealth = 5;
     [SerializeField] float acceleration = 6.0f;
     [SerializeField] float jumpHeight = 3.0f;
-    [SerializeField] bool canDoubleJump;
+    [SerializeField] bool canDoubleJump = true;
 
     CharacterController2D charController;
     PlayerInputController input;
@@ -19,7 +19,6 @@ public class PlayerController : MonoBehaviour {
     {  
         charController = GetComponent<CharacterController2D>();
         input = GetComponent<PlayerInputController>();
-        canDoubleJump = true;
     }
 
     private void Die() 
