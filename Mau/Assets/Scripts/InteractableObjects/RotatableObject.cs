@@ -9,10 +9,13 @@ public class RotatableObject : InteractableObject
 	[SerializeField] int maxState;
 	[SerializeField] int targetState;
 
+	private Animator animator;
+
     private void Awake()
     {
-		maxState = Mathf.Clamp(maxState, 0, target.LockNum);
-    }
+		animator = GetComponent<Animator>();
+		animator.SetInteger("CurrentState", currentState);
+	}
 
     public override void Interact()
     {
@@ -21,11 +24,14 @@ public class RotatableObject : InteractableObject
 		else
 			currentState++;
 
-		// Animate the Rotation
+		animator.SetInteger("CurrentState", currentState);
 
-		if (currentState == targetState)
-			target.OpenLock(targetLockNumber);
-		else
-			target.CloseLock(targetLockNumber);
+		if (target != null)
+		{
+			if (currentState == targetState)
+				target.OpenLock(targetLockNumber);
+			else
+				target.CloseLock(targetLockNumber);
+		}
     }
 }

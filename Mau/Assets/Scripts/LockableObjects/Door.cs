@@ -29,16 +29,20 @@ public class Door : LockableObject
 
     protected override void Lock()
     {
+        StopCoroutine("OpenDoor");
         StartCoroutine(CloseDoor());
     }
 
     protected override void Unlock()
     {
+        StopCoroutine("CloseDoor");
         StartCoroutine(OpenDoor());
     }
 
     IEnumerator OpenDoor()
     {
+        
+
         float time = 0;
         while (time < openTime)
         {
@@ -57,6 +61,8 @@ public class Door : LockableObject
 
     IEnumerator CloseDoor()
     {
+        
+
         float time = 0;
         while (time < openTime)
         {

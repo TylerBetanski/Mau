@@ -24,12 +24,15 @@ public class PlayerInputController : MonoBehaviour
     private void OnEnable()
     {
         inputActions.Locomotion.Enable();
+        inputActions.Actions.Enable();
         inputActions.Locomotion.Movement.performed += ctx => _horizontalAxis = ctx.ReadValue<float>();
         inputActions.Locomotion.Jump.performed += ctx => controller.Jump();
+        inputActions.Actions.Attack.performed += ctx => controller.Attack();
     }
 
     private void OnDisable()
     {
         inputActions.Locomotion.Disable();
+        inputActions.Actions.Disable();
     }
 }

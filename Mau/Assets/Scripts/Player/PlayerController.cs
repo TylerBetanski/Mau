@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(PlayerInputController))]
+[RequireComponent(typeof(CharacterController2D))]
+[RequireComponent(typeof(PlayerAttackScript))]
 public class PlayerController : MonoBehaviour { 
     [SerializeField] int maxHealth = 5;
     [SerializeField] float acceleration = 6.0f;
@@ -11,6 +13,7 @@ public class PlayerController : MonoBehaviour {
 
     CharacterController2D charController;
     PlayerInputController input;
+    PlayerAttackScript attackScript;
 
     bool secondJump = true;
     int health;
@@ -19,6 +22,7 @@ public class PlayerController : MonoBehaviour {
     {  
         charController = GetComponent<CharacterController2D>();
         input = GetComponent<PlayerInputController>();
+        attackScript = GetComponent<PlayerAttackScript>();
     }
 
     private void Die() 
@@ -62,12 +66,24 @@ public class PlayerController : MonoBehaviour {
         }
     }
 
+    public void Attack()
+    {
+        attackScript.Attack();
+    }
+
     private void FixedUpdate()
     {
         if (charController.Grounded) { 
-        secondJump = true;
+            secondJump = true;
         }
+
         charController.AddVelocity(new Vector2(input.HorizontalAxis * acceleration, 0)) ;
+
+        if (input.HorizontalAxis != 0) {
+            transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x) * Mathf.Sign(input.HorizontalAxis),
+                transform.localScale.y,
+                transform.localScale.z);
+        }
     }
 
 }

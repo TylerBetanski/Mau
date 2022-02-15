@@ -9,17 +9,17 @@ public abstract class LockableObject : MonoBehaviour
     public int LockNum { get { return locks.Count; } }
     [SerializeField] protected List<bool> locks = new List<bool>();
 
-    private bool wasLocked;
+    private bool wasLocked = true;
 
     public void OpenLock(int lockIndex)
     {
         if (lockIndex >= 0 && lockIndex < locks.Count)
             locks[lockIndex] = false;
 
-        if (!Locked)
+        if (Locked)
         {
             Unlock();
-            Locked = true;
+            Locked = false;
         }
 
         wasLocked = Locked;
