@@ -15,6 +15,9 @@ public class RotatableObject : InteractableObject
     {
 		animator = GetComponent<Animator>();
 		animator.SetInteger("CurrentState", currentState);
+
+		if (currentState == targetState)
+			target.OpenLock(targetLockNumber);
 	}
 
     public override void Interact()

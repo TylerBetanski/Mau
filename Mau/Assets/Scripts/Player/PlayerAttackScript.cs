@@ -31,7 +31,6 @@ public class PlayerAttackScript : MonoBehaviour
 
             foreach (Collider2D collider in hitObjects)
             {
-                print(collider.gameObject.name);
                 InteractableObject interactableObj = collider.gameObject.GetComponent<InteractableObject>();
                 if (interactableObj != null)
                 {
