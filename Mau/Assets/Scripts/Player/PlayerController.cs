@@ -30,6 +30,15 @@ public class PlayerController : MonoBehaviour {
         Debug.Log("I died");
     }
 
+    public void increaseMaxHealth() {
+        maxHealth++;
+        Debug.Log("Max health is now: " + maxHealth);
+    }
+
+    public void enableDoubleJump() {
+        canDoubleJump = true;    
+    }
+
     public void Heal(int amount)
     {
         amount = Mathf.Abs(amount);
