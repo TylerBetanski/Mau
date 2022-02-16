@@ -20,7 +20,7 @@ public class RotatableObject : InteractableObject
 			target.OpenLock(targetLockNumber);
 	}
 
-    public override void Interact()
+    public override void Interact(GameObject interactingObject)
     {
 		if (currentState == maxState)
 			currentState = 0;

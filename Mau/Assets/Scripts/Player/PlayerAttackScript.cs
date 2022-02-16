@@ -34,7 +34,7 @@ public class PlayerAttackScript : MonoBehaviour
                 InteractableObject interactableObj = collider.gameObject.GetComponent<InteractableObject>();
                 if (interactableObj != null)
                 {
-                    interactableObj.Interact();
+                    interactableObj.Interact(gameObject);
 
                     if (!canHitMultiple)
                         break;
