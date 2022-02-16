@@ -23,6 +23,8 @@ public class PlayerController : MonoBehaviour {
         charController = GetComponent<CharacterController2D>();
         input = GetComponent<PlayerInputController>();
         attackScript = GetComponent<PlayerAttackScript>();
+
+        health = maxHealth;
     }
 
     private void Die() 
