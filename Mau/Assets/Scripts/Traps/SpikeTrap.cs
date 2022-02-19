@@ -18,5 +18,10 @@ public class SpikeTrap : TrapObject
             obj.GetComponent<PlayerController>().Damage(damage);
             print("Damaged Player!");
         }
+
+        if (obj.tag == "Scarab")
+        {
+            obj.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
+        }
     }
 }
