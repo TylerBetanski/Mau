@@ -20,9 +20,6 @@ public class EnemyInteraction : InteractableObject
             Vector3 direction = transform.position - interactingObject.transform.position;
             direction.y = 3.0f;
             direction.Normalize();
-            
-
-            print(direction);
 
             rb2D.AddForce(direction * 500.0f);
         }
