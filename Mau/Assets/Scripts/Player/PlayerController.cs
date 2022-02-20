@@ -23,11 +23,22 @@ public class PlayerController : MonoBehaviour {
         charController = GetComponent<CharacterController2D>();
         input = GetComponent<PlayerInputController>();
         attackScript = GetComponent<PlayerAttackScript>();
+
+        health = maxHealth;
     }
 
     private void Die() 
     {
         Debug.Log("I died");
+    }
+
+    public void increaseMaxHealth() {
+        maxHealth++;
+        Debug.Log("Max health is now: " + maxHealth);
+    }
+
+    public void enableDoubleJump() {
+        canDoubleJump = true;    
     }
 
     public void Heal(int amount)

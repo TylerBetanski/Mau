@@ -16,7 +16,7 @@ public abstract class LockableObject : MonoBehaviour
         if (lockIndex >= 0 && lockIndex < locks.Count)
             locks[lockIndex] = false;
 
-        if (Locked)
+        if (Locked && CanOpen())
         {
             Unlock();
             Locked = false;
@@ -36,6 +36,16 @@ public abstract class LockableObject : MonoBehaviour
         Locked = true;
 
         wasLocked = Locked;
+    }
+
+    private bool CanOpen()
+    {
+        for(int i = 0; i < locks.Count; i++)
+        {
+            if (locks[i])
+                return false;
+        }
+        return true;
     }
 
     protected abstract void Unlock();
