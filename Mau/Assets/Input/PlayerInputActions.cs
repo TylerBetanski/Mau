@@ -131,17 +131,6 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
             ""bindings"": [
                 {
                     ""name"": """",
-                    ""id"": ""63ec4ea5-a8aa-4559-8a39-cecb5399e449"",
-                    ""path"": ""<Mouse>/leftButton"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""Keyboard"",
-                    ""action"": ""Attack"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
                     ""id"": ""e0bbb7bc-288a-4c7c-97d7-1f83b0ebf4b9"",
                     ""path"": ""<Keyboard>/e"",
                     ""interactions"": """",

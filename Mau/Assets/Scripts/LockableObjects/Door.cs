@@ -14,6 +14,9 @@ public class Door : LockableObject
     private Vector3 startPosition;
     private Vector3 endPosition;
 
+    private bool opening = false;
+    private bool closing = false;
+
     private void Awake()
     {
         doorTime = new WaitForSeconds(Time.fixedDeltaTime);
@@ -41,10 +44,11 @@ public class Door : LockableObject
 
     IEnumerator OpenDoor()
     {
-        
+        opening = true;
+        closing = false;
 
         float time = 0;
-        while (time < openTime)
+        while (time < openTime && opening)
         {
             float progress = time / openTime;
 
@@ -61,10 +65,11 @@ public class Door : LockableObject
 
     IEnumerator CloseDoor()
     {
-        
+        closing = true;
+        opening = false;
 
         float time = 0;
-        while (time < openTime)
+        while (time < openTime && closing)
         {
             float progress = time / openTime;
 

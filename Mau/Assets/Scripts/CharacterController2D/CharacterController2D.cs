@@ -60,7 +60,6 @@ public class CharacterController2D : MonoBehaviour
     private void CheckGrounded()
     {
         Grounded = Physics2D.OverlapCircle(ColliderBottom, 0.5f, collisionLayers);
-        
     }
 
     private void ClampVelocity()
