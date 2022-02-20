@@ -7,10 +7,10 @@ public class EnemyMovement : MonoBehaviour
 {
     [SerializeField] Collider2D groundCollider;
     [SerializeField] Transform circleTransform;
+    [SerializeField] private int moveSpeed;
     Rigidbody2D rb;
     private bool isGround;
     private bool isWall;
-    [SerializeField] private int moveSpeed;
     private Vector2 ColliderBottom { get { return new Vector2(groundCollider.bounds.center.x, groundCollider.bounds.min.y); } }
     private Vector2 ColliderSide { get { return new Vector2(groundCollider.bounds.center.x, groundCollider.bounds.center.y); } }
     [SerializeField] private LayerMask collisionLayers;
@@ -41,7 +41,6 @@ public class EnemyMovement : MonoBehaviour
     {
         rb  = GetComponent<Rigidbody2D>();
         rb.bodyType = RigidbodyType2D.Kinematic;
-        moveSpeed = 10;
     }
 
     private void FixedUpdate()
