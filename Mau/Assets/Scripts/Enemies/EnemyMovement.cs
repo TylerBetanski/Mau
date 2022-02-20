@@ -13,11 +13,11 @@ public class EnemyMovement : MonoBehaviour
     private bool isWall;
     private Vector2 ColliderBottom { get { return new Vector2(groundCollider.bounds.center.x, groundCollider.bounds.min.y); } }
     private Vector2 ColliderSide { get { return new Vector2(groundCollider.bounds.center.x, groundCollider.bounds.center.y); } }
-    [SerializeField] private LayerMask collisionLayers;
+    [SerializeField] private LayerMask obstacleCollision;
     private void CheckForObstacle()
     {
-        Collider2D collidedGround = Physics2D.OverlapCircle(ColliderBottom, 0.5f, collisionLayers);
-        if (collidedGround != null && collidedGround.tag == "Ground")
+        Collider2D collidedGround = Physics2D.OverlapCircle(ColliderBottom, 0.5f, obstacleCollision);
+        if (collidedGround != null)
         {
             isGround = true;
         }
@@ -26,8 +26,8 @@ public class EnemyMovement : MonoBehaviour
             isGround = false;
         }
 
-        Collider2D collidedWall = Physics2D.OverlapCircle(ColliderSide, 0.5f, collisionLayers);
-        if (collidedWall != null && collidedWall.tag == "Ground")
+        Collider2D collidedWall = Physics2D.OverlapCircle(ColliderSide, 0.5f, obstacleCollision);
+        if (collidedWall != null)
         {
             isWall = true;
         }
