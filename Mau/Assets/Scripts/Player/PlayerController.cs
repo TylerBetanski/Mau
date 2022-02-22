@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 [RequireComponent(typeof(PlayerInputController))]
@@ -30,6 +31,15 @@ public class PlayerController : MonoBehaviour {
     private void Die() 
     {
         Debug.Log("I died");
+
+        StartCoroutine(reloadScene());
+    }
+
+    IEnumerator reloadScene()
+    {
+        yield return new WaitForSeconds(2);
+        Scene scene = SceneManager.GetActiveScene();
+        SceneManager.LoadScene(scene.name);
     }
 
     public void increaseMaxHealth() {
