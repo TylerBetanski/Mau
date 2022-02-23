@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Room : MonoBehaviour
+public class Room : MonoBehaviour, ISignalReciever
 {
     public Bounds WorldBounds { get { return new Bounds(transform.position + bounds.center, bounds.size); } }
 
@@ -39,5 +39,10 @@ public class Room : MonoBehaviour
 
         Gizmos.color = gizmosColor;
         Gizmos.DrawCube(transform.position + bounds.center, bounds.size);
+    }
+
+    public void RecieveSignal(SignalTransmitter transmitter)
+    {
+        SaveRoom();
     }
 }

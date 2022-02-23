@@ -37,4 +37,7 @@ public class RotatableObject : InteractableObject
 				target.CloseLock(targetLockNumber);
 		}
     }
+	
+	public int GetCurrentState() { return currentState; }
+	public void SetCurrentState(int state) { state = Mathf.Clamp(state, 0, maxState); currentState = state; }
 }
