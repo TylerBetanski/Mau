@@ -61,6 +61,6 @@ public class ObjectSaveData_RotatableObject : ObjectSaveData
 
     public ObjectSaveData_RotatableObject(Transform transform, RotatableObject rotateObject) : base(transform)
     {
-
+        currentState = rotateObject.GetCurrentState();
     }
 }
