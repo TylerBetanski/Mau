@@ -14,8 +14,8 @@ public class HealthBar : MonoBehaviour
 
     private void FixedUpdate() {
 
-        health = GetComponent<PlayerController>().getHealth();
-        numOfHearts = GetComponent<PlayerController>().getMaxHealth();
+        health = GameObject.Find("Player").GetComponent<PlayerController>().getHealth();
+        numOfHearts = GameObject.Find("Player").GetComponent<PlayerController>().getMaxHealth();
 
         if (health > numOfHearts) {
             health = numOfHearts;
