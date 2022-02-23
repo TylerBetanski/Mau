@@ -61,6 +61,10 @@ public class Door : LockableObject
 
         transform.position = endPosition;
         collider.offset = new Vector2(0, 0);
+
+        SignalTransmitter transmitter = GetComponent<SignalTransmitter>();
+        if (transmitter != null)
+            transmitter.TransmitSignal();
     }
 
     IEnumerator CloseDoor()
