@@ -6,8 +6,8 @@ using UnityEngine;
 [RequireComponent(typeof(PlayerInputController))]
 [RequireComponent(typeof(CharacterController2D))]
 [RequireComponent(typeof(PlayerAttackScript))]
-public class PlayerController : MonoBehaviour { 
-    [SerializeField] int maxHealth = 5;
+public class PlayerController : MonoBehaviour {
+    [SerializeField] int maxHealth;
     [SerializeField] float acceleration = 6.0f;
     [SerializeField] float jumpHeight = 3.0f;
     [SerializeField] bool canDoubleJump = true;
@@ -42,9 +42,17 @@ public class PlayerController : MonoBehaviour {
         SceneManager.LoadScene(scene.name);
     }
 
+    public int getHealth()
+    {
+        return health;
+    }
+    public int getMaxHealth()
+    {
+        return maxHealth;
+    }
+
     public void increaseMaxHealth() {
         maxHealth++;
-        Debug.Log("Max health is now: " + maxHealth);
     }
 
     public void enableDoubleJump() {
