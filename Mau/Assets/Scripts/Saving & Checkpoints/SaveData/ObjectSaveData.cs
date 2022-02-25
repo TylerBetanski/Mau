@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class ObjectSaveData
 {
-    public float[] objectPosition;
-    public float[] objectRotation;
-    public float[] objectScale;
+    private float[] objectPosition;
+    private float[] objectRotation;
+    private float[] objectScale;
 
     public ObjectSaveData(Transform transform)
     {
@@ -38,7 +38,7 @@ public class ObjectSaveData
 
 public class ObjectSaveData_Physics : ObjectSaveData
 {
-    public float[] velocity;
+    private float[] velocity;
     public float angularVelocity;
 
     public ObjectSaveData_Physics(Transform transform, Rigidbody2D rb2D) : base(transform)
@@ -57,7 +57,7 @@ public class ObjectSaveData_Physics : ObjectSaveData
 
 public class ObjectSaveData_RotatableObject : ObjectSaveData
 {
-    int currentState = 0;
+    public int currentState = 0;
 
     public ObjectSaveData_RotatableObject(Transform transform, RotatableObject rotateObject) : base(transform)
     {
