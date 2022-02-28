@@ -7,16 +7,20 @@ public class BGMTrigger : MonoBehaviour
     [SerializeField] AudioClip BGM;
     [SerializeField] AudioSource BGAudioSource;
 
+    bool changed;
     GameObject player;
     private void Awake()
     {
         player = GameObject.Find("Player 1");
+        changed = false;
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject == player) {
+
+        if ((other.gameObject == player) && !changed) {
             ChangeBGM();
+            changed = true;
         }
     }
 
