@@ -15,6 +15,7 @@ public class PlayerController : MonoBehaviour {
     CharacterController2D charController;
     PlayerInputController input;
     PlayerAttackScript attackScript;
+    [SerializeField] Animator animator;
 
     bool secondJump = true;
     int health;
@@ -24,6 +25,8 @@ public class PlayerController : MonoBehaviour {
         charController = GetComponent<CharacterController2D>();
         input = GetComponent<PlayerInputController>();
         attackScript = GetComponent<PlayerAttackScript>();
+        if (animator == null)
+            animator = GetComponentInChildren<Animator>();
 
         health = maxHealth;
     }
@@ -33,7 +36,7 @@ public class PlayerController : MonoBehaviour {
         Debug.Log("I died");
 
         //StartCoroutine(reloadScene());
-        FindObjectOfType<CheckpointManager>().Reload(gameObject);
+        //FindObjectOfType<CheckpointManager>().Reload(gameObject);
     }
 
     IEnumerator reloadScene()
@@ -98,6 +101,9 @@ public class PlayerController : MonoBehaviour {
 
     public void Attack()
     {
+        if (animator != null && attackScript.CanAttack)
+            animator.SetTrigger("Attacking");
+
         attackScript.Attack();
     }
 
@@ -107,7 +113,9 @@ public class PlayerController : MonoBehaviour {
             secondJump = true;
         }
 
-        charController.AddVelocity(new Vector2(input.HorizontalAxis * acceleration, 0)) ;
+        charController.AddVelocity(new Vector2(input.HorizontalAxis * acceleration, 0));
+        if (animator != null)
+            animator.SetBool("Moving", charController.Velocity.x != 0);
 
         if (input.HorizontalAxis != 0) {
             transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x) * Mathf.Sign(input.HorizontalAxis),

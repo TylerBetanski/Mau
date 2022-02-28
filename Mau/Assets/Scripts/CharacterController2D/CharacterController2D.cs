@@ -5,7 +5,7 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody2D))]
 public class CharacterController2D : MonoBehaviour
 {
-    private Vector2 Velocity { get { return rb2D.velocity; } }
+    public Vector2 Velocity { get { return rb2D.velocity; } }
     private Vector2 ColliderBottom { get{ return new Vector2((collider.bounds.min.x + collider.bounds.max.x) /2, collider.bounds.min.y); } }
     private bool _grounded = false;
     public bool Grounded { get { return _grounded; } private set { _grounded = value; } }

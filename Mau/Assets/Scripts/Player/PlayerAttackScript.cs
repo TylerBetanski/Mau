@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerAttackScript : MonoBehaviour
 {
+    private bool _canAttack = true;
+    public bool CanAttack { get { return _canAttack; } }
     [SerializeField] private Transform attackLocation;
     [SerializeField] private float attackRadius;
     [SerializeField] private LayerMask attackableLayers;
@@ -12,8 +14,6 @@ public class PlayerAttackScript : MonoBehaviour
 
     WaitForSeconds cooldown;
 
-    private bool canAttack = true;
-
     private void Awake()
     {
         cooldown = new WaitForSeconds(cooldownTime);
@@ -21,7 +21,7 @@ public class PlayerAttackScript : MonoBehaviour
 
     public void Attack()
     {
-        if (canAttack)
+        if (_canAttack)
         {
             // Animate the Attack
             //
@@ -47,9 +47,9 @@ public class PlayerAttackScript : MonoBehaviour
 
     private IEnumerator AttackCooldown()
     {
-        canAttack = false;
+        _canAttack = false;
         yield return cooldown;
-        canAttack = true;
+        _canAttack = true;
     }
 
     private void OnDrawGizmosSelected()
