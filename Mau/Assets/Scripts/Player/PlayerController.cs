@@ -32,7 +32,8 @@ public class PlayerController : MonoBehaviour {
     {
         Debug.Log("I died");
 
-        StartCoroutine(reloadScene());
+        //StartCoroutine(reloadScene());
+        FindObjectOfType<CheckpointManager>().Reload(gameObject);
     }
 
     IEnumerator reloadScene()
