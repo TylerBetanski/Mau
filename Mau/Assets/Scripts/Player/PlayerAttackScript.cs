@@ -13,10 +13,12 @@ public class PlayerAttackScript : MonoBehaviour
     [SerializeField] private bool canHitMultiple = false;
 
     WaitForSeconds cooldown;
+    CatAudioController CA;
 
     private void Awake()
     {
         cooldown = new WaitForSeconds(cooldownTime);
+        CA = GetComponent<CatAudioController>();
     }
 
     public void Attack()
@@ -26,7 +28,7 @@ public class PlayerAttackScript : MonoBehaviour
             // Animate the Attack
             //
             //
-
+            CA.playSound("Attack");
             Collider2D[] hitObjects = Physics2D.OverlapCircleAll(attackLocation.position, attackRadius, attackableLayers);
 
             foreach (Collider2D collider in hitObjects)

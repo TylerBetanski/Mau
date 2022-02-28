@@ -14,23 +14,21 @@ public class Lever : InteractableObject
         flipped = false;
     }
 
-    public override void Interact(GameObject interactingObject) {
-        if (interactingObject.name == "Player")
+    public override void Interact(GameObject interactingObject)
+    {
+        if (flipped)
         {
-            if (flipped)
-            {
-                GetComponent<SpriteRenderer>().sprite = lever;
-                flipped = false;
-                if (lockedObject != null)
-                    lockedObject.CloseLock(lockNumber);
-            }
-            else
-            {
-                GetComponent<SpriteRenderer>().sprite = flippedLever;
-                flipped = true;
-                if (lockedObject != null)
-                    lockedObject.OpenLock(lockNumber);
-            }
+            GetComponent<SpriteRenderer>().sprite = lever;
+            flipped = false;
+            if (lockedObject != null)
+                lockedObject.CloseLock(lockNumber);
+        }
+        else
+        {
+            GetComponent<SpriteRenderer>().sprite = flippedLever;
+            flipped = true;
+            if (lockedObject != null)
+                lockedObject.OpenLock(lockNumber);
         }
     }
 }
