@@ -6,24 +6,25 @@ public class CheckpointManager : MonoBehaviour
 {
     public static CheckpointManager Instance;
 
-    [SerializeField] private List<Checkpoint> checkpoints;
-    [SerializeField] private int defaultIndex;
-
-    private int currentCheckpointIndex;
-
+    private List<Checkpoint> checkpoints = new List<Checkpoint>();
+    private Checkpoint currentCheckpoint;
     private void Awake()
     {
         CreateInstance();
     }
 
-    public void Reload(GameObject player)
+    public void ResetAllCheckpoints()
     {
         for(int i = 0; i < checkpoints.Count; i++)
         {
-            checkpoints[i].Interact(gameObject);
-            if(i == currentCheckpointIndex)
-                player.transform.position = checkpoints[i].transform.position;
+            checkpoints[i].Reload();
         }
+    }
+
+    public void ReloadWorld(GameObject player)
+    {
+        ResetAllCheckpoints();
+        player.transform.position = currentCheckpoint.gameObject.transform.position;
     }
 
     private void CreateInstance()
@@ -34,8 +35,13 @@ public class CheckpointManager : MonoBehaviour
             Destroy(this);
     }
 
-    private void OnValidate()
+    public void AddCheckpoint(Checkpoint checkpoint)
     {
-        defaultIndex = Mathf.Clamp(defaultIndex, 0, checkpoints.Count - 1);
+        checkpoints.Add(checkpoint);
+    }
+    
+    public void SetCurrentCheckpoint(Checkpoint checkpoint)
+    {
+        currentCheckpoint = checkpoint;
     }
 }

@@ -21,14 +21,13 @@ public abstract class TrapObject : MonoBehaviour
         if (canBeTriggered)
         {
             TriggerTrap(collision.gameObject);
-            StartCoroutine(Cooldown());
         }
     }
 
     protected abstract void TriggerTrap(GameObject obj);
     protected abstract void InitializeTrap();
 
-    private IEnumerator Cooldown()
+    protected IEnumerator Cooldown()
     {
         canBeTriggered = false;
         yield return wait;
