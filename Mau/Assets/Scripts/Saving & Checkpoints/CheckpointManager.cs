@@ -6,7 +6,7 @@ public class CheckpointManager : MonoBehaviour
 {
     public static CheckpointManager Instance;
 
-    private List<Checkpoint> checkpoints;
+    private List<Checkpoint> checkpoints = new List<Checkpoint>();
     private Checkpoint currentCheckpoint;
     private void Awake()
     {
@@ -21,9 +21,10 @@ public class CheckpointManager : MonoBehaviour
         }
     }
 
-    public void ReloadWorld()
+    public void ReloadWorld(GameObject player)
     {
         ResetAllCheckpoints();
+        player.transform.position = currentCheckpoint.gameObject.transform.position;
     }
 
     private void CreateInstance()

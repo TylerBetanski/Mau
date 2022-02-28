@@ -33,10 +33,8 @@ public class PlayerController : MonoBehaviour {
 
     private void Die() 
     {
-        Debug.Log("I died");
-
-        //StartCoroutine(reloadScene());
-        //FindObjectOfType<CheckpointManager>().Reload(gameObject);
+        FindObjectOfType<CheckpointManager>().ReloadWorld(gameObject);
+        health = maxHealth;
     }
 
     IEnumerator reloadScene()

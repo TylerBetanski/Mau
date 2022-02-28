@@ -19,7 +19,7 @@ public class Checkpoint : InteractableObject
         }
 
         checkpointManager = FindObjectOfType<CheckpointManager>();
-        if (checkpointManager == null) {
+        if (checkpointManager != null) {
             checkpointManager.AddCheckpoint(this);
             if (isStartingCheckpoint)
                 checkpointManager.SetCurrentCheckpoint(this);
