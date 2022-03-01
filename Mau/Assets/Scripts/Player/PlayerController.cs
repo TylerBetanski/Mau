@@ -15,13 +15,15 @@ public class PlayerController : MonoBehaviour {
     CharacterController2D charController;
     PlayerInputController input;
     PlayerAttackScript attackScript;
+    CatAudioController CA;
     [SerializeField] Animator animator;
 
     bool secondJump = true;
     int health;
 
     private void Awake()
-    {  
+    {
+        CA = GetComponent<CatAudioController>();
         charController = GetComponent<CharacterController2D>();
         input = GetComponent<PlayerInputController>();
         attackScript = GetComponent<PlayerAttackScript>();
@@ -75,6 +77,7 @@ public class PlayerController : MonoBehaviour {
 
     public void Damage(int amount)
     {
+        CA.playSound("Hurt");
         amount = Mathf.Abs(amount);
         if ((health - amount) <= 0)
         {

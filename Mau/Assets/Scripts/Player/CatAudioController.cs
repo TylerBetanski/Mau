@@ -20,28 +20,27 @@ public class CatAudioController : MonoBehaviour
     }
     public void playSound(string sound) {
 
-        AS.Stop();
+        if (!AS.isPlaying)
+        {
+            AS.Stop();
 
-        if (sound == "Attack") {
-            AS.clip = Attack;
-        }
-        if (sound == "Hurt")
-        {
-            AS.clip = Hurt;
-        }
-        if (sound == "Meow")
-        {
-            AS.clip = Meow;
-        }
-        if (sound == "Hiss")
-        {
-            AS.clip = Hiss;
-        }
-        if (sound == "Purr")
-        {
-            AS.clip = Purr;
-        }
+            if (sound == "Attack") {
+                AS.clip = Attack;
+            }
+            if (sound == "Hurt") {
+                AS.clip = Hurt;
+            }
+            if (sound == "Meow") {
+                AS.clip = Meow;
+            }
+            if (sound == "Hiss") {
+                AS.clip = Hiss;
+            }
+            if (sound == "Purr") {
+                AS.clip = Purr;
+            }
 
-        AS.Play();
+            AS.Play();
+        }
     }
 }
