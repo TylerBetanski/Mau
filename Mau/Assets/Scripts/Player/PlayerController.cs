@@ -17,7 +17,11 @@ public class PlayerController : MonoBehaviour {
     PlayerAttackScript attackScript;
     CatAudioController CA;
     [SerializeField] Animator animator;
+    [SerializeField] private float invulnerabilityTime;
 
+    private WaitForSeconds invulnSeconds;
+
+    private bool canBeHurt = true;
     bool secondJump = true;
     int health;
 
@@ -31,6 +35,8 @@ public class PlayerController : MonoBehaviour {
             animator = GetComponentInChildren<Animator>();
 
         health = maxHealth;
+
+        invulnSeconds = new WaitForSeconds(invulnerabilityTime);
     }
 
     private void Die() 
@@ -77,16 +83,20 @@ public class PlayerController : MonoBehaviour {
 
     public void Damage(int amount)
     {
-        CA.playSound("Hurt");
-        amount = Mathf.Abs(amount);
-        if ((health - amount) <= 0)
+        if (canBeHurt)
         {
-            health = 0;
-            Die();
-        }
-        else
-        {
-            health -= amount;
+            CA.playSound("Hurt");
+            amount = Mathf.Abs(amount);
+            if ((health - amount) <= 0)
+            {
+                health = 0;
+                Die();
+            }
+            else
+            {
+                health -= amount;
+                StartCoroutine(HurtCooldown());
+            }
         }
     }
 
@@ -99,6 +109,13 @@ public class PlayerController : MonoBehaviour {
     {
         yield return new WaitForSeconds(time);
         Damage(amount);
+    }
+
+    private IEnumerator HurtCooldown()
+    {
+        canBeHurt = false;
+        yield return invulnSeconds;
+        canBeHurt = true;
     }
 
     public void Jump()
