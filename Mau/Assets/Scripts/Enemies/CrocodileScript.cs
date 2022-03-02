@@ -72,10 +72,4 @@ public class CrocodileScript : MonoBehaviour
             }
         }
     }
-
-    private void OnDrawGizmos()
-    {
-        Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(attackPosition.position, 2.5f);
-    }
 }

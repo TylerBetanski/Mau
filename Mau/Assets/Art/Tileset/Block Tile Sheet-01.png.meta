@@ -1,11 +1,697 @@
 fileFormatVersion: 2
-<<<<<<< Updated upstream
 guid: 8637e5bde9fbc65418b34074ac9a835a
-=======
-guid: e3e3380dbcd0d2546a3552d184787baa
->>>>>>> Stashed changes
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -1450664301460703970
+    second: Block Tile Sheet-01_0
+  - first:
+      213: 6688516861462527311
+    second: Block Tile Sheet-01_1
+  - first:
+      213: 5899822081160798643
+    second: Block Tile Sheet-01_2
+  - first:
+      213: -5592445590412757927
+    second: Block Tile Sheet-01_3
+  - first:
+      213: 5645660252535512533
+    second: Block Tile Sheet-01_4
+  - first:
+      213: -6262397464915930771
+    second: Block Tile Sheet-01_5
+  - first:
+      213: 4125592953980838698
+    second: Block Tile Sheet-01_6
+  - first:
+      213: 6120307825001995874
+    second: Block Tile Sheet-01_7
+  - first:
+      213: -1889056953199498371
+    second: Block Tile Sheet-01_8
+  - first:
+      213: 4177989377528607358
+    second: Block Tile Sheet-01_9
+  - first:
+      213: -3948800673355581231
+    second: Block Tile Sheet-01_10
+  - first:
+      213: 3114300962456466065
+    second: Block Tile Sheet-01_11
+  - first:
+      213: -3821733332480339167
+    second: Block Tile Sheet-01_12
+  - first:
+      213: -3866707225676398282
+    second: Block Tile Sheet-01_13
+  - first:
+      213: -6861879669281414616
+    second: Block Tile Sheet-01_14
+  - first:
+      213: 8302725895120965519
+    second: Block Tile Sheet-01_15
+  - first:
+      213: -3762890780185444242
+    second: Block Tile Sheet-01_16
+  - first:
+      213: 73889241438743004
+    second: Block Tile Sheet-01_17
+  - first:
+      213: -7232954851532955584
+    second: Block Tile Sheet-01_18
+  - first:
+      213: -8801170394414636000
+    second: Block Tile Sheet-01_19
+  - first:
+      213: 157835127039549394
+    second: Block Tile Sheet-01_20
+  - first:
+      213: -6734469762323225438
+    second: Block Tile Sheet-01_21
+  - first:
+      213: 8964836551608955058
+    second: Block Tile Sheet-01_22
+  - first:
+      213: -3995623898145872071
+    second: Block Tile Sheet-01_23
+  - first:
+      213: -929519678492257503
+    second: Block Tile Sheet-01_24
+  - first:
+      213: -450396346212086730
+    second: Block Tile Sheet-01_25
+  - first:
+      213: 139776097088550378
+    second: Block Tile Sheet-01_26
+  - first:
+      213: -4734462133421158890
+    second: Block Tile Sheet-01_27
+  - first:
+      213: 3566148311276736929
+    second: Block Tile Sheet-01_28
+  - first:
+      213: -4645221447608582725
+    second: Block Tile Sheet-01_29
+  - first:
+      213: 8156663421229931056
+    second: Block Tile Sheet-01_30
+  - first:
+      213: -3955919702464333484
+    second: Block Tile Sheet-01_31
+  - first:
+      213: -3369458663676729064
+    second: Block Tile Sheet-01_32
+  - first:
+      213: -1278487831507925373
+    second: Block Tile Sheet-01_33
+  - first:
+      213: -7986517469648925955
+    second: Block Tile Sheet-01_34
+  - first:
+      213: 6097243144163930994
+    second: Block Tile Sheet-01_35
+  - first:
+      213: -2409174212780877945
+    second: Block Tile Sheet-01_36
+  - first:
+      213: 8862792055856907390
+    second: Block Tile Sheet-01_37
+  - first:
+      213: -346737561702863188
+    second: Block Tile Sheet-01_38
+  - first:
+      213: -8174925012080396057
+    second: Block Tile Sheet-01_39
+  - first:
+      213: -7432138227291151471
+    second: Block Tile Sheet-01_40
+  - first:
+      213: 5389309166480308393
+    second: Block Tile Sheet-01_41
+  - first:
+      213: -3145890572324747699
+    second: Block Tile Sheet-01_42
+  - first:
+      213: -6789865933295971439
+    second: Block Tile Sheet-01_43
+  - first:
+      213: -9180478013073110890
+    second: Block Tile Sheet-01_44
+  - first:
+      213: -4218738027857563310
+    second: Block Tile Sheet-01_45
+  - first:
+      213: 4964251497033970398
+    second: Block Tile Sheet-01_46
+  - first:
+      213: -4624083033057050251
+    second: Block Tile Sheet-01_47
+  - first:
+      213: -8064564512296712235
+    second: Block Tile Sheet-01_48
+  - first:
+      213: -2729555973139297750
+    second: Block Tile Sheet-01_49
+  - first:
+      213: 2367331036315009575
+    second: Block Tile Sheet-01_50
+  - first:
+      213: 1049738677565783872
+    second: Block Tile Sheet-01_51
+  - first:
+      213: -3345133101085559570
+    second: Block Tile Sheet-01_52
+  - first:
+      213: -2749287683370928775
+    second: Block Tile Sheet-01_53
+  - first:
+      213: 5494300405185675728
+    second: Block Tile Sheet-01_54
+  - first:
+      213: -8365313130977746431
+    second: Block Tile Sheet-01_55
+  - first:
+      213: 1899252682699728516
+    second: Block Tile Sheet-01_56
+  - first:
+      213: -6085001390145577086
+    second: Block Tile Sheet-01_57
+  - first:
+      213: 6223941471681398055
+    second: Block Tile Sheet-01_58
+  - first:
+      213: 8588777974974108691
+    second: Block Tile Sheet-01_59
+  - first:
+      213: -8240594232716004291
+    second: Block Tile Sheet-01_60
+  - first:
+      213: 848733750191987438
+    second: Block Tile Sheet-01_61
+  - first:
+      213: -1521246303653430241
+    second: Block Tile Sheet-01_62
+  - first:
+      213: -5347983428075669199
+    second: Block Tile Sheet-01_63
+  - first:
+      213: 5599297361082856875
+    second: Block Tile Sheet-01_64
+  - first:
+      213: -5331932147144810020
+    second: Block Tile Sheet-01_65
+  - first:
+      213: -5735821096652371230
+    second: Block Tile Sheet-01_66
+  - first:
+      213: -2525333228625844665
+    second: Block Tile Sheet-01_67
+  - first:
+      213: 683310538196451432
+    second: Block Tile Sheet-01_68
+  - first:
+      213: -7844404614725507777
+    second: Block Tile Sheet-01_69
+  - first:
+      213: -4712300722386429631
+    second: Block Tile Sheet-01_70
+  - first:
+      213: -3413489938903950208
+    second: Block Tile Sheet-01_71
+  - first:
+      213: 7464899164616453039
+    second: Block Tile Sheet-01_72
+  - first:
+      213: -6386610807389226057
+    second: Block Tile Sheet-01_73
+  - first:
+      213: 4136387278364944502
+    second: Block Tile Sheet-01_74
+  - first:
+      213: -5127002630892280256
+    second: Block Tile Sheet-01_75
+  - first:
+      213: -8574385535182662091
+    second: Block Tile Sheet-01_76
+  - first:
+      213: -7924194051481050172
+    second: Block Tile Sheet-01_77
+  - first:
+      213: 5453678181488169287
+    second: Block Tile Sheet-01_78
+  - first:
+      213: 7747512433949579128
+    second: Block Tile Sheet-01_79
+  - first:
+      213: 4397093657907696668
+    second: Block Tile Sheet-01_80
+  - first:
+      213: 2330126339282379512
+    second: Block Tile Sheet-01_81
+  - first:
+      213: -7491800836843400863
+    second: Block Tile Sheet-01_82
+  - first:
+      213: -518481252546477155
+    second: Block Tile Sheet-01_83
+  - first:
+      213: -5891627094061033285
+    second: Block Tile Sheet-01_84
+  - first:
+      213: -5430871282876791137
+    second: Block Tile Sheet-01_85
+  - first:
+      213: -8426613016923905289
+    second: Block Tile Sheet-01_86
+  - first:
+      213: 762208714561801978
+    second: Block Tile Sheet-01_87
+  - first:
+      213: -7131361780934719010
+    second: Block Tile Sheet-01_88
+  - first:
+      213: 8717718949827334968
+    second: Block Tile Sheet-01_89
+  - first:
+      213: -3473797175546803057
+    second: Block Tile Sheet-01_90
+  - first:
+      213: 4296711144608738738
+    second: Block Tile Sheet-01_91
+  - first:
+      213: -583970531571289861
+    second: Block Tile Sheet-01_92
+  - first:
+      213: 1814704343058170240
+    second: Block Tile Sheet-01_93
+  - first:
+      213: 324650146216626936
+    second: Block Tile Sheet-01_94
+  - first:
+      213: -3061327066047125678
+    second: Block Tile Sheet-01_95
+  - first:
+      213: 4730090354521738098
+    second: Block Tile Sheet-01_96
+  - first:
+      213: -3940335027961184399
+    second: Block Tile Sheet-01_97
+  - first:
+      213: -7485969417519771524
+    second: Block Tile Sheet-01_98
+  - first:
+      213: 5645767717191999921
+    second: Block Tile Sheet-01_99
+  - first:
+      213: -7281400102965371135
+    second: Block Tile Sheet-01_100
+  - first:
+      213: 843301007433721594
+    second: Block Tile Sheet-01_101
+  - first:
+      213: -1193128589051252356
+    second: Block Tile Sheet-01_102
+  - first:
+      213: 3645204231678068168
+    second: Block Tile Sheet-01_103
+  - first:
+      213: 3662456725669590092
+    second: Block Tile Sheet-01_104
+  - first:
+      213: -6880185801412842591
+    second: Block Tile Sheet-01_105
+  - first:
+      213: -1044168446863418638
+    second: Block Tile Sheet-01_106
+  - first:
+      213: 1364738105236346121
+    second: Block Tile Sheet-01_107
+  - first:
+      213: 1214003029983411232
+    second: Block Tile Sheet-01_108
+  - first:
+      213: -2246462906478960986
+    second: Block Tile Sheet-01_109
+  - first:
+      213: -6541582128675558164
+    second: Block Tile Sheet-01_110
+  - first:
+      213: 6024021380983397667
+    second: Block Tile Sheet-01_111
+  - first:
+      213: 5237303942993874824
+    second: Block Tile Sheet-01_112
+  - first:
+      213: 7469804615134841917
+    second: Block Tile Sheet-01_113
+  - first:
+      213: -4999274992508137345
+    second: Block Tile Sheet-01_114
+  - first:
+      213: -2605759099641087020
+    second: Block Tile Sheet-01_115
+  - first:
+      213: 9034447714883942150
+    second: Block Tile Sheet-01_116
+  - first:
+      213: -4988140536112895284
+    second: Block Tile Sheet-01_117
+  - first:
+      213: 4794712378989708088
+    second: Block Tile Sheet-01_118
+  - first:
+      213: 6479882816921559071
+    second: Block Tile Sheet-01_119
+  - first:
+      213: 5296914437785739124
+    second: Block Tile Sheet-01_120
+  - first:
+      213: 4363493347747222677
+    second: Block Tile Sheet-01_121
+  - first:
+      213: -6927085329651789164
+    second: Block Tile Sheet-01_122
+  - first:
+      213: 5505689993450714692
+    second: Block Tile Sheet-01_123
+  - first:
+      213: -8710193781989808608
+    second: Block Tile Sheet-01_124
+  - first:
+      213: -7674955004516263258
+    second: Block Tile Sheet-01_125
+  - first:
+      213: -873602990666906254
+    second: Block Tile Sheet-01_126
+  - first:
+      213: 9195793662366672011
+    second: Block Tile Sheet-01_127
+  - first:
+      213: 9120651705211145416
+    second: Block Tile Sheet-01_128
+  - first:
+      213: -4788903189089973771
+    second: Block Tile Sheet-01_129
+  - first:
+      213: 4053238379082394636
+    second: Block Tile Sheet-01_130
+  - first:
+      213: -5112881474578163084
+    second: Block Tile Sheet-01_131
+  - first:
+      213: -3832072203945353152
+    second: Block Tile Sheet-01_132
+  - first:
+      213: -1701425759901151966
+    second: Block Tile Sheet-01_133
+  - first:
+      213: -1757958620370637297
+    second: Block Tile Sheet-01_134
+  - first:
+      213: -292551443208798381
+    second: Block Tile Sheet-01_135
+  - first:
+      213: 4570938450630271004
+    second: Block Tile Sheet-01_136
+  - first:
+      213: -5554465128698905175
+    second: Block Tile Sheet-01_137
+  - first:
+      213: 1891534082116258841
+    second: Block Tile Sheet-01_138
+  - first:
+      213: 1142204459751328101
+    second: Block Tile Sheet-01_139
+  - first:
+      213: -9141752401625853212
+    second: Block Tile Sheet-01_140
+  - first:
+      213: 6400021915193158702
+    second: Block Tile Sheet-01_141
+  - first:
+      213: -9002684533722622855
+    second: Block Tile Sheet-01_142
+  - first:
+      213: 8953292029363242056
+    second: Block Tile Sheet-01_143
+  - first:
+      213: 857680471550923864
+    second: Block Tile Sheet-01_144
+  - first:
+      213: -1268969866183440970
+    second: Block Tile Sheet-01_145
+  - first:
+      213: -6296158138308014584
+    second: Block Tile Sheet-01_146
+  - first:
+      213: -774063860959520620
+    second: Block Tile Sheet-01_147
+  - first:
+      213: 2981416205039320821
+    second: Block Tile Sheet-01_148
+  - first:
+      213: 6256814814008342631
+    second: Block Tile Sheet-01_149
+  - first:
+      213: 7708260571883066305
+    second: Block Tile Sheet-01_150
+  - first:
+      213: 6977287717077231065
+    second: Block Tile Sheet-01_151
+  - first:
+      213: -6906354293236117112
+    second: Block Tile Sheet-01_152
+  - first:
+      213: 1238459238660820484
+    second: Block Tile Sheet-01_153
+  - first:
+      213: 6012685369082216182
+    second: Block Tile Sheet-01_154
+  - first:
+      213: 7063963982022255499
+    second: Block Tile Sheet-01_155
+  - first:
+      213: 1043233136479333519
+    second: Block Tile Sheet-01_156
+  - first:
+      213: -8080663017930682426
+    second: Block Tile Sheet-01_157
+  - first:
+      213: 3281020264317031569
+    second: Block Tile Sheet-01_158
+  - first:
+      213: 5337020640393472264
+    second: Block Tile Sheet-01_159
+  - first:
+      213: -6277761387733056625
+    second: Block Tile Sheet-01_160
+  - first:
+      213: -1575107387463726936
+    second: Block Tile Sheet-01_161
+  - first:
+      213: -5238337319036356506
+    second: Block Tile Sheet-01_162
+  - first:
+      213: -5516000609983057173
+    second: Block Tile Sheet-01_163
+  - first:
+      213: -7083131207166360029
+    second: Block Tile Sheet-01_164
+  - first:
+      213: 5350458441655238358
+    second: Block Tile Sheet-01_165
+  - first:
+      213: -4963424417612845407
+    second: Block Tile Sheet-01_166
+  - first:
+      213: -6683371521945808484
+    second: Block Tile Sheet-01_167
+  - first:
+      213: 3988334519766752157
+    second: Block Tile Sheet-01_168
+  - first:
+      213: 5159971015330906654
+    second: Block Tile Sheet-01_169
+  - first:
+      213: -3162622026557014819
+    second: Block Tile Sheet-01_170
+  - first:
+      213: -1435881447993547817
+    second: Block Tile Sheet-01_171
+  - first:
+      213: -6185391757733807981
+    second: Block Tile Sheet-01_172
+  - first:
+      213: -7678817823671356838
+    second: Block Tile Sheet-01_173
+  - first:
+      213: -4171069501173787442
+    second: Block Tile Sheet-01_174
+  - first:
+      213: -2611484426113161443
+    second: Block Tile Sheet-01_175
+  - first:
+      213: -7689185101636336130
+    second: Block Tile Sheet-01_176
+  - first:
+      213: 464354752078835066
+    second: Block Tile Sheet-01_177
+  - first:
+      213: -6829677608846766735
+    second: Block Tile Sheet-01_178
+  - first:
+      213: -3380414302569438034
+    second: Block Tile Sheet-01_179
+  - first:
+      213: -3610191407319366988
+    second: Block Tile Sheet-01_180
+  - first:
+      213: 7677914810110543627
+    second: Block Tile Sheet-01_181
+  - first:
+      213: 1919613199473793412
+    second: Block Tile Sheet-01_182
+  - first:
+      213: 8851596336750748165
+    second: Block Tile Sheet-01_183
+  - first:
+      213: -1400589870726119710
+    second: Block Tile Sheet-01_184
+  - first:
+      213: -7155069907042994132
+    second: Block Tile Sheet-01_185
+  - first:
+      213: 5019203977974973550
+    second: Block Tile Sheet-01_186
+  - first:
+      213: -57959533132632983
+    second: Block Tile Sheet-01_187
+  - first:
+      213: 3112405780084462463
+    second: Block Tile Sheet-01_188
+  - first:
+      213: -7455593467241146993
+    second: Block Tile Sheet-01_189
+  - first:
+      213: 1424883023710261232
+    second: Block Tile Sheet-01_190
+  - first:
+      213: -1914964006124904813
+    second: Block Tile Sheet-01_191
+  - first:
+      213: -6950782272157207402
+    second: Block Tile Sheet-01_192
+  - first:
+      213: -8467752825143020565
+    second: Block Tile Sheet-01_193
+  - first:
+      213: -8171116556350779795
+    second: Block Tile Sheet-01_194
+  - first:
+      213: -7876316921742758919
+    second: Block Tile Sheet-01_195
+  - first:
+      213: 1513391094966703643
+    second: Block Tile Sheet-01_196
+  - first:
+      213: -1662442175897561145
+    second: Block Tile Sheet-01_197
+  - first:
+      213: -4599798533388901530
+    second: Block Tile Sheet-01_198
+  - first:
+      213: 7240085507193795251
+    second: Block Tile Sheet-01_199
+  - first:
+      213: -5458851489054791891
+    second: Block Tile Sheet-01_200
+  - first:
+      213: -7544297096105221668
+    second: Block Tile Sheet-01_201
+  - first:
+      213: 5131635465717099248
+    second: Block Tile Sheet-01_202
+  - first:
+      213: 7505843022724257624
+    second: Block Tile Sheet-01_203
+  - first:
+      213: -7026383108545866929
+    second: Block Tile Sheet-01_204
+  - first:
+      213: -4038684969683002442
+    second: Block Tile Sheet-01_205
+  - first:
+      213: 807160683342341721
+    second: Block Tile Sheet-01_206
+  - first:
+      213: -5258628934059043548
+    second: Block Tile Sheet-01_207
+  - first:
+      213: 5003007139836003344
+    second: Block Tile Sheet-01_208
+  - first:
+      213: -4664532540111706638
+    second: Block Tile Sheet-01_209
+  - first:
+      213: -6463056476815768939
+    second: Block Tile Sheet-01_210
+  - first:
+      213: 7789845384605767631
+    second: Block Tile Sheet-01_211
+  - first:
+      213: 2651509711376635314
+    second: Block Tile Sheet-01_212
+  - first:
+      213: -2080621009786854079
+    second: Block Tile Sheet-01_213
+  - first:
+      213: 3265252111287128239
+    second: Block Tile Sheet-01_214
+  - first:
+      213: 1155631073161749162
+    second: Block Tile Sheet-01_215
+  - first:
+      213: -2780789622368246305
+    second: Block Tile Sheet-01_216
+  - first:
+      213: -2884250442941275469
+    second: Block Tile Sheet-01_217
+  - first:
+      213: 3916925231746583610
+    second: Block Tile Sheet-01_218
+  - first:
+      213: -375399429055321167
+    second: Block Tile Sheet-01_219
+  - first:
+      213: 9163606870196804867
+    second: Block Tile Sheet-01_220
+  - first:
+      213: 1791986470520646803
+    second: Block Tile Sheet-01_221
+  - first:
+      213: 7712245252561848048
+    second: Block Tile Sheet-01_222
+  - first:
+      213: -4994416228422846356
+    second: Block Tile Sheet-01_223
+  - first:
+      213: -1287579592110253740
+    second: Block Tile Sheet-01_224
+  - first:
+      213: -6846679663068615973
+    second: Block Tile Sheet-01_225
+  - first:
+      213: 3631639012941979255
+    second: Block Tile Sheet-01_226
+  - first:
+      213: -2999195458605129878
+    second: Block Tile Sheet-01_227
+  - first:
+      213: -7354814300869742775
+    second: Block Tile Sheet-01_228
+  - first:
+      213: 6291087428817735366
+    second: Block Tile Sheet-01_229
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -36,21 +722,21 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: 1
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 50
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -65,14 +751,26 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
-  applyGammaDecoding: 0
+  applyGammaDecoding: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -81,7 +779,4837 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_0
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 3900
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e153817f0843edbe0800000000000000
+      internalID: -1450664301460703970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_1
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 3900
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4d3fa1f5a262dc50800000000000000
+      internalID: 6688516861462527311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_2
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 3900
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b168999ce060e150800000000000000
+      internalID: 5899822081160798643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_3
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 3900
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9547fb59d54a362b0800000000000000
+      internalID: -5592445590412757927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_4
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 3900
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dddbe2761a695e40800000000000000
+      internalID: 5645660252535512533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_5
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 3900
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d61116d6fae7719a0800000000000000
+      internalID: -6262397464915930771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_6
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 3900
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a23e1edeeec014930800000000000000
+      internalID: 4125592953980838698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_7
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 3900
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26e99414a83bfe450800000000000000
+      internalID: 6120307825001995874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_8
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 3900
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7bef00b5b8b8c5e0800000000000000
+      internalID: -1889056953199498371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_9
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 3900
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e72b2f2f3333bf930800000000000000
+      internalID: 4177989377528607358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_10
+      rect:
+        serializedVersion: 2
+        x: 1700
+        y: 3900
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d831df85ba0339c0800000000000000
+      internalID: -3948800673355581231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_11
+      rect:
+        serializedVersion: 2
+        x: 1900
+        y: 3900
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 192ffde9938383b20800000000000000
+      internalID: 3114300962456466065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_12
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 3900
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1235d3358c976fac0800000000000000
+      internalID: -3821733332480339167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_13
+      rect:
+        serializedVersion: 2
+        x: 2200
+        y: 3900
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6314f13d342b65ac0800000000000000
+      internalID: -3866707225676398282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_14
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 3900
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 822a10debc4b5c0a0800000000000000
+      internalID: -6861879669281414616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3800
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8f4f1e3635393370800000000000000
+      internalID: 8302725895120965519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_16
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 3800
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e604476a5c687cbc0800000000000000
+      internalID: -3762890780185444242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_17
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 3800
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd9eda4afd1860100800000000000000
+      internalID: 73889241438743004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_18
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 3800
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 040a0f562e16f9b90800000000000000
+      internalID: -7232954851532955584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_19
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 3800
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0242b392826fbd580800000000000000
+      internalID: -8801170394414636000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_20
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 3800
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2df5548363eb03200800000000000000
+      internalID: 157835127039549394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_21
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 3800
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a46d129e6b5a82a0800000000000000
+      internalID: -6734469762323225438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_22
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 3800
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b0f610985f796c70800000000000000
+      internalID: 8964836551608955058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_23
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 3800
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93724fefb31bc88c0800000000000000
+      internalID: -3995623898145872071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_24
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 3800
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 123dbb7f6cea913f0800000000000000
+      internalID: -929519678492257503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_25
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 3800
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63c05efc8eedfb9f0800000000000000
+      internalID: -450396346212086730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_26
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 3800
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae5bd07ae9590f100800000000000000
+      internalID: 139776097088550378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_27
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 3800
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61ec4ee16cfcb4eb0800000000000000
+      internalID: -4734462133421158890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_28
+      rect:
+        serializedVersion: 2
+        x: 1300
+        y: 3800
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a1520eaef08d7130800000000000000
+      internalID: 3566148311276736929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_29
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 3800
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbdb34074bbd88fb0800000000000000
+      internalID: -4645221447608582725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_30
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 3800
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03a15de6a2a423170800000000000000
+      internalID: 8156663421229931056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_31
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 3800
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 459f4ae6dffb919c0800000000000000
+      internalID: -3955919702464333484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_32
+      rect:
+        serializedVersion: 2
+        x: 1700
+        y: 3800
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 819af2292374d31d0800000000000000
+      internalID: -3369458663676729064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_33
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 3800
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3868f494716e14ee0800000000000000
+      internalID: -1278487831507925373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_34
+      rect:
+        serializedVersion: 2
+        x: 1900
+        y: 3800
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfacf1dfca03a2190800000000000000
+      internalID: -7986517469648925955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_35
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 3800
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 273b315c552cd9450800000000000000
+      internalID: 6097243144163930994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_36
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 3800
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7871a2d51d4e09ed0800000000000000
+      internalID: -2409174212780877945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_37
+      rect:
+        serializedVersion: 2
+        x: 2200
+        y: 3800
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e74418fea66fefa70800000000000000
+      internalID: 8862792055856907390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_38
+      rect:
+        serializedVersion: 2
+        x: 2300
+        y: 3800
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cae6a645604203bf0800000000000000
+      internalID: -346737561702863188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_39
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 3800
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e8fd7d9305dc8e80800000000000000
+      internalID: -8174925012080396057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_40
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 3800
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 193a5b0d8adbbd890800000000000000
+      internalID: -7432138227291151471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_41
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3700
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a8b0d4122caaca40800000000000000
+      internalID: 5389309166480308393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_42
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 3700
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d46455e213d8754d0800000000000000
+      internalID: -3145890572324747699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_43
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 3700
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1931e5d68ec85c1a0800000000000000
+      internalID: -6789865933295971439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_44
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 3700
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6984e7a23e3689080800000000000000
+      internalID: -9180478013073110890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_45
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 3700
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2513e119d180475c0800000000000000
+      internalID: -4218738027857563310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_46
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 3700
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed239605f6094e440800000000000000
+      internalID: 4964251497033970398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_47
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 3700
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57149ba1bf4f3dfb0800000000000000
+      internalID: -4624083033057050251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_48
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 3700
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d74550dd49e41090800000000000000
+      internalID: -8064564512296712235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_49
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 3700
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2a8c72ed4bae1ad0800000000000000
+      internalID: -2729555973139297750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_50
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 3700
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 722405de8037ad020800000000000000
+      internalID: 2367331036315009575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_51
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 3700
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04ffb47f3cb619e00800000000000000
+      internalID: 1049738677565783872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_52
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 3700
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee4f467fa23b391d0800000000000000
+      internalID: -3345133101085559570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_53
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 3700
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 975b1571b6198d9d0800000000000000
+      internalID: -2749287683370928775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_54
+      rect:
+        serializedVersion: 2
+        x: 1300
+        y: 3700
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d18064cb1daf3c40800000000000000
+      internalID: 5494300405185675728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_55
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 3700
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1022929570078eb80800000000000000
+      internalID: -8365313130977746431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_56
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 3700
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 486660390408b5a10800000000000000
+      internalID: 1899252682699728516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_57
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 3700
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28f5d92b97bbd8ba0800000000000000
+      internalID: -6085001390145577086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_58
+      rect:
+        serializedVersion: 2
+        x: 1700
+        y: 3700
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 725446aeac1ef5650800000000000000
+      internalID: 6223941471681398055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_59
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 3700
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 314d70d1018713770800000000000000
+      internalID: 8588777974974108691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_60
+      rect:
+        serializedVersion: 2
+        x: 1900
+        y: 3700
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3474d4b43783ad80800000000000000
+      internalID: -8240594232716004291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_61
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 3700
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eea141959de47cb00800000000000000
+      internalID: 848733750191987438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_62
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 3700
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1c7cd6fb8273eae0800000000000000
+      internalID: -1521246303653430241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_63
+      rect:
+        serializedVersion: 2
+        x: 2200
+        y: 3700
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 139bfd0386528c5b0800000000000000
+      internalID: -5347983428075669199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_64
+      rect:
+        serializedVersion: 2
+        x: 2300
+        y: 3700
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba530279843b4bd40800000000000000
+      internalID: 5599297361082856875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_65
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 3700
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd1a2f246fb2106b0800000000000000
+      internalID: -5331932147144810020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_66
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 3700
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ea08de2a154660b0800000000000000
+      internalID: -5735821096652371230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_67
+      rect:
+        serializedVersion: 2
+        x: 2600
+        y: 3700
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7462440fec634fcd0800000000000000
+      internalID: -2525333228625844665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_68
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 3600
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8600b7c605b9b7900800000000000000
+      internalID: 683310538196451432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_69
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 3600
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f35e9d87093132390800000000000000
+      internalID: -7844404614725507777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_70
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 3600
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1491757b57b8a9eb0800000000000000
+      internalID: -4712300722386429631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_71
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 3600
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08c924b6cf8d0a0d0800000000000000
+      internalID: -3413489938903950208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_72
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 3600
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fabe21f4d36a89760800000000000000
+      internalID: 7464899164616453039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_73
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 3600
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bbf4e2fe433e57a0800000000000000
+      internalID: -6386610807389226057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_74
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 3600
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 678236c6056676930800000000000000
+      internalID: 4136387278364944502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_75
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 3600
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0462c2f654a39d8b0800000000000000
+      internalID: -5127002630892280256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_76
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 3600
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5369038e8c9a10980800000000000000
+      internalID: -8574385535182662091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_77
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 3600
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c3653e8e7b970290800000000000000
+      internalID: -7924194051481050172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_78
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 3600
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74196e6496b5fab40800000000000000
+      internalID: 5453678181488169287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_79
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 3600
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8779c76b281b48b60800000000000000
+      internalID: 7747512433949579128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_80
+      rect:
+        serializedVersion: 2
+        x: 1300
+        y: 3600
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1416b3926d950d30800000000000000
+      internalID: 4397093657907696668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_81
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 3600
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f225be5f85465020800000000000000
+      internalID: 2330126339282379512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_82
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 3600
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16199f705d6c70890800000000000000
+      internalID: -7491800836843400863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_83
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 3600
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d93844f3c0cfdc8f0800000000000000
+      internalID: -518481252546477155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_84
+      rect:
+        serializedVersion: 2
+        x: 1700
+        y: 3600
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb8dc658f5cbc3ea0800000000000000
+      internalID: -5891627094061033285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_85
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 3600
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f96424b975ba1a4b0800000000000000
+      internalID: -5430871282876791137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_86
+      rect:
+        serializedVersion: 2
+        x: 1900
+        y: 3600
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f261927b18ae0b80800000000000000
+      internalID: -8426613016923905289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_87
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 3600
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afec92c99c8e39a00800000000000000
+      internalID: 762208714561801978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_88
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 3600
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed9c69a6e30580d90800000000000000
+      internalID: -7131361780934719010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_89
+      rect:
+        serializedVersion: 2
+        x: 2200
+        y: 3600
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8335628423f8bf870800000000000000
+      internalID: 8717718949827334968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_90
+      rect:
+        serializedVersion: 2
+        x: 2300
+        y: 3600
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8c07c1bfd79acfc0800000000000000
+      internalID: -3473797175546803057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_91
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 3600
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bdadd4650cf0ab30800000000000000
+      internalID: 4296711144608738738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_92
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 3600
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf0b56245e155e7f0800000000000000
+      internalID: -583970531571289861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_93
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3500
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 081475c3cff1f2910800000000000000
+      internalID: 1814704343058170240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_94
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 3500
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fa45818693618400800000000000000
+      internalID: 324650146216626936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_95
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 3500
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 257e8f6c04bf385d0800000000000000
+      internalID: -3061327066047125678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_96
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 3500
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27b05c8cd18a4a140800000000000000
+      internalID: 4730090354521738098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_97
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 3500
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17f385a3b2e1159c0800000000000000
+      internalID: -3940335027961184399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_98
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 3500
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c70db452a7e7c1890800000000000000
+      internalID: -7485969417519771524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_99
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 3500
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b1e89383dbc95e40800000000000000
+      internalID: 5645767717191999921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_100
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 3500
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10f91435f2543fa90800000000000000
+      internalID: -7281400102965371135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_101
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 3500
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af6e0da5cc104bb00800000000000000
+      internalID: 843301007433721594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_102
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 3500
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c71bc36aed7217fe0800000000000000
+      internalID: -1193128589051252356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_103
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 3500
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c50ce28fed569230800000000000000
+      internalID: 3645204231678068168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_104
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 3500
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c44b6caccf8a3d230800000000000000
+      internalID: 3662456725669590092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_105
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 3500
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1abe916677ba480a0800000000000000
+      internalID: -6880185801412842591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_106
+      rect:
+        serializedVersion: 2
+        x: 1300
+        y: 3500
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fad80f645e5281f0800000000000000
+      internalID: -1044168446863418638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_107
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 3500
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9055d06731680f210800000000000000
+      internalID: 1364738105236346121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_108
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 3500
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02cb86ed25109d010800000000000000
+      internalID: 1214003029983411232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_109
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 3500
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6aeda3a83e5f2d0e0800000000000000
+      internalID: -2246462906478960986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_110
+      rect:
+        serializedVersion: 2
+        x: 1700
+        y: 3500
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cecef3776b1a735a0800000000000000
+      internalID: -6541582128675558164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_111
+      rect:
+        serializedVersion: 2
+        x: 1900
+        y: 3500
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32d9fd4878f999350800000000000000
+      internalID: 6024021380983397667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_112
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 3500
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88f07ee0034aea840800000000000000
+      internalID: 5237303942993874824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_113
+      rect:
+        serializedVersion: 2
+        x: 2200
+        y: 3500
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3c8fa288b31aa760800000000000000
+      internalID: 7469804615134841917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_114
+      rect:
+        serializedVersion: 2
+        x: 2300
+        y: 3500
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f701f01b1e10f9ab0800000000000000
+      internalID: -4999274992508137345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_115
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 3500
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dbb6af97eb76dbd0800000000000000
+      internalID: -2605759099641087020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_116
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3400
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6073f73845ec06d70800000000000000
+      internalID: 9034447714883942150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_117
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 3400
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccaa3475c9096cab0800000000000000
+      internalID: -4988140536112895284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_118
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 3400
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83389d5518d3a8240800000000000000
+      internalID: 4794712378989708088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_119
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 3400
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1064c0171b2de950800000000000000
+      internalID: 6479882816921559071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_120
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 3400
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47f5bdded9b628940800000000000000
+      internalID: 5296914437785739124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_121
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 3400
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 594d04cb41e3e8c30800000000000000
+      internalID: 4363493347747222677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_122
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 3400
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 492194d089c0edf90800000000000000
+      internalID: -6927085329651789164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_123
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 3400
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4467d0fe0e3286c40800000000000000
+      internalID: 5505689993450714692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_124
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 3400
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0266ea367ec2f1780800000000000000
+      internalID: -8710193781989808608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_125
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 3400
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6aa93b846151d7590800000000000000
+      internalID: -7674955004516263258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_126
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 3400
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 275849265b650e3f0800000000000000
+      internalID: -873602990666906254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_127
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 3400
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8467215d950e9f70800000000000000
+      internalID: 9195793662366672011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_128
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 3400
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cccb211760139e70800000000000000
+      internalID: 9120651705211145416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_129
+      rect:
+        serializedVersion: 2
+        x: 1300
+        y: 3400
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f98e861ce56a8db0800000000000000
+      internalID: -4788903189089973771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_130
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 3400
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0caf2fa4deff3830800000000000000
+      internalID: 4053238379082394636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_131
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 3400
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47ad71953656b09b0800000000000000
+      internalID: -5112881474578163084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_132
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 3400
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 040603a32aeb1dac0800000000000000
+      internalID: -3832072203945353152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_133
+      rect:
+        serializedVersion: 2
+        x: 1700
+        y: 3400
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22d846139425368e0800000000000000
+      internalID: -1701425759901151966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_134
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 3400
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0ee8f6e2f97a97e0800000000000000
+      internalID: -1757958620370637297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_135
+      rect:
+        serializedVersion: 2
+        x: 1900
+        y: 3400
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35ff20d2306a0fbf0800000000000000
+      internalID: -292551443208798381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_136
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 3400
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c10edff8d4c3f6f30800000000000000
+      internalID: 4570938450630271004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_137
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 3400
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ad7b9ee4639ae2b0800000000000000
+      internalID: -5554465128698905175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_138
+      rect:
+        serializedVersion: 2
+        x: 2200
+        y: 3400
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91c8515d934104a10800000000000000
+      internalID: 1891534082116258841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_139
+      rect:
+        serializedVersion: 2
+        x: 2300
+        y: 3400
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 569485c87ece9df00800000000000000
+      internalID: 1142204459751328101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_140
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 3400
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e2548430a8f12180800000000000000
+      internalID: -9141752401625853212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_141
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 3400
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2cadc9e50271d850800000000000000
+      internalID: 6400021915193158702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_142
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3300
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9745f866d1a001380800000000000000
+      internalID: -9002684533722622855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_143
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 3300
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84448840aab704c70800000000000000
+      internalID: 8953292029363242056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_144
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 3300
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 854159d38d717eb00800000000000000
+      internalID: 857680471550923864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_145
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 3300
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b5067741a6b36ee0800000000000000
+      internalID: -1268969866183440970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_146
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 3300
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80e477c188d8f98a0800000000000000
+      internalID: -6296158138308014584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_147
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 3300
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4985a060509f145f0800000000000000
+      internalID: -774063860959520620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_148
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 3300
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fe36f40e3e106920800000000000000
+      internalID: 2981416205039320821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_149
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 3300
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7687e5e5ceba4d650800000000000000
+      internalID: 6256814814008342631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_150
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 3300
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c35d37662e39fa60800000000000000
+      internalID: 7708260571883066305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_151
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 3300
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d5a510263e44d060800000000000000
+      internalID: 6977287717077231065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_152
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 3300
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 881daaa9c53b720a0800000000000000
+      internalID: -6906354293236117112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_153
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 3300
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40ecd2dad14ef2110800000000000000
+      internalID: 1238459238660820484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_154
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 3300
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fe75529c79517350800000000000000
+      internalID: 6012685369082216182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_155
+      rect:
+        serializedVersion: 2
+        x: 1300
+        y: 3300
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b83279ea0dd380260800000000000000
+      internalID: 7063963982022255499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_156
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 3300
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8c64c5a20f4a7e00800000000000000
+      internalID: 1043233136479333519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_157
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 3300
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cf0b926cc7bbdf80800000000000000
+      internalID: -8080663017930682426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_158
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 3300
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 194997bfb86888d20800000000000000
+      internalID: 3281020264317031569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_159
+      rect:
+        serializedVersion: 2
+        x: 1700
+        y: 3300
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 809a495eef7e01a40800000000000000
+      internalID: 5337020640393472264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_160
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 3300
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8302836749e0e8a0800000000000000
+      internalID: -6277761387733056625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_161
+      rect:
+        serializedVersion: 2
+        x: 1900
+        y: 3300
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a881272d28142ae0800000000000000
+      internalID: -1575107387463726936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_162
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 3300
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6687a2556ffad47b0800000000000000
+      internalID: -5238337319036356506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_163
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 3300
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be23f159baa3373b0800000000000000
+      internalID: -5516000609983057173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_164
+      rect:
+        serializedVersion: 2
+        x: 2200
+        y: 3300
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3268d53f1b9a3bd90800000000000000
+      internalID: -7083131207166360029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_165
+      rect:
+        serializedVersion: 2
+        x: 2300
+        y: 3300
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6deb950da95a04a40800000000000000
+      internalID: 5350458441655238358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_166
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 3300
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1aeafae1acf5e1bb0800000000000000
+      internalID: -4963424417612845407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_167
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 3300
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c915574c205ef33a0800000000000000
+      internalID: -6683371521945808484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_168
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3200
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9b10285d19695730800000000000000
+      internalID: 3988334519766752157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_169
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 3200
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e124c1cbc46eb9740800000000000000
+      internalID: 5159971015330906654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_170
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 3200
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddc3e3ce50c1c14d0800000000000000
+      internalID: -3162622026557014819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_171
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 3200
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d365c04e69b21ce0800000000000000
+      internalID: -1435881447993547817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_172
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 3200
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 398b5abc7f2192aa0800000000000000
+      internalID: -6185391757733807981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_173
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 3200
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a52712d9fdb5f6590800000000000000
+      internalID: -7678817823671356838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_174
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 3200
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec4121153626d16c0800000000000000
+      internalID: -4171069501173787442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_175
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 3200
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d176f0d20c422cbd0800000000000000
+      internalID: -2611484426113161443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_176
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 3200
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef58dbc93e68a4590800000000000000
+      internalID: -7689185101636336130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_177
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 3200
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7d6c6fcf28b17600800000000000000
+      internalID: 464354752078835066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_178
+      rect:
+        serializedVersion: 2
+        x: 1700
+        y: 3200
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17dcf32666c1831a0800000000000000
+      internalID: -6829677608846766735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_179
+      rect:
+        serializedVersion: 2
+        x: 1900
+        y: 3200
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea4e2bd1a1b5611d0800000000000000
+      internalID: -3380414302569438034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_180
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 3200
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b2cf8bea0606edc0800000000000000
+      internalID: -3610191407319366988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_181
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 3200
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b07895827de6d8a60800000000000000
+      internalID: 7677914810110543627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_182
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3100
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48959ccc806d3aa10800000000000000
+      internalID: 1919613199473793412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_183
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 3100
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5026d2378ff27da70800000000000000
+      internalID: 8851596336750748165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_184
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 3100
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2eefb57eeea109ce0800000000000000
+      internalID: -1400589870726119710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_185
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 3100
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c287d9724d514bc90800000000000000
+      internalID: -7155069907042994132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_186
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 3100
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e640d62dc6bc7a540800000000000000
+      internalID: 5019203977974973550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_187
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 3100
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96c28489c16123ff0800000000000000
+      internalID: -57959533132632983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_188
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 3100
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f739ec6119c713b20800000000000000
+      internalID: 3112405780084462463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_189
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 3100
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f855e533e39688890800000000000000
+      internalID: -7455593467241146993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_190
+      rect:
+        serializedVersion: 2
+        x: 1700
+        y: 3100
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ff0cba8f8336c310800000000000000
+      internalID: 1424883023710261232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_191
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3000
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39e1441e16eac65e0800000000000000
+      internalID: -1914964006124904813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_192
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 3000
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 694bcfca95cd98f90800000000000000
+      internalID: -6950782272157207402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_193
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 3000
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be33a8b6baf7c7a80800000000000000
+      internalID: -8467752825143020565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_194
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 3000
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6e0660d8cc5a9e80800000000000000
+      internalID: -8171116556350779795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_195
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 3000
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fbef1d7d73b1b290800000000000000
+      internalID: -7876316921742758919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_196
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 3000
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b16dabdbe25a00510800000000000000
+      internalID: 1513391094966703643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_197
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 3000
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c79ff526a1dde8e0800000000000000
+      internalID: -1662442175897561145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_198
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2900
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 663edfaca9b3a20c0800000000000000
+      internalID: -4599798533388901530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_199
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 2900
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b27dbfb863f97460800000000000000
+      internalID: 7240085507193795251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_200
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 2900
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d27e6413e734e34b0800000000000000
+      internalID: -5458851489054791891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_201
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 2900
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd123a233c54d4790800000000000000
+      internalID: -7544297096105221668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_202
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 2900
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fa2dda744b373740800000000000000
+      internalID: 5131635465717099248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_203
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 2900
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 857d255267c1a2860800000000000000
+      internalID: 7505843022724257624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_204
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 2900
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4391574ac54d7e90800000000000000
+      internalID: -7026383108545866929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_205
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2800
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bbd55efa65b3f7c0800000000000000
+      internalID: -4038684969683002442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_206
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 2800
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 956284f6d5c933b00800000000000000
+      internalID: 807160683342341721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_207
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 2800
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 425d1db88d89507b0800000000000000
+      internalID: -5258628934059043548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_208
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 2800
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0140ba29c704e6540800000000000000
+      internalID: 5003007139836003344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_209
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 2800
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f524675e50444fb0800000000000000
+      internalID: -4664532540111706638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_210
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 2800
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 592cb18806c9e46a0800000000000000
+      internalID: -6463056476815768939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_211
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 2800
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc794acda171b1c60800000000000000
+      internalID: 7789845384605767631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_212
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2700
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b55a11c80e0cc420800000000000000
+      internalID: 2651509711376635314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_213
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 2700
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 145a07717362023e0800000000000000
+      internalID: -2080621009786854079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_214
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 2700
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa01d53ce71805d20800000000000000
+      internalID: 3265252111287128239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_215
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 2700
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa2a5379650a90010800000000000000
+      internalID: 1155631073161749162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_216
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 2600
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd5e5ab5296a869d0800000000000000
+      internalID: -2780789622368246305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_217
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 2600
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b2e839e08519f7d0800000000000000
+      internalID: -2884250442941275469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_218
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 2600
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3c050adeb6bb5630800000000000000
+      internalID: 3916925231746583610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_219
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 2100
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bbe54e45305acaf0800000000000000
+      internalID: -375399429055321167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_220
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 2100
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30dd867c5ebab2f70800000000000000
+      internalID: 9163606870196804867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_221
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 2100
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39c60b9533a6ed810800000000000000
+      internalID: 1791986470520646803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_222
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2000
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f644ab2236670b60800000000000000
+      internalID: 7712245252561848048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_223
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 2000
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c68f86cd6e440bab0800000000000000
+      internalID: -4994416228422846356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_224
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 2000
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 459d930de29912ee0800000000000000
+      internalID: -1287579592110253740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_225
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 2000
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bda67e72f15bbf0a0800000000000000
+      internalID: -6846679663068615973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_226
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1900
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77e5bd6e07c266230800000000000000
+      internalID: 3631639012941979255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_227
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 1900
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6f50edee97b066d0800000000000000
+      internalID: -2999195458605129878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_228
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 1900
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94f22bf5c537ee990800000000000000
+      internalID: -7354814300869742775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block Tile Sheet-01_229
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 1900
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ce4b955fae6e4750800000000000000
+      internalID: 6291087428817735366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
