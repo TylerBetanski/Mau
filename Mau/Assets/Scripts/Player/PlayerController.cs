@@ -90,6 +90,17 @@ public class PlayerController : MonoBehaviour {
         }
     }
 
+    public void DamageDelay(int amount, float time)
+    {
+        StartCoroutine(DelayDamage(amount, time));
+    }
+
+    private IEnumerator DelayDamage(int amount, float time)
+    {
+        yield return new WaitForSeconds(time);
+        Damage(amount);
+    }
+
     public void Jump()
     {
         if (charController.Grounded) {
