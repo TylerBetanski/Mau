@@ -17,7 +17,7 @@ public class PlayerController : MonoBehaviour {
     PlayerAttackScript attackScript;
     CatAudioController CA;
     [SerializeField] Animator animator;
-    [SerializeField] private float invulnerabilityTime;
+    [SerializeField] private float invulnerabilityTime = 0.3f;
 
     private WaitForSeconds invulnSeconds;
 
