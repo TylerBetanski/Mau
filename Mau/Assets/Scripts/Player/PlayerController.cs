@@ -15,24 +15,28 @@ public class PlayerController : MonoBehaviour {
     CharacterController2D charController;
     PlayerInputController input;
     PlayerAttackScript attackScript;
+    CatAudioController CA;
+    [SerializeField] Animator animator;
 
     bool secondJump = true;
     int health;
 
     private void Awake()
-    {  
+    {
+        CA = GetComponent<CatAudioController>();
         charController = GetComponent<CharacterController2D>();
         input = GetComponent<PlayerInputController>();
         attackScript = GetComponent<PlayerAttackScript>();
+        if (animator == null)
+            animator = GetComponentInChildren<Animator>();
 
         health = maxHealth;
     }
 
     private void Die() 
     {
-        Debug.Log("I died");
-
-        StartCoroutine(reloadScene());
+        FindObjectOfType<CheckpointManager>().ReloadWorld(gameObject);
+        health = maxHealth;
     }
 
     IEnumerator reloadScene()
@@ -73,6 +77,7 @@ public class PlayerController : MonoBehaviour {
 
     public void Damage(int amount)
     {
+        CA.playSound("Hurt");
         amount = Mathf.Abs(amount);
         if ((health - amount) <= 0)
         {
@@ -97,6 +102,9 @@ public class PlayerController : MonoBehaviour {
 
     public void Attack()
     {
+        if (animator != null && attackScript.CanAttack)
+            animator.SetTrigger("Attacking");
+
         attackScript.Attack();
     }
 
@@ -106,7 +114,9 @@ public class PlayerController : MonoBehaviour {
             secondJump = true;
         }
 
-        charController.AddVelocity(new Vector2(input.HorizontalAxis * acceleration, 0)) ;
+        charController.AddVelocity(new Vector2(input.HorizontalAxis * acceleration, 0));
+        if (animator != null)
+            animator.SetBool("Moving", charController.Velocity.x != 0);
 
         if (input.HorizontalAxis != 0) {
             transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x) * Mathf.Sign(input.HorizontalAxis),

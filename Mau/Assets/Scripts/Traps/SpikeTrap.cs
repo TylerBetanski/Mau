@@ -16,7 +16,7 @@ public class SpikeTrap : TrapObject
         if(obj.tag == "Player")
         {
             obj.GetComponent<PlayerController>().Damage(damage);
-            print("Damaged Player!");
+            StartCoroutine(Cooldown());
         }
 
         if (obj.tag == "Scarab")

@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerAttackScript : MonoBehaviour
 {
+    private bool _canAttack = true;
+    public bool CanAttack { get { return _canAttack; } }
     [SerializeField] private Transform attackLocation;
     [SerializeField] private float attackRadius;
     [SerializeField] private LayerMask attackableLayers;
@@ -11,22 +13,22 @@ public class PlayerAttackScript : MonoBehaviour
     [SerializeField] private bool canHitMultiple = false;
 
     WaitForSeconds cooldown;
-
-    private bool canAttack = true;
+    CatAudioController CA;
 
     private void Awake()
     {
         cooldown = new WaitForSeconds(cooldownTime);
+        CA = GetComponent<CatAudioController>();
     }
 
     public void Attack()
     {
-        if (canAttack)
+        if (_canAttack)
         {
             // Animate the Attack
             //
             //
-
+            CA.playSound("Attack");
             Collider2D[] hitObjects = Physics2D.OverlapCircleAll(attackLocation.position, attackRadius, attackableLayers);
 
             foreach (Collider2D collider in hitObjects)
@@ -47,9 +49,9 @@ public class PlayerAttackScript : MonoBehaviour
 
     private IEnumerator AttackCooldown()
     {
-        canAttack = false;
+        _canAttack = false;
         yield return cooldown;
-        canAttack = true;
+        _canAttack = true;
     }
 
     private void OnDrawGizmosSelected()

@@ -22,6 +22,9 @@ public class RotatableObject : InteractableObject
 
     public override void Interact(GameObject interactingObject)
     {
+		if (!target.CanBeChanged)
+			return;
+
 		if (currentState == maxState)
 			currentState = 0;
 		else
@@ -37,4 +40,16 @@ public class RotatableObject : InteractableObject
 				target.CloseLock(targetLockNumber);
 		}
     }
+	
+	public int GetCurrentState() { return currentState; }
+	public void SetCurrentState(int state) { 
+		state = Mathf.Clamp(state, 0, maxState); 
+		currentState = state; 
+		animator.SetInteger("CurrentState", currentState); 
+	}
+
+    private void OnValidate()
+    {
+		currentState = Mathf.Clamp(currentState, 0, maxState);
+	}
 }

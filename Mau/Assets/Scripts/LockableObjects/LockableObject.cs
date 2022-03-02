@@ -6,36 +6,50 @@ public abstract class LockableObject : MonoBehaviour
 {
     private bool _locked = true;
     public bool Locked { get { return _locked; } private set { _locked = value; } }
+    private bool _canBeChanged = true;
+    public bool CanBeChanged { get { return _canBeChanged; } private set { _canBeChanged = value; } }
+
     public int LockNum { get { return locks.Count; } }
     [SerializeField] protected List<bool> locks = new List<bool>();
+    [SerializeField] private bool reusable = true;
 
     private bool wasLocked = true;
+    
 
     public void OpenLock(int lockIndex)
     {
-        if (lockIndex >= 0 && lockIndex < locks.Count)
-            locks[lockIndex] = false;
-
-        if (Locked && CanOpen())
+        if (CanBeChanged)
         {
-            Unlock();
-            Locked = false;
-        }
+            if (lockIndex >= 0 && lockIndex < locks.Count)
+                locks[lockIndex] = false;
 
-        wasLocked = Locked;
+            if (Locked && CanOpen())
+            {
+                Unlock();
+                Locked = false;
+
+                if(!reusable)
+                    CanBeChanged = false;
+            }
+
+            wasLocked = Locked;
+        }
     }
 
     public void CloseLock(int lockIndex)
     {
-        if (lockIndex >= 0 && lockIndex < locks.Count)
-            locks[lockIndex] = true;
+        if (CanBeChanged)
+        {
+            if (lockIndex >= 0 && lockIndex < locks.Count)
+                locks[lockIndex] = true;
 
-        if (!wasLocked)
-            Lock();
+            if (!wasLocked)
+                Lock();
 
-        Locked = true;
+            Locked = true;
 
-        wasLocked = Locked;
+            wasLocked = Locked;
+        }
     }
 
     private bool CanOpen()
