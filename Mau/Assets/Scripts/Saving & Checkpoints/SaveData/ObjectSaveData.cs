@@ -64,3 +64,13 @@ public class ObjectSaveData_RotatableObject : ObjectSaveData
         currentState = rotateObject.GetCurrentState();
     }
 }
+
+public class ObjectSaveData_Enemy : ObjectSaveData
+{
+    public int moveSpeed;
+
+    public ObjectSaveData_Enemy(Transform transform, EnemyMovement enemyMovement) : base(transform)
+    {
+        moveSpeed = enemyMovement.MoveSpeed;
+    }
+}

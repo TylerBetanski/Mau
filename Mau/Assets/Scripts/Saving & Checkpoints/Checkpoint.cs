@@ -29,6 +29,7 @@ public class Checkpoint : InteractableObject
     public override void Interact(GameObject interactingObject)
     {
         room.ReloadRoom();
+        checkpointManager.SetCurrentCheckpoint(this);
     }
 
     public void Reload()
