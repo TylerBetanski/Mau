@@ -24,7 +24,7 @@ public class CheckpointManager : MonoBehaviour
     public void ReloadWorld(GameObject player)
     {
         ResetAllCheckpoints();
-        player.transform.position = currentCheckpoint.gameObject.transform.position;
+        player.transform.position = currentCheckpoint.gameObject.transform.position + new Vector3(0, 2.5f, 0);
     }
 
     private void CreateInstance()

@@ -16,19 +16,18 @@ public class Lever : InteractableObject
 
     public override void Interact(GameObject interactingObject)
     {
+        if (lockedObject != null)
+            lockedObject.SetLock(lockNumber, !lockedObject.GetLockValue(lockNumber));
+
         if (flipped)
         {
             GetComponent<SpriteRenderer>().sprite = lever;
             flipped = false;
-            if (lockedObject != null)
-                lockedObject.CloseLock(lockNumber);
         }
         else
         {
             GetComponent<SpriteRenderer>().sprite = flippedLever;
             flipped = true;
-            if (lockedObject != null)
-                lockedObject.OpenLock(lockNumber);
         }
     }
 }

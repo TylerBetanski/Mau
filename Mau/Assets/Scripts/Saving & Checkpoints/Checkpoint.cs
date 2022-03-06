@@ -28,7 +28,11 @@ public class Checkpoint : InteractableObject
 
     public override void Interact(GameObject interactingObject)
     {
+        interactingObject.GetComponent<PlayerController>().Heal(interactingObject.GetComponent<PlayerController>().getMaxHealth());
+
         room.ReloadRoom();
+        print(gameObject.name);
+        checkpointManager.SetCurrentCheckpoint(this);
     }
 
     public void Reload()
