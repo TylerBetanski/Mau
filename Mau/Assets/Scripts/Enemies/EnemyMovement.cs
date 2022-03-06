@@ -8,12 +8,11 @@ public class EnemyMovement : MonoBehaviour
     [SerializeField] Collider2D groundCollider;
     [SerializeField] Transform circleTransform;
     [SerializeField] private int moveSpeed;
-    public int MoveSpeed { get { return moveSpeed; } set { moveSpeed = value; } }
     Rigidbody2D rb;
     private bool isGround;
     private bool isWall;
     private Vector2 ColliderBottom { get { return new Vector2(groundCollider.bounds.center.x, groundCollider.bounds.min.y); } }
-    private Vector2 ColliderSide { get { return new Vector2(groundCollider.bounds.center.x, groundCollider.bounds.center.y + (moveSpeed / 10)); } }
+    private Vector2 ColliderSide { get { return new Vector2(groundCollider.bounds.center.x, groundCollider.bounds.center.y); } }
     [SerializeField] private LayerMask obstacleCollision;
     private void CheckForObstacle()
     {
@@ -40,7 +39,7 @@ public class EnemyMovement : MonoBehaviour
 
     private void Awake()
     {
-        rb = GetComponent<Rigidbody2D>();
+        rb  = GetComponent<Rigidbody2D>();
         rb.bodyType = RigidbodyType2D.Kinematic;
     }
 
@@ -65,9 +64,8 @@ public class EnemyMovement : MonoBehaviour
 
     private void Flip()
     {
-        transform.localScale = new Vector3(-transform.localScale.x, transform.localScale.y, transform.localScale.z);
         moveSpeed = 0 - moveSpeed;
-        //circleTransform.localPosition = new Vector3(circleTransform.localPosition.x * -1, circleTransform.localPosition.y, circleTransform.localPosition.z);
+        circleTransform.localPosition = new Vector3(circleTransform.localPosition.x * -1, circleTransform.localPosition.y, circleTransform.localPosition.z);
         CheckForObstacle();
     }
 }
