@@ -8,6 +8,7 @@ public class EnemyMovement : MonoBehaviour
     [SerializeField] Collider2D groundCollider;
     [SerializeField] Transform circleTransform;
     [SerializeField] private int moveSpeed;
+    public int MoveSpeed { get { return moveSpeed; } set { moveSpeed = value; } }
     Rigidbody2D rb;
     private bool isGround;
     private bool isWall;
