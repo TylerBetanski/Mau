@@ -5,7 +5,7 @@ using UnityEngine;
 public abstract class LockableObject : MonoBehaviour
 {
     private bool _locked = true;
-    public bool Locked { get { return isLocked(); } private set { _locked = value; } }
+    public bool Locked { get { return _locked; } private set { _locked = value; } }
     private bool _canBeChanged = true;
     public bool CanBeChanged { get { return _canBeChanged; } private set { _canBeChanged = value; } }
 
@@ -23,7 +23,7 @@ public abstract class LockableObject : MonoBehaviour
             if (lockIndex >= 0 && lockIndex < locks.Count)
                 locks[lockIndex] = false;
 
-            if (_locked && CanOpen())
+            if (Locked && CanOpen())
             {
                 Unlock();
                 Locked = false;
@@ -34,17 +34,6 @@ public abstract class LockableObject : MonoBehaviour
 
             wasLocked = Locked;
         }
-    }
-
-    private bool isLocked()
-    {
-        foreach(bool l in locks)
-        {
-            if (l)
-                return true;
-        }
-
-        return false;
     }
 
     public void CloseLock(int lockIndex)
@@ -61,25 +50,6 @@ public abstract class LockableObject : MonoBehaviour
 
             wasLocked = Locked;
         }
-    }
-
-    public void SetLock(int lockIndex, bool lockValue)
-    {
-        if (CanBeChanged)
-        {
-            if (lockIndex >= 0 && lockIndex < locks.Count)
-                locks[lockIndex] = lockValue;
-        }
-
-        if (Locked)
-            Lock();
-        else
-            Unlock();
-    }
-
-    public bool GetLockValue(int lockIndex)
-    {
-        return locks[lockIndex];
     }
 
     private bool CanOpen()

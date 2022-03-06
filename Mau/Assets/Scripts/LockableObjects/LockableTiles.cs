@@ -22,7 +22,7 @@ public class LockableTiles : LockableObject
         }
         else { 
             tilesColor = ground.color;
-            unlockChildren();
+            unlockChildern();
         }  
     }
     protected override void Unlock()
@@ -37,6 +37,7 @@ public class LockableTiles : LockableObject
 
     private void lockChildren()
     {
+
         tilesColor = backGround.color;
         for (int i = 0; i < transform.childCount; i++)
         {
@@ -46,7 +47,7 @@ public class LockableTiles : LockableObject
 
         }
     }
-    private void unlockChildren() {
+    private void unlockChildern() {
 
             tilesColor = ground.color;
             for (int i = 0; i < transform.childCount; i++)
@@ -59,13 +60,13 @@ public class LockableTiles : LockableObject
 
     private IEnumerator unlockChildrenAnimation() {
         float currentTime = 0;
-        setColliders(true);
         while (currentTime < openTime) {
             yield return delay;
             currentTime+= Time.fixedDeltaTime;
             tilesColor = Color.Lerp(backGround.color, ground.color, currentTime / openTime);
             ColorChildren();
         }
+        setColliders(true);
     }
 
     private IEnumerator lockChildrenAnimation()
