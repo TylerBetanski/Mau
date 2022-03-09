@@ -13,7 +13,7 @@ public class EnemyMovement : MonoBehaviour
     private bool isGround;
     private bool isWall;
     private Vector2 ColliderBottom { get { return new Vector2(groundCollider.bounds.center.x, groundCollider.bounds.min.y); } }
-    private Vector2 ColliderSide { get { return new Vector2(groundCollider.bounds.center.x, groundCollider.bounds.center.y + (moveSpeed / 10)); } }
+    private Vector2 ColliderSide { get { return new Vector2(groundCollider.bounds.center.x, groundCollider.bounds.center.y + 1); } }
     [SerializeField] private LayerMask obstacleCollision;
     private void CheckForObstacle()
     {

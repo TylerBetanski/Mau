@@ -8,23 +8,53 @@ public class CameraZoom : MonoBehaviour
     [SerializeField] float zoomedOutSize;
     
     private Camera mainCamera;
-    bool zoom;
-    
+    bool zoomed;
+    bool isZooming;
+
+    [SerializeField] float zoomingTime;
     private void Awake()
     {
         mainCamera = GameObject.Find("Main Camera").GetComponent<Camera>();
         initialSize = mainCamera.orthographicSize;
-        zoom = false;
+        zoomed = false;
+        isZooming = false;
     }
-    public void changeZoom() {
-        if (zoom)
+    public void changeZoom()
+    {
+        if (!isZooming) {   
+            if (zoomed)
+            {
+                StartCoroutine(ZoomIn());
+                zoomed = false;
+            }
+            else
+            {
+                StartCoroutine(ZoomOut());
+                zoomed = true;
+            }
+        }
+    }
+    IEnumerator ZoomIn() {
+        isZooming = true;
+        float changeAmount = 0.5f;
+
+        while (mainCamera.orthographicSize > initialSize) 
         {
-            mainCamera.orthographicSize = initialSize;
-            zoom = false;
+            yield return new WaitForSeconds(zoomingTime);
+            mainCamera.orthographicSize -= changeAmount;
         }
-        else {
-            mainCamera.orthographicSize = zoomedOutSize;
-            zoom = true;
+        isZooming = false;
+    }
+    IEnumerator ZoomOut()
+    {   
+        isZooming = true;
+        float changeAmount = 0.5f;
+
+        while (mainCamera.orthographicSize < zoomedOutSize)
+        {
+            yield return new WaitForSeconds(zoomingTime);
+            mainCamera.orthographicSize += changeAmount;
         }
+        isZooming = false;
     }
 }
