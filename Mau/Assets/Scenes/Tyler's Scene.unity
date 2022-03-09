@@ -19258,8 +19258,8 @@ Tilemap:
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Origin: {x: -28, y: -8, z: 0}
-  m_Size: {x: 83, y: 39, z: 1}
+  m_Origin: {x: -52, y: -16, z: 0}
+  m_Size: {x: 107, y: 47, z: 1}
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
   m_TileOrientation: 0
   m_TileOrientationMatrix:
@@ -19299,90 +19299,56 @@ CompositeCollider2D:
   m_ColliderPaths:
   - m_Collider: {fileID: 875924331}
     m_ColliderPaths:
-    - - X: 1100000100
-        Y: -160000041
-      - X: 1100000100
-        Y: 620000041
-      - X: 1100000041
-        Y: 620000100
-      - X: 419999959
-        Y: 620000100
-      - X: 419999900
-        Y: 620000041
-      - X: 419999900
-        Y: 280000100
-      - X: -519999959
-        Y: 280000100
-      - X: -519999900
-        Y: 280000041
-      - X: -519999900
-        Y: -160000041
-      - X: -519999959
-        Y: -160000100
-      - X: 1100000041
-        Y: -160000100
-    - - X: -259999900
-        Y: 100
-      - X: -259999900
-        Y: 139999900
-      - X: 259999900
-        Y: 139999900
-      - X: 259999900
-        Y: 59999959
-      - X: 259999959
-        Y: 59999900
-      - X: 320000041
-        Y: 59999900
-      - X: 320000100
-        Y: 59999959
-      - X: 320000100
-        Y: 139999900
-      - X: 679999959
-        Y: 139999900
-      - X: 679999900
-        Y: 139999959
-      - X: 679999900
-        Y: 279999900
-      - X: 680000041
-        Y: 279999900
-      - X: 680000100
-        Y: 279999959
-      - X: 680000100
-        Y: 539999900
-      - X: 839999900
-        Y: 539999900
-      - X: 839999900
-        Y: 279999959
-      - X: 839999959
-        Y: 279999900
-      - X: 840000100
-        Y: 279999900
-      - X: 840000100
-        Y: 139999959
-      - X: 840000041
-        Y: 139999900
-      - X: 839999900
-        Y: 139999900
-      - X: 839999900
-        Y: 100
+    - - X: 1100000000
+        Y: 620000000
+      - X: 420000000
+        Y: 620000000
+      - X: 420000000
+        Y: 280000000
+      - X: -520000000
+        Y: 280000000
+      - X: -520000000
+        Y: -160000000
+      - X: 1100000000
+        Y: -160000000
+    - - X: -260000000
+        Y: 0
+      - X: -260000000
+        Y: 140000000
+      - X: 260000000
+        Y: 140000000
+      - X: 260000000
+        Y: 60000000
+      - X: 320000000
+        Y: 60000000
+      - X: 320000000
+        Y: 140000000
+      - X: 680000000
+        Y: 140000000
+      - X: 680000000
+        Y: 540000000
+      - X: 840000000
+        Y: 540000000
+      - X: 840000000
+        Y: 0
   m_CompositePaths:
     m_Paths:
-    - - {x: 109.99998, y: -16.00001}
-      - {x: 109.99998, y: 62.000015}
-      - {x: 41.999992, y: 61.999973}
-      - {x: 41.99996, y: 28.00001}
-      - {x: -51.999992, y: 27.999975}
-      - {x: -51.99997, y: -16.00001}
-    - - {x: 83.999985, y: 0.0000394}
-      - {x: -25.99999, y: 0.0000394}
-      - {x: -25.99996, y: 13.99999}
-      - {x: 25.99999, y: 13.99996}
-      - {x: 26.000027, y: 5.99999}
-      - {x: 32.00001, y: 6.0000253}
-      - {x: 32.00004, y: 13.99999}
-      - {x: 67.999985, y: 14.000026}
-      - {x: 68.00004, y: 53.99999}
-      - {x: 83.999985, y: 53.99996}
+    - - {x: 109.99998, y: -16}
+      - {x: 109.99998, y: 62}
+      - {x: 42, y: 61.99997}
+      - {x: 41.999973, y: 28}
+      - {x: -52, y: 27.999971}
+      - {x: -51.999973, y: -16}
+    - - {x: 84, y: 0.0000294}
+      - {x: -26, y: 0.0000294}
+      - {x: -25.999971, y: 14}
+      - {x: 26, y: 13.999971}
+      - {x: 26.000029, y: 6}
+      - {x: 32, y: 6.000029}
+      - {x: 32.00003, y: 14}
+      - {x: 68, y: 14.000029}
+      - {x: 68.00003, y: 54}
+      - {x: 84, y: 53.99997}
   m_VertexDistance: 0.0005
   m_OffsetDistance: 0.00005
 --- !u!50 &875924330
@@ -20047,6 +20013,78 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!1 &1010222433
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1010222434}
+  - component: {fileID: 1010222435}
+  m_Layer: 6
+  m_Name: Point Light 2D
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1010222434
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1010222433}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 938607650}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1010222435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1010222433}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_LightType: 3
+  m_BlendStyleIndex: 0
+  m_FalloffIntensity: 0.618
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 0.2
+  m_LightVolumeOpacity: 0
+  m_ApplyToSortingLayers: 7beac5e600000000bd1930179bf13326b9f03a01
+  m_LightCookieSprite: {fileID: 0}
+  m_UseNormalMap: 0
+  m_LightOrder: 0
+  m_AlphaBlendOnOverlap: 0
+  m_ShadowIntensity: 0
+  m_ShadowVolumeIntensity: 0
+  m_PointLightInnerAngle: 360
+  m_PointLightOuterAngle: 360
+  m_PointLightInnerRadius: 0
+  m_PointLightOuterRadius: 12
+  m_PointLightDistance: 3
+  m_PointLightQuality: 1
+  m_ShapeLightParametricSides: 5
+  m_ShapeLightParametricAngleOffset: 0
+  m_ShapeLightParametricRadius: 1
+  m_ShapeLightFalloffSize: 0.5
+  m_ShapeLightFalloffOffset: {x: 0, y: 0}
+  m_ShapePath:
+  - {x: -0.5, y: -0.5, z: 0}
+  - {x: 0.5, y: -0.5, z: 0}
+  - {x: 0.5, y: 0.5, z: 0}
+  - {x: -0.5, y: 0.5, z: 0}
 --- !u!1 &1080652401
 GameObject:
   m_ObjectHideFlags: 0
