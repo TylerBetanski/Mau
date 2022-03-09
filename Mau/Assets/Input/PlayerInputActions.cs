@@ -126,6 +126,14 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": ""CameraZoom"",
+                    ""type"": ""Button"",
+                    ""id"": ""564e68c4-de3d-46b4-bc08-8956bca20ab3"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
                 }
             ],
             ""bindings"": [
@@ -137,6 +145,17 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""Attack"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""d7b606e0-1b1b-427c-b1ee-96bbb3b59a70"",
+                    ""path"": ""<Keyboard>/f"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""CameraZoom"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -164,6 +183,7 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
         // Actions
         m_Actions = asset.FindActionMap("Actions", throwIfNotFound: true);
         m_Actions_Attack = m_Actions.FindAction("Attack", throwIfNotFound: true);
+        m_Actions_CameraZoom = m_Actions.FindAction("CameraZoom", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -255,11 +275,13 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
     private readonly InputActionMap m_Actions;
     private IActionsActions m_ActionsActionsCallbackInterface;
     private readonly InputAction m_Actions_Attack;
+    private readonly InputAction m_Actions_CameraZoom;
     public struct ActionsActions
     {
         private @PlayerInputActions m_Wrapper;
         public ActionsActions(@PlayerInputActions wrapper) { m_Wrapper = wrapper; }
         public InputAction @Attack => m_Wrapper.m_Actions_Attack;
+        public InputAction @CameraZoom => m_Wrapper.m_Actions_CameraZoom;
         public InputActionMap Get() { return m_Wrapper.m_Actions; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -272,6 +294,9 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
                 @Attack.started -= m_Wrapper.m_ActionsActionsCallbackInterface.OnAttack;
                 @Attack.performed -= m_Wrapper.m_ActionsActionsCallbackInterface.OnAttack;
                 @Attack.canceled -= m_Wrapper.m_ActionsActionsCallbackInterface.OnAttack;
+                @CameraZoom.started -= m_Wrapper.m_ActionsActionsCallbackInterface.OnCameraZoom;
+                @CameraZoom.performed -= m_Wrapper.m_ActionsActionsCallbackInterface.OnCameraZoom;
+                @CameraZoom.canceled -= m_Wrapper.m_ActionsActionsCallbackInterface.OnCameraZoom;
             }
             m_Wrapper.m_ActionsActionsCallbackInterface = instance;
             if (instance != null)
@@ -279,6 +304,9 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
                 @Attack.started += instance.OnAttack;
                 @Attack.performed += instance.OnAttack;
                 @Attack.canceled += instance.OnAttack;
+                @CameraZoom.started += instance.OnCameraZoom;
+                @CameraZoom.performed += instance.OnCameraZoom;
+                @CameraZoom.canceled += instance.OnCameraZoom;
             }
         }
     }
@@ -300,5 +328,6 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
     public interface IActionsActions
     {
         void OnAttack(InputAction.CallbackContext context);
+        void OnCameraZoom(InputAction.CallbackContext context);
     }
 }

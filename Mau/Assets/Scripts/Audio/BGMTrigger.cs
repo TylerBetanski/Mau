@@ -11,14 +11,13 @@ public class BGMTrigger : MonoBehaviour
     GameObject player;
     private void Awake()
     {
-        player = GameObject.Find("Player 1");
         changed = false;
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
 
-        if ((other.gameObject == player) && !changed) {
+        if ((other.tag == "Player") && !changed) {
             ChangeBGM();
             changed = true;
         }

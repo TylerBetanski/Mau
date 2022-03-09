@@ -7,6 +7,8 @@ public class CharacterController2D : MonoBehaviour
 {
     public Vector2 Velocity { get { return rb2D.velocity; } }
     private Vector2 ColliderBottom { get{ return new Vector2((collider.bounds.min.x + collider.bounds.max.x) /2, collider.bounds.min.y); } }
+    private Vector2 ColliderBottomRight { get { return new Vector2(collider.bounds.max.x - groundCheckRadius - .1f, collider.bounds.min.y); } }
+    private Vector2 ColliderBottomLeft { get { return new Vector2(collider.bounds.min.x + groundCheckRadius + .1f, collider.bounds.min.y); } }
     private bool _grounded = false;
     public bool Grounded { get { return _grounded; } private set { _grounded = value; } }
     public float Gravity { get { return Physics2D.gravity.y * rb2D.gravityScale; } }
@@ -19,6 +21,7 @@ public class CharacterController2D : MonoBehaviour
     private new Collider2D collider;
 
     private bool moving = false;
+    private float groundCheckRadius = 0.5f;
 
     public void AddVelocity(Vector2 dVelocity)
     {
@@ -59,7 +62,18 @@ public class CharacterController2D : MonoBehaviour
 
     private void CheckGrounded()
     {
-        Grounded = Physics2D.OverlapCircle(ColliderBottom, 0.5f, collisionLayers);
+        Grounded = Physics2D.OverlapCircle(ColliderBottomLeft, groundCheckRadius, collisionLayers) || Physics2D.OverlapCircle(ColliderBottomRight, groundCheckRadius, collisionLayers);
+    }
+
+    private void OnDrawGizmos()
+    {
+        collider = GetComponent<Collider2D>();
+
+        Gizmos.color = Color.blue;
+        Gizmos.DrawWireSphere(ColliderBottomLeft, groundCheckRadius);
+
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(ColliderBottomRight, groundCheckRadius);
     }
 
     private void ClampVelocity()
