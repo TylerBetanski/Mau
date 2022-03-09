@@ -4,19 +4,21 @@ using UnityEngine;
 
 public class CatAudioController : MonoBehaviour
 {
-    [SerializeField] AudioClip Attack;
+    [SerializeField] AudioClip[] Meows;
     [SerializeField] AudioClip Hurt;
-    [SerializeField] AudioClip Meow;
     [SerializeField] AudioClip Hiss;
     [SerializeField] AudioClip Purr;
     [SerializeField] float volume;
+    [SerializeField] int attackMeowDelay;
 
+    int nextMeowCounter;
     AudioSource AS;
     private void Awake()
     {
         AS = GetComponent<AudioSource>();
         AS.loop = false;
         AS.volume = volume;
+        nextMeowCounter = Random.Range(0, (attackMeowDelay + 1));
     }
     public void playSound(string sound) {
 
@@ -25,22 +27,28 @@ public class CatAudioController : MonoBehaviour
             AS.Stop();
 
             if (sound == "Attack") {
-                AS.clip = Attack;
+                if (nextMeowCounter <= 0) { 
+                    AudioClip meow = Meows[Random.Range(0, Meows.Length)];
+                    if (meow != null) {
+                        AS.clip = meow;
+                        AS.Play();
+                    }
+                    nextMeowCounter = Random.Range(0, (attackMeowDelay + 1));
+                } else
+                    nextMeowCounter--;
             }
-            if (sound == "Hurt") {
+            else if (sound == "Hurt") {
                 AS.clip = Hurt;
+                AS.Play();
             }
-            if (sound == "Meow") {
-                AS.clip = Meow;
-            }
-            if (sound == "Hiss") {
+            else if (sound == "Hiss") {
                 AS.clip = Hiss;
+                AS.Play();
             }
-            if (sound == "Purr") {
+            else if (sound == "Purr") {
                 AS.clip = Purr;
+                AS.Play();
             }
-
-            AS.Play();
         }
     }
 }

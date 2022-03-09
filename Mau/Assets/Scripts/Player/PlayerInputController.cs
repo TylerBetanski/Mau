@@ -14,11 +14,13 @@ public class PlayerInputController : MonoBehaviour
 
     private PlayerInputActions inputActions;
     private PlayerController controller;
+    private CameraZoom cameraZoom;
 
     private void Awake()
     {
         inputActions = new PlayerInputActions();
         controller = GetComponent<PlayerController>();
+        cameraZoom = GetComponent<CameraZoom>();
     }
 
     private void OnEnable()
@@ -27,8 +29,8 @@ public class PlayerInputController : MonoBehaviour
         inputActions.Actions.Enable();
         inputActions.Locomotion.Movement.performed += ctx => _horizontalAxis = ctx.ReadValue<float>();
         inputActions.Locomotion.Jump.performed += ctx => controller.Jump();
-
         inputActions.Actions.Attack.performed += ctx => controller.Attack();
+        inputActions.Actions.CameraZoom.performed += ctx => cameraZoom.changeZoom();
     }
 
     private void OnDisable()
