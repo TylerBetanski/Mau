@@ -164,6 +164,8 @@ public class PlayerController : MonoBehaviour {
                 transform.localScale.y,
                 transform.localScale.z);
         }
+
+        animator.SetBool("Grounded", charController.Grounded);
     }
 
 }

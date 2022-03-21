@@ -4,5 +4,5 @@ using UnityEngine;
 
 public interface ISignalReciever
 {
-    public abstract void RecieveSignal(SignalTransmitter transmitter);
+    public abstract void RecieveSignal();
 }

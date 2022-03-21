@@ -41,7 +41,7 @@ public class Room : MonoBehaviour, ISignalReciever
         Gizmos.DrawCube(transform.position + bounds.center, bounds.size);
     }
 
-    public void RecieveSignal(SignalTransmitter transmitter)
+    public void RecieveSignal()
     {
         SaveRoom();
     }

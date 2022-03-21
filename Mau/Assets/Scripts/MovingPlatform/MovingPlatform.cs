@@ -66,7 +66,7 @@ public class MovingPlatform : MonoBehaviour, ISignalReciever
         }
     }
 
-    public void RecieveSignal(SignalTransmitter transmitter)
+    public void RecieveSignal()
     {
         if (!alwaysMove && !moving)
             StartCoroutine(Move());

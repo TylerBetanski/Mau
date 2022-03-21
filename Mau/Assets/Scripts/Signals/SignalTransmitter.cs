@@ -12,7 +12,7 @@ public class SignalTransmitter : MonoBehaviour
         {
             ISignalReciever reciever = signalRecievers[i].GetComponent<ISignalReciever>();
             if (reciever != null)
-                reciever.RecieveSignal(this);
+                reciever.RecieveSignal();
         }
     }
 }
