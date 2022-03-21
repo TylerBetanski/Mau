@@ -1,7 +1,19 @@
 fileFormatVersion: 2
 guid: faab42535a88f73409b04f368283340e
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -1549488918869491118
+    second: Title Screen Text Not Moused Over-01_0
+  - first:
+      213: -6942490569813768986
+    second: Title Screen Text Not Moused Over-01_3
+  - first:
+      213: -6575050414623193398
+    second: Title Screen Text Not Moused Over-01_10
+  - first:
+      213: 8705448050377410593
+    second: Title Screen Text Not Moused Over-01_18
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -41,7 +53,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -75,9 +87,105 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Title Screen Text Not Moused Over-01_0
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 832
+        width: 512
+        height: 183
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 252416fa90c1f7ae0800000000000000
+      internalID: -1549488918869491118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Title Screen Text Not Moused Over-01_3
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 380
+        width: 434
+        height: 124
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e440c11c9157af90800000000000000
+      internalID: -6942490569813768986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Title Screen Text Not Moused Over-01_10
+      rect:
+        serializedVersion: 2
+        x: 1375
+        y: 379
+        width: 345
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac68918eb7ab0c4a0800000000000000
+      internalID: -6575050414623193398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Title Screen Text Not Moused Over-01_18
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 187
+        width: 312
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 128cc5dd0e6ffc870800000000000000
+      internalID: 8705448050377410593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
