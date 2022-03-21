@@ -142,6 +142,14 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": ""Pause"",
+                    ""type"": ""Button"",
+                    ""id"": ""c0b95f06-205b-42ea-b528-763b017f2854"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
                 }
             ],
             ""bindings"": [
@@ -177,6 +185,17 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
                     ""action"": ""Hiss"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""7fa9f4bf-a9ad-4b8f-a486-cde475320f79"",
+                    ""path"": ""<Keyboard>/escape"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Pause"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -204,6 +223,7 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
         m_Actions_Attack = m_Actions.FindAction("Attack", throwIfNotFound: true);
         m_Actions_CameraZoom = m_Actions.FindAction("CameraZoom", throwIfNotFound: true);
         m_Actions_Hiss = m_Actions.FindAction("Hiss", throwIfNotFound: true);
+        m_Actions_Pause = m_Actions.FindAction("Pause", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -297,6 +317,7 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
     private readonly InputAction m_Actions_Attack;
     private readonly InputAction m_Actions_CameraZoom;
     private readonly InputAction m_Actions_Hiss;
+    private readonly InputAction m_Actions_Pause;
     public struct ActionsActions
     {
         private @PlayerInputActions m_Wrapper;
@@ -304,6 +325,7 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
         public InputAction @Attack => m_Wrapper.m_Actions_Attack;
         public InputAction @CameraZoom => m_Wrapper.m_Actions_CameraZoom;
         public InputAction @Hiss => m_Wrapper.m_Actions_Hiss;
+        public InputAction @Pause => m_Wrapper.m_Actions_Pause;
         public InputActionMap Get() { return m_Wrapper.m_Actions; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -322,6 +344,9 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
                 @Hiss.started -= m_Wrapper.m_ActionsActionsCallbackInterface.OnHiss;
                 @Hiss.performed -= m_Wrapper.m_ActionsActionsCallbackInterface.OnHiss;
                 @Hiss.canceled -= m_Wrapper.m_ActionsActionsCallbackInterface.OnHiss;
+                @Pause.started -= m_Wrapper.m_ActionsActionsCallbackInterface.OnPause;
+                @Pause.performed -= m_Wrapper.m_ActionsActionsCallbackInterface.OnPause;
+                @Pause.canceled -= m_Wrapper.m_ActionsActionsCallbackInterface.OnPause;
             }
             m_Wrapper.m_ActionsActionsCallbackInterface = instance;
             if (instance != null)
@@ -335,6 +360,9 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
                 @Hiss.started += instance.OnHiss;
                 @Hiss.performed += instance.OnHiss;
                 @Hiss.canceled += instance.OnHiss;
+                @Pause.started += instance.OnPause;
+                @Pause.performed += instance.OnPause;
+                @Pause.canceled += instance.OnPause;
             }
         }
     }
@@ -358,5 +386,6 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
         void OnAttack(InputAction.CallbackContext context);
         void OnCameraZoom(InputAction.CallbackContext context);
         void OnHiss(InputAction.CallbackContext context);
+        void OnPause(InputAction.CallbackContext context);
     }
 }

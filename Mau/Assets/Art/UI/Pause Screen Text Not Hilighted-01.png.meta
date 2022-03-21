@@ -1,19 +1,16 @@
 fileFormatVersion: 2
-guid: faab42535a88f73409b04f368283340e
+guid: 58a57d043bc68504db7b7601df06780e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1549488918869491118
-    second: Title Screen Text Not Moused Over-01_0
+      213: 9109899562216907334
+    second: Pause Screen Text Not Hilighted-01_0
   - first:
-      213: -6942490569813768986
-    second: Title Screen Text Not Moused Over-01_3
+      213: -423351923815939220
+    second: Pause Screen Text Not Hilighted-01_6
   - first:
-      213: -6575050414623193398
-    second: Title Screen Text Not Moused Over-01_10
-  - first:
-      213: 8705448050377410593
-    second: Title Screen Text Not Moused Over-01_18
+      213: -3669306570207413759
+    second: Pause Screen Text Not Hilighted-01_12
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -103,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Title Screen Text Not Moused Over-01_0
+      name: Pause Screen Text Not Hilighted-01_0
       rect:
         serializedVersion: 2
-        x: 687
-        y: 832
-        width: 512
-        height: 183
+        x: 724
+        y: 888
+        width: 453
+        height: 135
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -117,20 +114,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 252416fa90c1f7ae0800000000000000
-      internalID: -1549488918869491118
+      spriteID: 642ec61b26ddc6e70800000000000000
+      internalID: 9109899562216907334
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Title Screen Text Not Moused Over-01_3
+      name: Pause Screen Text Not Hilighted-01_6
       rect:
         serializedVersion: 2
-        x: 171
-        y: 380
-        width: 434
-        height: 124
+        x: 1447
+        y: 668
+        width: 369
+        height: 101
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -138,20 +135,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6e440c11c9157af90800000000000000
-      internalID: -6942490569813768986
+      spriteID: c6309f51ba3ff1af0800000000000000
+      internalID: -423351923815939220
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Title Screen Text Not Moused Over-01_10
+      name: Pause Screen Text Not Hilighted-01_12
       rect:
         serializedVersion: 2
-        x: 1375
-        y: 379
-        width: 345
-        height: 95
+        x: 1499
+        y: 161
+        width: 246
+        height: 112
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -159,29 +156,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ac68918eb7ab0c4a0800000000000000
-      internalID: -6575050414623193398
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Title Screen Text Not Moused Over-01_18
-      rect:
-        serializedVersion: 2
-        x: 795
-        y: 187
-        width: 312
-        height: 160
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 128cc5dd0e6ffc870800000000000000
-      internalID: 8705448050377410593
+      spriteID: 10ab7ce7d11041dc0800000000000000
+      internalID: -3669306570207413759
       vertices: []
       indices: 
       edges: []
