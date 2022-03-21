@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour {
     [SerializeField] float jumpHeight = 3.0f;
     [SerializeField] bool canHiss = false;
     [SerializeField] bool canDoubleJump = false;
+    [SerializeField] GameObject pauseMenu;
 
     CharacterController2D charController;
     PlayerInputController input;
@@ -24,6 +25,7 @@ public class PlayerController : MonoBehaviour {
     private WaitForSeconds invulnSeconds;
 
     private bool canBeHurt = true;
+    private bool paused = false;
     bool secondJump = true;
     int health;
 
@@ -40,6 +42,7 @@ public class PlayerController : MonoBehaviour {
         health = maxHealth;
 
         invulnSeconds = new WaitForSeconds(invulnerabilityTime);
+        paused = false;
     }
 
     private void Die() 
@@ -147,6 +150,27 @@ public class PlayerController : MonoBehaviour {
             //animator.SetTrigger("Attacking");
             hissScript.Hiss();
         }
+    }
+
+    public void Pause()
+    {
+        if (!paused)
+        {
+            Time.timeScale = 0;
+            pauseMenu.SetActive(true);
+            paused = true;
+        }
+        else if (paused)
+        {
+            Time.timeScale = 1;
+            pauseMenu.SetActive(false);
+            paused = false;
+        }
+    }
+
+    public void Quit()
+    {
+        SceneManager.LoadScene("Menu");
     }
 
     private void FixedUpdate()

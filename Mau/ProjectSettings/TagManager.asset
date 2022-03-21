@@ -43,9 +43,6 @@ TagManager:
   - name: Background
     uniqueID: 3871730299
     locked: 0
-  - name: VFX
-    uniqueID: 2889526471
-    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
