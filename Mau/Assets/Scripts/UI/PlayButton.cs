@@ -8,7 +8,9 @@ public class PlayButton : MonoBehaviour
     [SerializeField] public string mainLevel;
     public void play()
     {
-        if (mainLevel != null)  
+        if (mainLevel != null) { 
             SceneManager.LoadScene(mainLevel);
+            Time.timeScale = 1;
+        }
     }
 }
