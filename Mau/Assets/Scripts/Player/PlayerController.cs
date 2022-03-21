@@ -10,11 +10,13 @@ public class PlayerController : MonoBehaviour {
     [SerializeField] int maxHealth;
     [SerializeField] float acceleration = 6.0f;
     [SerializeField] float jumpHeight = 3.0f;
-    [SerializeField] bool canDoubleJump = true;
+    [SerializeField] bool canHiss = false;
+    [SerializeField] bool canDoubleJump = false;
 
     CharacterController2D charController;
     PlayerInputController input;
     PlayerAttackScript attackScript;
+    PlayerHiss hissScript;
     CatAudioController CA;
     [SerializeField] Animator animator;
     [SerializeField] private float invulnerabilityTime = 0.3f;
@@ -31,6 +33,7 @@ public class PlayerController : MonoBehaviour {
         charController = GetComponent<CharacterController2D>();
         input = GetComponent<PlayerInputController>();
         attackScript = GetComponent<PlayerAttackScript>();
+        hissScript = GetComponent<PlayerHiss>();
         if (animator == null)
             animator = GetComponentInChildren<Animator>();
 
@@ -134,6 +137,16 @@ public class PlayerController : MonoBehaviour {
             animator.SetTrigger("Attacking");
 
         attackScript.Attack();
+    }
+
+    public void Hiss()
+    {
+        if (canHiss)
+        {
+            //if (animator != null && attackScript.CanAttack)
+            //animator.SetTrigger("Attacking");
+            hissScript.Hiss();
+        }
     }
 
     private void FixedUpdate()
