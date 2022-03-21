@@ -31,7 +31,6 @@ public class PlayerInputController : MonoBehaviour
         inputActions.Locomotion.Jump.performed += ctx => controller.Jump();
         inputActions.Actions.Attack.performed += ctx => controller.Attack();
         inputActions.Actions.Hiss.performed += ctx => controller.Hiss();
-        inputActions.Actions.Pause.performed += ctx => controller.Pause();
         inputActions.Actions.CameraZoom.performed += ctx => cameraZoom.changeZoom();
     }
 
