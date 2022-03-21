@@ -30,6 +30,7 @@ public class PlayerInputController : MonoBehaviour
         inputActions.Locomotion.Movement.performed += ctx => _horizontalAxis = ctx.ReadValue<float>();
         inputActions.Locomotion.Jump.performed += ctx => controller.Jump();
         inputActions.Actions.Attack.performed += ctx => controller.Attack();
+        inputActions.Actions.Hiss.performed += ctx => controller.Hiss();
         inputActions.Actions.CameraZoom.performed += ctx => cameraZoom.changeZoom();
     }
 
