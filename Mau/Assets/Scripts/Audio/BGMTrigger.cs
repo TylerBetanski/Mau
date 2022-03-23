@@ -6,6 +6,7 @@ public class BGMTrigger : MonoBehaviour
 {
     [SerializeField] AudioClip BGM;
     [SerializeField] AudioSource BGAudioSource;
+    [SerializeField] float newVolume;
 
     bool changed;
     GameObject player;
@@ -29,6 +30,7 @@ public class BGMTrigger : MonoBehaviour
 
         BGAudioSource.Stop();
         BGAudioSource.clip = BGM;
+        BGAudioSource.volume = newVolume;
         BGAudioSource.Play();
     }
 }

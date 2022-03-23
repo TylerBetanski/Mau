@@ -9,6 +9,8 @@ public class Room : MonoBehaviour, ISignalReciever
     [SerializeField] private Color roomColor = Color.yellow;
     [SerializeField] private Bounds bounds = new Bounds(Vector3.zero, Vector3.one * 2);
 
+    [SerializeField] private TextBar textBar;
+
     private SaveObject[] saveObjects;
 
     private void Awake()
@@ -44,5 +46,14 @@ public class Room : MonoBehaviour, ISignalReciever
     public void RecieveSignal()
     {
         SaveRoom();
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        textBar.DisplayRoomName(name);
+    }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        textBar.RemoveRoomName(name);
     }
 }
