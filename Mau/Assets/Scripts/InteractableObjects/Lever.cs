@@ -9,13 +9,22 @@ public class Lever : InteractableObject
     [SerializeField] Sprite flippedLever;
     [SerializeField] LockableObject lockedObject;
     [SerializeField] int lockNumber;
+
+    [SerializeField] AudioClip flipSound;
+    private AudioSource leverAudio;
     private void Awake()
     {
         flipped = false;
+        leverAudio = GetComponent<AudioSource>();
+        leverAudio.clip = flipSound;
     }
 
     public override void Interact(GameObject interactingObject)
     {
+        if (leverAudio.isPlaying)
+            leverAudio.Stop();
+        leverAudio.Play();
+        Debug.Log("PLaying Lever Sound");
         if (lockedObject != null)
             lockedObject.SetLock(lockNumber, !lockedObject.GetLockValue(lockNumber));
 

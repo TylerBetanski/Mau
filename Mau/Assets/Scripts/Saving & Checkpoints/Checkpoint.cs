@@ -7,7 +7,11 @@ public class Checkpoint : InteractableObject
     [SerializeField] private Room room;
     [SerializeField] private bool isStartingCheckpoint = false;
 
+    [SerializeField] AudioClip activateSound;
+
     private CheckpointManager checkpointManager;
+    private AudioSource checkpointAS;
+    
 
     private void Awake()
     {
@@ -24,10 +28,15 @@ public class Checkpoint : InteractableObject
             if (isStartingCheckpoint)
                 checkpointManager.SetCurrentCheckpoint(this);
         }
+        checkpointAS = GetComponent<AudioSource>();
+        checkpointAS.clip = activateSound;
     }
 
     public override void Interact(GameObject interactingObject)
     {
+        if (checkpointAS.isPlaying)
+            checkpointAS.Stop();
+        checkpointAS.Play();
         interactingObject.GetComponent<PlayerController>().Heal(interactingObject.GetComponent<PlayerController>().getMaxHealth());
 
         room.ReloadRoom();

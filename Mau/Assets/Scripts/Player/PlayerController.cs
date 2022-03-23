@@ -157,6 +157,7 @@ public class PlayerController : MonoBehaviour {
     {
         if (!paused)
         {
+            pauseMenu.GetComponent<PauseMenu>().UpdateHeartContainers();
             Time.timeScale = 0;
             pauseMenu.SetActive(true);
             paused = true;
