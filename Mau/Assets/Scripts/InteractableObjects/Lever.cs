@@ -24,7 +24,6 @@ public class Lever : InteractableObject
         if (leverAudio.isPlaying)
             leverAudio.Stop();
         leverAudio.Play();
-        Debug.Log("PLaying Lever Sound");
         if (lockedObject != null)
             lockedObject.SetLock(lockNumber, !lockedObject.GetLockValue(lockNumber));
 
