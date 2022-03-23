@@ -146,8 +146,9 @@ public class PlayerController : MonoBehaviour {
     {
         if (canHiss)
         {
-            //if (animator != null && attackScript.CanAttack)
-            //animator.SetTrigger("Attacking");
+            if (animator != null && hissScript.CanHiss)
+            animator.SetTrigger("Hissing");
+
             hissScript.Hiss();
         }
     }
