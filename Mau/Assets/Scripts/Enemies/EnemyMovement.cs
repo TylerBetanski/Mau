@@ -63,7 +63,7 @@ public class EnemyMovement : MonoBehaviour
         rb.velocity = new Vector2(moveSpeed, 0);
     }
 
-    private void Flip()
+    public void Flip()
     {
         transform.localScale = new Vector3(-transform.localScale.x, transform.localScale.y, transform.localScale.z);
         moveSpeed = 0 - moveSpeed;

@@ -20,7 +20,7 @@ public class PlayerController : MonoBehaviour {
     PlayerHiss hissScript;
     CatAudioController CA;
     [SerializeField] Animator animator;
-    [SerializeField] private float invulnerabilityTime = 0.3f;
+    [SerializeField] private float invulnerabilityTime = 0.8f;
 
     private WaitForSeconds invulnSeconds;
 

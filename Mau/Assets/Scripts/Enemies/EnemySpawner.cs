@@ -6,10 +6,14 @@ public class EnemySpawner : MonoBehaviour, ISignalReciever
 {
     [SerializeField] GameObject enemyPrefab;
 
+    private bool activated = false;
 
     public void RecieveSignal()
     {
-        SpawnEnemy();  
+        activated = !activated;
+
+        if(activated)
+            SpawnEnemy();  
     }
 
     public void SpawnEnemy()
@@ -19,6 +23,13 @@ public class EnemySpawner : MonoBehaviour, ISignalReciever
             GameObject newEnemy = GameObject.Instantiate(enemyPrefab);
             newEnemy.transform.parent = transform;
             newEnemy.transform.position = transform.position;
+
+            int randNum = Random.Range(0, 1);
+            if(randNum == 1)
+            {
+                newEnemy.GetComponent<EnemyMovement>().Flip();
+            }
+
         }
     }
 }

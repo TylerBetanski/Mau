@@ -86,6 +86,9 @@ public class Sarcophagus : InteractableObject
         }
 
         lid.position = lidStart;
+
+        activateObject.GetComponent<ISignalReciever>().RecieveSignal();
+
         isOpen = false;
     }
 }

@@ -13,17 +13,22 @@ public class EnemyInteraction : InteractableObject
 
     public override void Interact(GameObject interactingObject)
     {
-        rb2D.bodyType = RigidbodyType2D.Dynamic;
-
-        if(interactingObject.tag == "Player")
+        if(CanInteract)
         {
-            GetComponent<EnemyDamage>().isKnockedDown = true;
-            GetComponent<EnemyMovement>().enabled = false;
-            Vector3 direction = transform.position - interactingObject.transform.position;
-            direction.y = 3.0f;
-            direction.Normalize();
+            rb2D.bodyType = RigidbodyType2D.Dynamic;
 
-            rb2D.AddForce(direction * 500.0f);
+            if(interactingObject.tag == "Player")
+            {
+                GetComponent<EnemyDamage>().isKnockedDown = true;
+                GetComponent<EnemyMovement>().enabled = false;
+                Vector3 direction = transform.position - interactingObject.transform.position;
+                direction.y = 3.0f;
+                direction.Normalize();
+
+                rb2D.AddForce(direction * 500.0f);
+
+                transform.GetComponentInChildren<Animator>().SetBool("Alive", false);
+            }
         }
     }
 }
