@@ -10,6 +10,7 @@ public class PlayerHiss : MonoBehaviour
     [SerializeField] private float cooldownTime;
     [SerializeField] private bool canHitMultiple = true;
     [SerializeField] private Collider2D hiss;
+    [SerializeField] GameObject hissSprite;
 
     WaitForSeconds cooldown;
     CatAudioController CA;
@@ -19,15 +20,14 @@ public class PlayerHiss : MonoBehaviour
         cooldown = new WaitForSeconds(cooldownTime);
         CA = GetComponent<CatAudioController>();
         _canHiss = true;
+        hissSprite.GetComponent<SpriteRenderer>().enabled = false;
     }
 
     public void Hiss()
     {
         if (_canHiss)
         {
-            // Animate the Hiss
-            //
-            //
+            StartCoroutine(hissCoroutine());
             CA.playSound("Hiss");
             Collider2D[] hitObjects = new Collider2D[10];
             Physics2D.OverlapCollider(hiss, filter, hitObjects);
@@ -35,14 +35,14 @@ public class PlayerHiss : MonoBehaviour
             foreach (Collider2D collider in hitObjects)
             {
                 if (collider != null) { 
-                InteractableObject interactableObj = collider.gameObject.GetComponent<InteractableObject>();
-                if (interactableObj != null)
-                {
-                    interactableObj.Interact(gameObject);
+                    InteractableObject interactableObj = collider.gameObject.GetComponent<InteractableObject>();
+                    if (interactableObj != null)
+                    {
+                        interactableObj.Interact(gameObject);
 
-                    if (!canHitMultiple)
-                        break;
-                }
+                        if (!canHitMultiple)
+                            break;
+                    }
                 }
             }
 
@@ -55,5 +55,12 @@ public class PlayerHiss : MonoBehaviour
         _canHiss = false;
         yield return cooldown;
         _canHiss = true;
+    }
+    public IEnumerator hissCoroutine()
+    {
+        yield return new WaitForSeconds(0.3f);
+        hissSprite.GetComponent<SpriteRenderer>().enabled = true;
+        yield return new WaitForSeconds(0.5f);
+        hissSprite.GetComponent<SpriteRenderer>().enabled = false;
     }
 }
