@@ -10,6 +10,7 @@ public class Room : MonoBehaviour, ISignalReciever
     [SerializeField] private Bounds bounds = new Bounds(Vector3.zero, Vector3.one * 2);
 
     [SerializeField] private TextBar textBar;
+    [SerializeField] private GameObject roomName;
 
     private SaveObject[] saveObjects;
 
@@ -50,10 +51,10 @@ public class Room : MonoBehaviour, ISignalReciever
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        textBar.DisplayRoomName(name);
+        textBar.DisplayRoomName(roomName);
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
-        textBar.RemoveRoomName(name);
+        textBar.RemoveRoomName(roomName);
     }
 }
