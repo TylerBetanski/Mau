@@ -74,6 +74,10 @@ public class PlayerController : MonoBehaviour {
     public void enableDoubleJump() {
         canDoubleJump = true;    
     }
+    public void enableHiss()
+    {
+        canHiss = true;
+    }
 
     public void Heal(int amount)
     {
