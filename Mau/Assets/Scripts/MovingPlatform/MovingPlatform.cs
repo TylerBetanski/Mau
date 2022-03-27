@@ -77,4 +77,11 @@ public class MovingPlatform : MonoBehaviour, ISignalReciever
         if (moveTime < 1)
             moveTime = 1;
     }
+
+    private void OnDrawGizmosSelected() {
+        if(endPoint != null) {
+            Gizmos.color = Color.red;
+            Gizmos.DrawLine(transform.position, endPoint.position);
+        }
+    }
 }

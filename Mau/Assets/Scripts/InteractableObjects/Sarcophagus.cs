@@ -39,7 +39,7 @@ public class Sarcophagus : InteractableObject
         }
 
         lidStart = lid.position;
-        lidEnd = new Vector3(lid.position.x, lid.position.y, lid.position.z) + new Vector3(lid.localScale.x, 0, 0);
+        lidEnd = new Vector3(lid.position.x, lid.position.y, lid.position.z) + new Vector3(3, 0, 0);
     }
 
     public override void Interact(GameObject interactingObject)

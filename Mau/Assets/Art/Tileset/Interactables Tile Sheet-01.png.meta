@@ -65,6 +65,81 @@ TextureImporter:
   - first:
       213: 2425278210235633185
     second: Interactables Tile Sheet-01_20
+  - first:
+      213: -2021289424275928187
+    second: Interactables Tile Sheet-01_21
+  - first:
+      213: 51101026468135483
+    second: Interactables Tile Sheet-01_22
+  - first:
+      213: -4406063498566180359
+    second: Interactables Tile Sheet-01_23
+  - first:
+      213: 742922651361798956
+    second: Interactables Tile Sheet-01_24
+  - first:
+      213: -3464127490902644135
+    second: Interactables Tile Sheet-01_25
+  - first:
+      213: 8731904064899200201
+    second: Interactables Tile Sheet-01_32
+  - first:
+      213: -5446527229006607974
+    second: Interactables Tile Sheet-01_33
+  - first:
+      213: 3175405651826570757
+    second: Interactables Tile Sheet-01_34
+  - first:
+      213: 3192032423776573795
+    second: Interactables Tile Sheet-01_35
+  - first:
+      213: -9012708980447728243
+    second: Interactables Tile Sheet-01_36
+  - first:
+      213: 5844523981338428457
+    second: Interactables Tile Sheet-01_40
+  - first:
+      213: 6536758363550794771
+    second: Interactables Tile Sheet-01_41
+  - first:
+      213: -1193937242430296997
+    second: Interactables Tile Sheet-01_52
+  - first:
+      213: 5198373069236413921
+    second: Interactables Tile Sheet-01_53
+  - first:
+      213: -4774631119810051934
+    second: Interactables Tile Sheet-01_62
+  - first:
+      213: -8784658248499873308
+    second: Interactables Tile Sheet-01_63
+  - first:
+      213: -4919548960379258133
+    second: Interactables Tile Sheet-01_74
+  - first:
+      213: -3010712190695107502
+    second: Interactables Tile Sheet-01_75
+  - first:
+      213: -7529423137085451406
+    second: Interactables Tile Sheet-01_83
+  - first:
+      213: -744467493309811579
+    second: Interactables Tile Sheet-01_84
+  - first:
+      213: 1073125762589834892
+    second: Interactables Tile Sheet-01_89
+  - first:
+      213: 7269097369577902743
+    second: Interactables Tile Sheet-01_90
+  - first:
+      213: 7204045552643229667
+    second: Interactables Tile Sheet-01_93
+  - first:
+      213: 3939903518532848148
+    second: Interactables Tile Sheet-01_94
+  - first:
+      213: -6130041501943604914
+    second: Interactables Tile Sheet-01_95
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -162,7 +237,7 @@ TextureImporter:
         width: 100
         height: 100
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -183,7 +258,7 @@ TextureImporter:
         width: 100
         height: 100
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -199,12 +274,12 @@ TextureImporter:
       name: Interactables Tile Sheet-01_2
       rect:
         serializedVersion: 2
-        x: 100
-        y: 1700
-        width: 100
-        height: 100
+        x: 500
+        y: 1800
+        width: 300
+        height: 53
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -217,183 +292,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Interactables Tile Sheet-01_3
-      rect:
-        serializedVersion: 2
-        x: 200
-        y: 1700
-        width: 100
-        height: 100
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4e35d4fb4bf43cbd0800000000000000
-      internalID: -2611155721222532124
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Interactables Tile Sheet-01_4
-      rect:
-        serializedVersion: 2
-        x: 300
-        y: 1700
-        width: 100
-        height: 100
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fe46f77f5fabb54e0800000000000000
-      internalID: -1991792844599237393
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Interactables Tile Sheet-01_5
-      rect:
-        serializedVersion: 2
-        x: 400
-        y: 1700
-        width: 100
-        height: 100
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 277d384305d4fc9e0800000000000000
-      internalID: -1598974335819458702
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Interactables Tile Sheet-01_6
-      rect:
-        serializedVersion: 2
-        x: 100
-        y: 1600
-        width: 100
-        height: 100
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 780a7640c6b535bb0800000000000000
-      internalID: -4948511046061547385
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Interactables Tile Sheet-01_7
-      rect:
-        serializedVersion: 2
-        x: 200
-        y: 1600
-        width: 100
-        height: 100
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 36e820f3768a6c770800000000000000
-      internalID: 8630770897294364259
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Interactables Tile Sheet-01_8
-      rect:
-        serializedVersion: 2
-        x: 300
-        y: 1600
-        width: 100
-        height: 100
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 81b97481e936b17a0800000000000000
-      internalID: -6405416514341070056
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Interactables Tile Sheet-01_9
-      rect:
-        serializedVersion: 2
-        x: 400
-        y: 1600
-        width: 100
-        height: 100
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f31b098c3bc8d97c0800000000000000
-      internalID: -4062936585026358977
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Interactables Tile Sheet-01_10
-      rect:
-        serializedVersion: 2
-        x: 100
-        y: 1500
-        width: 100
-        height: 100
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3e3876e6a2dc19c10800000000000000
-      internalID: 2058652086809625571
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Interactables Tile Sheet-01_11
       rect:
         serializedVersion: 2
-        x: 200
-        y: 1500
+        x: 1400
+        y: 1800
         width: 100
         height: 100
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -409,12 +316,12 @@ TextureImporter:
       name: Interactables Tile Sheet-01_12
       rect:
         serializedVersion: 2
-        x: 300
-        y: 1500
+        x: 100
+        y: 1700
         width: 100
         height: 100
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -430,12 +337,12 @@ TextureImporter:
       name: Interactables Tile Sheet-01_13
       rect:
         serializedVersion: 2
-        x: 400
-        y: 1500
+        x: 200
+        y: 1700
         width: 100
         height: 100
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -451,12 +358,12 @@ TextureImporter:
       name: Interactables Tile Sheet-01_14
       rect:
         serializedVersion: 2
-        x: 100
-        y: 1400
+        x: 300
+        y: 1700
         width: 100
         height: 100
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -472,12 +379,12 @@ TextureImporter:
       name: Interactables Tile Sheet-01_15
       rect:
         serializedVersion: 2
-        x: 100
-        y: 1300
+        x: 400
+        y: 1700
         width: 100
         height: 100
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -490,7 +397,322 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Interactables Tile Sheet-01_16
+      name: Interactables Tile Sheet-01_21
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 1700
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58b87c55affe2f3e0800000000000000
+      internalID: -2021289424275928187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interactables Tile Sheet-01_22
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 1600
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b328a42ec1c85b000800000000000000
+      internalID: 51101026468135483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interactables Tile Sheet-01_23
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 1600
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f1e526a7948ad2c0800000000000000
+      internalID: -4406063498566180359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interactables Tile Sheet-01_24
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 1600
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2be20a17346f4a00800000000000000
+      internalID: 742922651361798956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interactables Tile Sheet-01_25
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1600
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95a25189662fcefc0800000000000000
+      internalID: -3464127490902644135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interactables Tile Sheet-01_32
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 1600
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c43b11cb74fd2970800000000000000
+      internalID: 8731904064899200201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interactables Tile Sheet-01_33
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 1500
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a998197975c0a64b0800000000000000
+      internalID: -5446527229006607974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interactables Tile Sheet-01_34
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 1500
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 506f3e6cd9e411c20800000000000000
+      internalID: 3175405651826570757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interactables Tile Sheet-01_35
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 1500
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3695bbac3906c4c20800000000000000
+      internalID: 3192032423776573795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interactables Tile Sheet-01_36
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1500
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8da0740fec6ce280800000000000000
+      internalID: -9012708980447728243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interactables Tile Sheet-01_40
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 1500
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 924cdec689beb1150800000000000000
+      internalID: 5844523981338428457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interactables Tile Sheet-01_41
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 1400
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3144202391b37ba50800000000000000
+      internalID: 6536758363550794771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interactables Tile Sheet-01_52
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 1400
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5c25dc57684e6fe0800000000000000
+      internalID: -1193937242430296997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interactables Tile Sheet-01_53
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 1300
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e52bc9a3c4542840800000000000000
+      internalID: 5198373069236413921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interactables Tile Sheet-01_62
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 1300
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a0423a2b4a1dbdb0800000000000000
+      internalID: -4774631119810051934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interactables Tile Sheet-01_63
       rect:
         serializedVersion: 2
         x: 100
@@ -498,20 +720,41 @@ TextureImporter:
         width: 100
         height: 100
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 65251484bdc8c0710800000000000000
-      internalID: 1660857236030837334
+      spriteID: 4e9b5f8bddf961680800000000000000
+      internalID: -8784658248499873308
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Interactables Tile Sheet-01_17
+      name: Interactables Tile Sheet-01_74
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 1200
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: beab37119404abbb0800000000000000
+      internalID: -4919548960379258133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interactables Tile Sheet-01_75
       rect:
         serializedVersion: 2
         x: 100
@@ -519,20 +762,41 @@ TextureImporter:
         width: 100
         height: 100
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b537f1f4396875dd0800000000000000
-      internalID: -2497379501107874981
+      spriteID: 2541ea8c63dc736d0800000000000000
+      internalID: -3010712190695107502
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Interactables Tile Sheet-01_18
+      name: Interactables Tile Sheet-01_83
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 1100
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2731a66ac8d128790800000000000000
+      internalID: -7529423137085451406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interactables Tile Sheet-01_84
       rect:
         serializedVersion: 2
         x: 100
@@ -540,20 +804,41 @@ TextureImporter:
         width: 100
         height: 100
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c654b1515002e0a20800000000000000
-      internalID: 3030394805467956588
+      spriteID: 584717a52ce1ba5f0800000000000000
+      internalID: -744467493309811579
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Interactables Tile Sheet-01_19
+      name: Interactables Tile Sheet-01_89
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 1000
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8ebc76023284ee00800000000000000
+      internalID: 1073125762589834892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interactables Tile Sheet-01_90
       rect:
         serializedVersion: 2
         x: 100
@@ -561,20 +846,41 @@ TextureImporter:
         width: 100
         height: 100
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c63f756dee4ee1d80800000000000000
-      internalID: -8277927350610955412
+      spriteID: 792da675b8501e460800000000000000
+      internalID: 7269097369577902743
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Interactables Tile Sheet-01_20
+      name: Interactables Tile Sheet-01_93
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 900
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e7480fe249e9f360800000000000000
+      internalID: 7204045552643229667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interactables Tile Sheet-01_94
       rect:
         serializedVersion: 2
         x: 100
@@ -582,14 +888,35 @@ TextureImporter:
         width: 100
         height: 100
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 12e079abea158a120800000000000000
-      internalID: 2425278210235633185
+      spriteID: 41a467720695da630800000000000000
+      internalID: 3939903518532848148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interactables Tile Sheet-01_95
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 800
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e49df3a7bb7bdeaa0800000000000000
+      internalID: -6130041501943604914
       vertices: []
       indices: 
       edges: []
