@@ -16,11 +16,18 @@ public class Room : MonoBehaviour, ISignalReciever
 
     private void Awake()
     {
+        GetChildren();
+    }
+
+    private void GetChildren()
+    {
         saveObjects = transform.GetComponentsInChildren<SaveObject>();
     }
 
     public void ReloadRoom()
     {
+        GetChildren();
+
         for (int i = 0; i < saveObjects.Length; i++)
         {
             saveObjects[i].ReloadSaveData();
@@ -29,6 +36,8 @@ public class Room : MonoBehaviour, ISignalReciever
 
     public void SaveRoom()
     {
+        GetChildren();
+
         for (int i = 0; i < saveObjects.Length; i++)
         {
             saveObjects[i].OverrideSaveData();

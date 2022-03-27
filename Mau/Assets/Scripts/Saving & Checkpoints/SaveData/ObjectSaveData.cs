@@ -74,3 +74,15 @@ public class ObjectSaveData_Enemy : ObjectSaveData
         moveSpeed = enemyMovement.MoveSpeed;
     }
 }
+
+public class ObjectSaveData_Sarcophagus : ObjectSaveData
+{
+    private bool open;
+    private bool shouldClose;
+
+    public ObjectSaveData_Sarcophagus(Transform transform, Sarcophagus sarc) : base(transform)
+    {
+        open = sarc.Open;
+        shouldClose = sarc.ShouldClose;
+    }
+}

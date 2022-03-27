@@ -4,12 +4,19 @@ using UnityEngine;
 
 public class Sarcophagus : InteractableObject
 {
+    public bool Open { get { return isOpen; } }
+    private bool isOpen;
+
+    public bool ShouldClose { get { return shouldClose; } }
+    private bool shouldClose = true;
+
     [SerializeField] private float openTime;
     [SerializeField] private float transitionTime;
     [SerializeField] private Transform lid;
     [SerializeField] private Transform activateObject;
-    private bool isOpen;
+
     private bool isMoving;
+    
 
     private WaitForSeconds deltaWait;
     private WaitForSeconds openWait;
@@ -34,7 +41,6 @@ public class Sarcophagus : InteractableObject
         lidStart = lid.position;
         lidEnd = new Vector3(lid.position.x, lid.position.y, lid.position.z) + new Vector3(lid.localScale.x, 0, 0);
     }
-
 
     public override void Interact(GameObject interactingObject)
     {
@@ -70,7 +76,9 @@ public class Sarcophagus : InteractableObject
     private IEnumerator WaitOpen()
     {
         yield return openWait;
-        StartCoroutine(CloseSarcophagus());
+
+        if(shouldClose)
+            StartCoroutine(CloseSarcophagus());
     }
 
     private IEnumerator CloseSarcophagus()

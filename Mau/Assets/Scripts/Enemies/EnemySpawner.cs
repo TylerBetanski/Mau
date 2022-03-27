@@ -21,8 +21,10 @@ public class EnemySpawner : MonoBehaviour, ISignalReciever
         if (enemyPrefab != null)
         {
             GameObject newEnemy = GameObject.Instantiate(enemyPrefab);
-            newEnemy.transform.parent = transform;
+            newEnemy.transform.parent = transform.parent.parent;
             newEnemy.transform.position = transform.position;
+
+            newEnemy.GetComponent<SaveObject_Enemy>().SetRemoveOnLoad(true);
 
             int randNum = Random.Range(0, 1);
             if(randNum == 1)

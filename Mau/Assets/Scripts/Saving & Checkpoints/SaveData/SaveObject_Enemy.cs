@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class SaveObject_Enemy : SaveObject
 {
-    EnemyMovement em;
+    private EnemyMovement em;
+
+    private bool removeOnLoad = false;
 
     protected override void InitializeSaveData()
     {
@@ -24,5 +26,13 @@ public class SaveObject_Enemy : SaveObject
         transform.localScale = saveData.GetScale();
 
         em.MoveSpeed = ((ObjectSaveData_Enemy)saveData).moveSpeed;
+
+        if (removeOnLoad)
+            Destroy(gameObject);
+    }
+
+    public void SetRemoveOnLoad(bool b)
+    {
+        removeOnLoad = b;
     }
 }
