@@ -42,7 +42,7 @@ public class LockableTiles : LockableObject
         {
             GameObject go = transform.GetChild(i).gameObject;
             go.GetComponent<SpriteRenderer>().color = tilesColor;
-            go.GetComponent<BoxCollider2D>().enabled = false;
+            go.GetComponent<Collider2D>().enabled = false;
 
         }
     }
@@ -53,7 +53,7 @@ public class LockableTiles : LockableObject
             {
                 GameObject go = transform.GetChild(i).gameObject;
                 go.GetComponent<SpriteRenderer>().color = tilesColor;
-                go.GetComponent<BoxCollider2D>().enabled = true;
+                go.GetComponent<Collider2D>().enabled = true;
             }
     }
 
@@ -94,7 +94,7 @@ public class LockableTiles : LockableObject
         for (int i = 0; i < transform.childCount; i++)
         {
             GameObject go = transform.GetChild(i).gameObject;
-            go.GetComponent<BoxCollider2D>().enabled = enabled;
+            go.GetComponent<Collider2D>().enabled = enabled;
         }
     }
 }
