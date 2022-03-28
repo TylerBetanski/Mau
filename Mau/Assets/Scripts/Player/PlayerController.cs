@@ -181,13 +181,14 @@ public class PlayerController : MonoBehaviour {
 
     private void FixedUpdate()
     {
-        if (charController.Grounded) { 
+        if (charController.Grounded) {
             secondJump = true;
         }
 
         charController.AddVelocity(new Vector2(input.HorizontalAxis * acceleration, 0));
-        if (animator != null)
-            animator.SetBool("Moving", charController.Velocity.x != 0);
+        if (animator != null) {
+            animator.SetBool("Moving", Mathf.Abs(charController.Velocity.x) >= 0.2f);
+        }
 
         if (input.HorizontalAxis != 0) {
             transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x) * Mathf.Sign(input.HorizontalAxis),
