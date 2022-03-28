@@ -1724,6 +1724,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 996009012}
     m_Modifications:
+    - target: {fileID: 3760663759240958239, guid: 899368ba4c8e35b489e36c19c04bcda6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -16.44
+      objectReference: {fileID: 0}
+    - target: {fileID: 3760663759240958239, guid: 899368ba4c8e35b489e36c19c04bcda6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.92
+      objectReference: {fileID: 0}
     - target: {fileID: 3760663759369759973, guid: 899368ba4c8e35b489e36c19c04bcda6, type: 3}
       propertyPath: m_Name
       value: Shifting Crypts
