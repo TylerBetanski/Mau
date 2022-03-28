@@ -60,10 +60,12 @@ public class Room : MonoBehaviour, ISignalReciever
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        textBar.DisplayRoomName(roomName);
+        if (collision.gameObject.tag == "Player")
+            textBar.DisplayRoomName(roomName);
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
-        textBar.RemoveRoomName(roomName);
+        if (collision.gameObject.tag == "Player")
+            textBar.RemoveRoomName(roomName);
     }
 }

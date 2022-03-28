@@ -19,8 +19,10 @@ public class TutorialText : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (!poppedUp)
+        {
             poppedUp = true;
             StartCoroutine(FadeIn());
+        }
     }
 
     private IEnumerator FadeIn() {
