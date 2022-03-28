@@ -132,9 +132,11 @@ public class PlayerController : MonoBehaviour {
     {
         if (charController.Grounded) {
             charController.AddVelocity( new Vector2 (0, Mathf.Sqrt(-2 * charController.Gravity * jumpHeight)));
+            animator.SetTrigger("Jump");
         } else if (canDoubleJump && secondJump) {
             charController.AddVelocity(new Vector2(0, Mathf.Sqrt(-2 * charController.Gravity * jumpHeight)));
             secondJump = false;
+            animator.SetTrigger("Jump");
         }
     }
 
