@@ -8,6 +8,7 @@ public class LockableTiles : LockableObject
     [SerializeField] Tilemap backGround;
     [SerializeField] Tilemap ground;
     [SerializeField] float openTime = 1;
+
     private Color tilesColor = Color.white;
     private WaitForSeconds delay;
 
@@ -16,14 +17,13 @@ public class LockableTiles : LockableObject
         delay = new WaitForSeconds(Time.fixedDeltaTime);
         if (Locked)
         {
-
             tilesColor = backGround.color;
             lockChildren();
         }
         else { 
             tilesColor = ground.color;
             unlockChildren();
-        }  
+        }
     }
     protected override void Unlock()
     {
@@ -42,8 +42,9 @@ public class LockableTiles : LockableObject
         {
             GameObject go = transform.GetChild(i).gameObject;
             go.GetComponent<SpriteRenderer>().color = tilesColor;
-            go.GetComponent<BoxCollider2D>().enabled = false;
-
+            go.GetComponent<Collider2D>().enabled = false;
+            go.GetComponent<SpriteRenderer>().sortingLayerName = "Background";
+            go.GetComponent<SpriteRenderer>().sortingOrder = 1;
         }
     }
     private void unlockChildren() {
@@ -53,8 +54,10 @@ public class LockableTiles : LockableObject
             {
                 GameObject go = transform.GetChild(i).gameObject;
                 go.GetComponent<SpriteRenderer>().color = tilesColor;
-                go.GetComponent<BoxCollider2D>().enabled = true;
+                go.GetComponent<Collider2D>().enabled = true;
+            go.GetComponent<SpriteRenderer>().sortingLayerName = "Default";
             }
+            
     }
 
     private IEnumerator unlockChildrenAnimation() {
@@ -70,6 +73,7 @@ public class LockableTiles : LockableObject
 
     private IEnumerator lockChildrenAnimation()
     {
+        setColliders(false);
         float currentTime = 0;
         while (currentTime < openTime)
         {
@@ -78,7 +82,7 @@ public class LockableTiles : LockableObject
             tilesColor = Color.Lerp(ground.color, backGround.color, currentTime / openTime);
             ColorChildren();
         }
-        setColliders(false);
+        
     }
 
     private void ColorChildren() {
@@ -87,14 +91,21 @@ public class LockableTiles : LockableObject
             GameObject go = transform.GetChild(i).gameObject;
             go.GetComponent<SpriteRenderer>().color = tilesColor;
         }
-
     }
 
     private void setColliders(bool enabled) {
         for (int i = 0; i < transform.childCount; i++)
         {
             GameObject go = transform.GetChild(i).gameObject;
-            go.GetComponent<BoxCollider2D>().enabled = enabled;
+            go.GetComponent<Collider2D>().enabled = enabled;
+
+            if (enabled)
+                go.GetComponent<SpriteRenderer>().sortingLayerName = "Default";
+            else
+            {
+                go.GetComponent<SpriteRenderer>().sortingLayerName = "Background";
+                go.GetComponent<SpriteRenderer>().sortingOrder = 1;
+            }
         }
     }
 }
