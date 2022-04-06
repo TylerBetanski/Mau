@@ -8,6 +8,7 @@ public class PauseMenu : MonoBehaviour
     int numOfHearts;
 
     [SerializeField] Image[] heartContainers;
+    [SerializeField] GameObject options;
 
     public void UpdateHeartContainers()
     {
@@ -24,6 +25,16 @@ public class PauseMenu : MonoBehaviour
                 heartContainers[i].enabled = false;
             }
         }
+    }
+
+    public void OpenPauseMenu()
+    {
+        gameObject.SetActive(true);
+    }
+    public void ClosePauseMenu()
+    {
+        gameObject.SetActive(false);
+        options.SetActive(false);
     }
 
 }

@@ -15,6 +15,7 @@ public class PlayerController : MonoBehaviour {
     [SerializeField] GameObject pauseMenu;
     [SerializeField] Transform playerArt;
 
+    
     GameObject currentDialog;
     CharacterController2D charController;
     PlayerInputController input;
@@ -28,6 +29,7 @@ public class PlayerController : MonoBehaviour {
 
     private bool canBeHurt = true;
     private bool paused = false;
+    public bool dialog = false;
     bool secondJump = true;
     int health;
 
@@ -132,32 +134,44 @@ public class PlayerController : MonoBehaviour {
 
     public void Jump()
     {
-        if (charController.Grounded) {
-            charController.AddVelocity( new Vector2 (0, Mathf.Sqrt(-2 * charController.Gravity * jumpHeight)));
-            animator.SetTrigger("Jump");
-        } else if (canDoubleJump && secondJump) {
-            charController.AddVelocity(new Vector2(0, Mathf.Sqrt(-2 * charController.Gravity * jumpHeight)));
-            secondJump = false;
-            animator.SetTrigger("Jump");
+        if (!dialog)
+        {
+            if (charController.Grounded)
+            {
+                charController.AddVelocity(new Vector2(0, Mathf.Sqrt(-2 * charController.Gravity * jumpHeight)));
+                animator.SetTrigger("Jump");
+            }
+            else if (canDoubleJump && secondJump)
+            {
+                charController.AddVelocity(new Vector2(0, Mathf.Sqrt(-2 * charController.Gravity * jumpHeight)));
+                secondJump = false;
+                animator.SetTrigger("Jump");
+            }
         }
     }
 
     public void Attack()
     {
-        if (animator != null && attackScript.CanAttack)
-            animator.SetTrigger("Attacking");
+        if (!dialog)
+        {
+            if (animator != null && attackScript.CanAttack)
+                animator.SetTrigger("Attacking");
 
-        attackScript.Attack();
+            attackScript.Attack();
+        }
     }
 
     public void Hiss()
     {
-        if (canHiss)
+        if (!dialog)
         {
-            if (animator != null && hissScript.CanHiss)
-            animator.SetTrigger("Hissing");
+            if (canHiss)
+            {
+                if (animator != null && hissScript.CanHiss)
+                    animator.SetTrigger("Hissing");
 
-            hissScript.Hiss();
+                hissScript.Hiss();
+            }
         }
     }
     public void setDialog(GameObject dialog)
@@ -175,13 +189,13 @@ public class PlayerController : MonoBehaviour {
         {
             pauseMenu.GetComponent<PauseMenu>().UpdateHeartContainers();
             Time.timeScale = 0;
-            pauseMenu.SetActive(true);
+            pauseMenu.GetComponent<PauseMenu>().OpenPauseMenu();
             paused = true;
         }
         else if (paused)
         {
             Time.timeScale = 1;
-            pauseMenu.SetActive(false);
+            pauseMenu.GetComponent<PauseMenu>().ClosePauseMenu();
             paused = false;
         }
     }
@@ -197,17 +211,21 @@ public class PlayerController : MonoBehaviour {
             secondJump = true;
         }
 
-        charController.AddVelocity(new Vector2(input.HorizontalAxis * acceleration, 0));
-        if (animator != null) {
-            animator.SetBool("Moving", Mathf.Abs(charController.Velocity.x) >= 0.2f);
-        }
+        if (!dialog)
+        {
+            charController.AddVelocity(new Vector2(input.HorizontalAxis * acceleration, 0));
+            if (animator != null)
+            {
+                animator.SetBool("Moving", Mathf.Abs(charController.Velocity.x) >= 0.2f);
+            }
 
-        if (input.HorizontalAxis != 0) {
-            transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x) * Mathf.Sign(input.HorizontalAxis),
-                transform.localScale.y,
-                transform.localScale.z);
+            if (input.HorizontalAxis != 0)
+            {
+                transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x) * Mathf.Sign(input.HorizontalAxis),
+                    transform.localScale.y,
+                    transform.localScale.z);
+            }
         }
-
         animator.SetBool("Grounded", charController.Grounded);
     }
 

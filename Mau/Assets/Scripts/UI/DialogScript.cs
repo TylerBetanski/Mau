@@ -24,8 +24,9 @@ public class DialogScript : MonoBehaviour
     {
         if (!complete && (collision.gameObject.tag == "Player"))
         {
+            dialogBox.GetComponent<Image>().color = new Color(dialogBox.GetComponent<Image>().color.r, dialogBox.GetComponent<Image>().color.g, dialogBox.GetComponent<Image>().color.b, 1);
             player.GetComponent<PlayerController>().setDialog(dialogBox);
-            player.GetComponent<PlayerInputController>().paused = true;
+            player.GetComponent<PlayerController>().dialog = true;
             if (state == 0)
                 updateDialog();
         }
@@ -49,7 +50,7 @@ public class DialogScript : MonoBehaviour
         }
         else
         {
-            player.GetComponent<PlayerInputController>().paused = false;
+            player.GetComponent<PlayerController>().dialog = false;
             Destroy(dialogBox);
         }
     }

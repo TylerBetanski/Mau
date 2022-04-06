@@ -15,11 +15,9 @@ public class PlayerInputController : MonoBehaviour
     private PlayerInputActions inputActions;
     private PlayerController controller;
     private CameraZoom cameraZoom;
-    public bool paused;
 
     private void Awake()
     {
-        paused = false;
         inputActions = new PlayerInputActions();
         controller = GetComponent<PlayerController>();
         cameraZoom = GetComponent<CameraZoom>();
