@@ -26,6 +26,7 @@ public class EnemyInteraction : InteractableObject
                 direction.Normalize();
 
                 rb2D.AddForce(direction * 500.0f);
+                rb2D.AddTorque(500);
 
                 transform.GetComponentInChildren<Animator>().SetBool("Alive", false);
             }
