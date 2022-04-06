@@ -6,6 +6,7 @@ public class EnemyAttack : MonoBehaviour
 {
     [SerializeField] int damage;
     [SerializeField] Collider2D attackCollider;
+    [SerializeField] float attackTiming;
     [SerializeField] private ContactFilter2D filter = new ContactFilter2D();
     private bool attacking = false;
     private void OnTriggerStay2D(Collider2D collision)
@@ -19,7 +20,7 @@ public class EnemyAttack : MonoBehaviour
     private IEnumerator Damage(GameObject player) {
         attacking = true;
         gameObject.GetComponentInChildren<Animator>().SetTrigger("Attack");
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(attackTiming);
         Collider2D[] hitObjects = new Collider2D[10];
         Physics2D.OverlapCollider(attackCollider, filter, hitObjects);
         foreach (Collider2D collider in hitObjects)
