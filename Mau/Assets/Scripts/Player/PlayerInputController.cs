@@ -15,9 +15,11 @@ public class PlayerInputController : MonoBehaviour
     private PlayerInputActions inputActions;
     private PlayerController controller;
     private CameraZoom cameraZoom;
+    public bool paused;
 
     private void Awake()
     {
+        paused = false;
         inputActions = new PlayerInputActions();
         controller = GetComponent<PlayerController>();
         cameraZoom = GetComponent<CameraZoom>();
@@ -33,6 +35,7 @@ public class PlayerInputController : MonoBehaviour
         inputActions.Actions.Hiss.performed += ctx => controller.Hiss();
         inputActions.Actions.Pause.performed += ctx => controller.Pause();
         inputActions.Actions.CameraZoom.performed += ctx => cameraZoom.changeZoom();
+        inputActions.Actions.Enter.performed += ctx => controller.advanceDialog();
     }
 
     private void OnDisable()

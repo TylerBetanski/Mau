@@ -150,6 +150,14 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": ""Enter"",
+                    ""type"": ""Button"",
+                    ""id"": ""025c55d7-531b-4158-b9e9-cf63d4ade16f"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
                 }
             ],
             ""bindings"": [
@@ -196,6 +204,17 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
                     ""action"": ""Pause"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""2917f39c-04fb-4f52-8787-07c89d58174f"",
+                    ""path"": ""<Keyboard>/enter"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Enter"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -224,6 +243,7 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
         m_Actions_CameraZoom = m_Actions.FindAction("CameraZoom", throwIfNotFound: true);
         m_Actions_Hiss = m_Actions.FindAction("Hiss", throwIfNotFound: true);
         m_Actions_Pause = m_Actions.FindAction("Pause", throwIfNotFound: true);
+        m_Actions_Enter = m_Actions.FindAction("Enter", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -318,6 +338,7 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
     private readonly InputAction m_Actions_CameraZoom;
     private readonly InputAction m_Actions_Hiss;
     private readonly InputAction m_Actions_Pause;
+    private readonly InputAction m_Actions_Enter;
     public struct ActionsActions
     {
         private @PlayerInputActions m_Wrapper;
@@ -326,6 +347,7 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
         public InputAction @CameraZoom => m_Wrapper.m_Actions_CameraZoom;
         public InputAction @Hiss => m_Wrapper.m_Actions_Hiss;
         public InputAction @Pause => m_Wrapper.m_Actions_Pause;
+        public InputAction @Enter => m_Wrapper.m_Actions_Enter;
         public InputActionMap Get() { return m_Wrapper.m_Actions; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -347,6 +369,9 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
                 @Pause.started -= m_Wrapper.m_ActionsActionsCallbackInterface.OnPause;
                 @Pause.performed -= m_Wrapper.m_ActionsActionsCallbackInterface.OnPause;
                 @Pause.canceled -= m_Wrapper.m_ActionsActionsCallbackInterface.OnPause;
+                @Enter.started -= m_Wrapper.m_ActionsActionsCallbackInterface.OnEnter;
+                @Enter.performed -= m_Wrapper.m_ActionsActionsCallbackInterface.OnEnter;
+                @Enter.canceled -= m_Wrapper.m_ActionsActionsCallbackInterface.OnEnter;
             }
             m_Wrapper.m_ActionsActionsCallbackInterface = instance;
             if (instance != null)
@@ -363,6 +388,9 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
                 @Pause.started += instance.OnPause;
                 @Pause.performed += instance.OnPause;
                 @Pause.canceled += instance.OnPause;
+                @Enter.started += instance.OnEnter;
+                @Enter.performed += instance.OnEnter;
+                @Enter.canceled += instance.OnEnter;
             }
         }
     }
@@ -387,5 +415,6 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
         void OnCameraZoom(InputAction.CallbackContext context);
         void OnHiss(InputAction.CallbackContext context);
         void OnPause(InputAction.CallbackContext context);
+        void OnEnter(InputAction.CallbackContext context);
     }
 }

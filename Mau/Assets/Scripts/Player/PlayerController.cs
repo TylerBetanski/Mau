@@ -15,6 +15,7 @@ public class PlayerController : MonoBehaviour {
     [SerializeField] GameObject pauseMenu;
     [SerializeField] Transform playerArt;
 
+    GameObject currentDialog;
     CharacterController2D charController;
     PlayerInputController input;
     PlayerAttackScript attackScript;
@@ -159,7 +160,15 @@ public class PlayerController : MonoBehaviour {
             hissScript.Hiss();
         }
     }
-
+    public void setDialog(GameObject dialog)
+    {
+        currentDialog = dialog;
+    }
+    public void advanceDialog()
+    {
+        if (currentDialog != null)
+            currentDialog.GetComponentInChildren<DialogScript>().updateDialog();
+    }
     public void Pause()
     {
         if (!paused)
