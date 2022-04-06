@@ -15,6 +15,7 @@ public class PlayerController : MonoBehaviour {
     [SerializeField] GameObject pauseMenu;
     [SerializeField] Transform playerArt;
 
+    GameObject currentDialog;
     CharacterController2D charController;
     PlayerInputController input;
     PlayerAttackScript attackScript;
@@ -159,7 +160,15 @@ public class PlayerController : MonoBehaviour {
             hissScript.Hiss();
         }
     }
-
+    public void setDialog(GameObject dialog)
+    {
+        currentDialog = dialog;
+    }
+    public void advanceDialog()
+    {
+        if (currentDialog != null)
+            currentDialog.GetComponentInChildren<DialogScript>().updateDialog();
+    }
     public void Pause()
     {
         if (!paused)
@@ -193,13 +202,11 @@ public class PlayerController : MonoBehaviour {
             animator.SetBool("Moving", Mathf.Abs(charController.Velocity.x) >= 0.2f);
         }
 
-        print("Old Rotation: " + playerArt.rotation.eulerAngles.z);
         if (input.HorizontalAxis != 0) {
             transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x) * Mathf.Sign(input.HorizontalAxis),
                 transform.localScale.y,
                 transform.localScale.z);
         }
-        print("New Rotation: " + playerArt.rotation.eulerAngles.z);
 
         animator.SetBool("Grounded", charController.Grounded);
     }
