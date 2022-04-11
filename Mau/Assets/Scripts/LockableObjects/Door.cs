@@ -7,6 +7,7 @@ public class Door : LockableObject
 {
     [SerializeField] private float doorHeight = 3;
     [SerializeField] private float openTime;
+    [SerializeField] private AudioClip doorOpenSound;
 
     WaitForSeconds doorTime;
     private new BoxCollider2D collider;
@@ -22,6 +23,7 @@ public class Door : LockableObject
         doorTime = new WaitForSeconds(Time.fixedDeltaTime);
 
         collider = GetComponent<BoxCollider2D>();
+        gameObject.GetComponent<AudioSource>().clip = doorOpenSound;
 
         startPosition = transform.position;
         endPosition = transform.position + new Vector3(0, doorHeight, 0);
@@ -40,6 +42,7 @@ public class Door : LockableObject
     {
         StopCoroutine("CloseDoor");
         StartCoroutine(OpenDoor());
+
         SignalTransmitter transmitter = GetComponent<SignalTransmitter>();
         if (transmitter != null)
             transmitter.TransmitSignal();
@@ -49,8 +52,11 @@ public class Door : LockableObject
     {
         opening = true;
         closing = false;
-
         float time = 0;
+
+        gameObject.GetComponent<AudioSource>().Stop();
+        gameObject.GetComponent<AudioSource>().Play();
+
         while (time < openTime && opening)
         {
             float progress = time / openTime;
@@ -64,6 +70,7 @@ public class Door : LockableObject
 
         transform.position = endPosition;
         collider.offset = new Vector2(0, 0);
+        gameObject.GetComponent<AudioSource>().Stop();
     }
 
     IEnumerator CloseDoor()

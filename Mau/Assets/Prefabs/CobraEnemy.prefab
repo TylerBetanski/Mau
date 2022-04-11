@@ -1,5 +1,24 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!95 &7637935016045470116
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6947256796787210974}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 51b44c5ea08d5de4bb7746bcd3df61bf, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &7637935015955208615
 GameObject:
   m_ObjectHideFlags: 0
@@ -12,6 +31,8 @@ GameObject:
   - component: {fileID: 7637935015955208612}
   - component: {fileID: 7637935015955208613}
   - component: {fileID: 7637935015955208614}
+  - component: {fileID: 250155612}
+  - component: {fileID: 250155611}
   m_Layer: 0
   m_Name: CobraEnemy
   m_TagString: Untagged
@@ -65,6 +86,7 @@ MonoBehaviour:
   damage: 1
   attackCollider: {fileID: 7637935015955208614}
   attackTiming: 0.25
+  pissedDelay: 1.5
   filter:
     useTriggers: 0
     useLayerMask: 0
@@ -79,6 +101,7 @@ MonoBehaviour:
     maxDepth: 0
     minNormalAngle: 0
     maxNormalAngle: 0
+  isCobra: 1
 --- !u!61 &7637935015955208614
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -105,25 +128,116 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.675, y: 2}
   m_EdgeRadius: 0
---- !u!95 &7637935016045470116
-Animator:
-  serializedVersion: 3
+--- !u!82 &250155612
+AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6947256796787210974}
+  m_GameObject: {fileID: 7637935015955208615}
   m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 51b44c5ea08d5de4bb7746bcd3df61bf, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 0.2
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 10
+  MaxDistance: 30
+  Pan2D: 0
+  rolloffMode: 1
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &250155611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7637935015955208615}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cba6a371aa39a6645924a91871ff71a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CobraHiss: {fileID: 8300000, guid: 0c59963301d1f704283294322fa4588d, type: 3}
+  CobraAttack: {fileID: 8300000, guid: b9982e73299be9841ac44c135f6efd57, type: 3}
 --- !u!1001 &7637935014402953743
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -141,7 +255,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7544712725251906036, guid: a7a8eef179fd3c64fa846189b0a8ce93, type: 3}
       propertyPath: m_Bounds.m_Center.y
-      value: 0.0007658377
+      value: 0.00075057894
       objectReference: {fileID: 0}
     - target: {fileID: -7544712725251906036, guid: a7a8eef179fd3c64fa846189b0a8ce93, type: 3}
       propertyPath: m_Bounds.m_Extent.x
@@ -153,11 +267,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -4732614153562887021, guid: a7a8eef179fd3c64fa846189b0a8ce93, type: 3}
       propertyPath: m_Bounds.m_Center.x
-      value: -0.000014960766
+      value: 0.00000029802322
       objectReference: {fileID: 0}
     - target: {fileID: -4732614153562887021, guid: a7a8eef179fd3c64fa846189b0a8ce93, type: 3}
       propertyPath: m_Bounds.m_Center.y
-      value: -0.00017488003
+      value: -0.00018250942
       objectReference: {fileID: 0}
     - target: {fileID: -4732614153562887021, guid: a7a8eef179fd3c64fa846189b0a8ce93, type: 3}
       propertyPath: m_Bounds.m_Extent.x
@@ -165,7 +279,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -4732614153562887021, guid: a7a8eef179fd3c64fa846189b0a8ce93, type: 3}
       propertyPath: m_Bounds.m_Extent.y
-      value: 1.1506585
+      value: 1.1506509
       objectReference: {fileID: 0}
     - target: {fileID: 1450848489508598339, guid: a7a8eef179fd3c64fa846189b0a8ce93, type: 3}
       propertyPath: m_Bounds.m_Center.x
@@ -173,7 +287,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1450848489508598339, guid: a7a8eef179fd3c64fa846189b0a8ce93, type: 3}
       propertyPath: m_Bounds.m_Center.y
-      value: 0.000015199184
+      value: 0.00000756979
       objectReference: {fileID: 0}
     - target: {fileID: 1450848489508598339, guid: a7a8eef179fd3c64fa846189b0a8ce93, type: 3}
       propertyPath: m_Bounds.m_Extent.x
@@ -181,7 +295,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1450848489508598339, guid: a7a8eef179fd3c64fa846189b0a8ce93, type: 3}
       propertyPath: m_Bounds.m_Extent.y
-      value: 0.58581805
+      value: 0.5858257
       objectReference: {fileID: 0}
     - target: {fileID: 6478705311109912713, guid: a7a8eef179fd3c64fa846189b0a8ce93, type: 3}
       propertyPath: m_RootOrder
@@ -229,11 +343,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7025471124321507544, guid: a7a8eef179fd3c64fa846189b0a8ce93, type: 3}
       propertyPath: m_Bounds.m_Center.x
-      value: 0.014431477
+      value: 0.014446735
       objectReference: {fileID: 0}
     - target: {fileID: 7025471124321507544, guid: a7a8eef179fd3c64fa846189b0a8ce93, type: 3}
       propertyPath: m_Bounds.m_Center.y
-      value: 0.03179601
+      value: 0.03178072
       objectReference: {fileID: 0}
     - target: {fileID: 7025471124321507544, guid: a7a8eef179fd3c64fa846189b0a8ce93, type: 3}
       propertyPath: m_Bounds.m_Extent.x

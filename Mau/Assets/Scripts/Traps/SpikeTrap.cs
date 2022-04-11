@@ -5,6 +5,7 @@ using UnityEngine;
 public class SpikeTrap : TrapObject
 {
     [SerializeField] private int damage = 1;
+    [SerializeField] bool isWater;
 
     protected override void InitializeTrap()
     {
@@ -15,7 +16,10 @@ public class SpikeTrap : TrapObject
     {
         if(obj.tag == "Player")
         {
+            if (isWater)
+                obj.GetComponent<CatAudioController>().playSound("Splash");
             obj.GetComponent<PlayerController>().Damage(damage);
+
             StartCoroutine(Cooldown());
         }
 

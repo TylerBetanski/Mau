@@ -47,11 +47,12 @@ public class NewCrocodile : MonoBehaviour
             GameObject player = playerCollider.gameObject;
             player.GetComponent<CharacterController2D>().AddVelocity(new Vector2(0, 14));
             player.GetComponent<PlayerController>().DamageDelay(100, 1.2f);
+
+            yield return attackWait;
+            CAC.PlayBite();
+            player.GetComponent<CatAudioController>().playSound("Splash");
+            isTriggered = false;
         }
-        
-        yield return attackWait;
-        CAC.PlayBite();
-        isTriggered = false;
     }
 
     private void OnDrawGizmosSelected()
