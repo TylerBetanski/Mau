@@ -12,7 +12,7 @@ public class PlayerRotationManager : MonoBehaviour
         playerCollider.bounds.max.x - (playerCollider.bounds.max.x - playerCollider.bounds.min.x) * (9f / 10f),
         playerCollider.bounds.min.y + (playerCollider.bounds.max.y - playerCollider.bounds.min.y) * (1f / 4f),
         0); } }
-    private Vector3 centerPoint { get { return new Vector3(playerCollider.bounds.center.x, playerCollider.bounds.min.y - .05f, 0); } }
+    private Vector3 centerPoint { get { return new Vector3(/*playerCollider.bounds.center.x*/ (transform.localScale.x > 0 ? playerCollider.bounds.max.x - 0.75f : playerCollider.bounds.min.x + 0.75f), playerCollider.bounds.min.y + .5f, 0); } }
 
     [SerializeField] private Collider2D playerCollider;
     [SerializeField] private ContactFilter2D filter;
@@ -20,6 +20,8 @@ public class PlayerRotationManager : MonoBehaviour
     [SerializeField] private float castDistance = 2;
     [SerializeField] private float smoothVelocity = 1.5f;
     [SerializeField] private float smoothTime = 0.2f;
+
+    float prevScale = 0;
 
     private void Awake() {
         playerCollider = GetComponent<Collider2D>();
@@ -84,16 +86,23 @@ public class PlayerRotationManager : MonoBehaviour
 
         //playerArt.rotation = Quaternion.Euler(0, 0, 45);
 
-        playerArt.rotation = Quaternion.Euler(0, 0, targetAngle);
+        //playerArt.rotation = Quaternion.Euler(0, 0, targetAngle);
 
         //if (Mathf.Sign(targetAngle) != Mathf.Sign(playerArt.rotation.eulerAngles.z)) {
         //    playerArt.rotation = Quaternion.Euler(0, 0, targetAngle);
-        //    print("Target Angle: " + targetAngle + ", PlayerAngle: " + playerArt.rotation.eulerAngles.z);
         //} else {
         //    float smoothAngle = Mathf.SmoothDampAngle(playerArt.rotation.eulerAngles.z, targetAngle, ref smoothVelocity, smoothTime);
-        //    print("Target Angle: " + targetAngle + ", Smooth Angle: " + smoothAngle + ", PlayerAngle: " + playerArt.rotation.eulerAngles.z);
         //    playerArt.rotation = Quaternion.Euler(0, 0, smoothAngle);
         //}
+
+        if(Mathf.Sign(transform.localScale.x) != Mathf.Sign(prevScale)) {
+            playerArt.rotation = Quaternion.Euler(0, 0, targetAngle);
+        } else {
+            float smoothAngle = Mathf.SmoothDampAngle(playerArt.rotation.eulerAngles.z, targetAngle, ref smoothVelocity, smoothTime);
+            playerArt.rotation = Quaternion.Euler(0, 0, smoothAngle);
+        }
+
+        prevScale = transform.localScale.x;
     }
 
     private void FixedUpdate() {
