@@ -5,7 +5,6 @@ using UnityEngine;
 public class ScarabAudioController : MonoBehaviour
 {
     [SerializeField] AudioClip buzz;
-    [SerializeField] AudioClip scuttle;
 
     private AudioSource ScarabAS;
     private int soundCountdown;
@@ -40,12 +39,6 @@ public class ScarabAudioController : MonoBehaviour
     {
         ScarabAS.Stop();
         ScarabAS.clip = buzz;
-        ScarabAS.Play();
-    }
-    public void PlayScuttle()
-    {
-        ScarabAS.Stop();
-        ScarabAS.clip = scuttle;
         ScarabAS.Play();
     }
 }

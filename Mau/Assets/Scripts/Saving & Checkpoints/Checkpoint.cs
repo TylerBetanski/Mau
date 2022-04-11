@@ -36,7 +36,7 @@ public class Checkpoint : InteractableObject
     {
         if (checkpointAS.isPlaying)
             checkpointAS.Stop();
-        //checkpointAS.Play();
+        checkpointAS.Play();
         interactingObject.GetComponent<PlayerController>().Heal(interactingObject.GetComponent<PlayerController>().getMaxHealth());
 
         room.ReloadRoom();

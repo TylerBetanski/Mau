@@ -29,8 +29,10 @@ public class CatAudioController : MonoBehaviour
 
             if (sound == "Purr")
             {
+                AS.volume = 5;
                 AS.clip = Purr;
                 AS.Play();
+                AS.volume = volume;
             }
             else if (sound == "Attack") {
                 if (nextMeowCounter <= 0) { 

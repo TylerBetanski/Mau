@@ -135,7 +135,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 072bace8e6ff88d4ea95977e33ec3a0f, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.4
+  m_Volume: 0.03
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -144,9 +144,9 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 12
-  MaxDistance: 100
+  MaxDistance: 90
   Pan2D: 0
-  rolloffMode: 1
+  rolloffMode: 2
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -154,46 +154,46 @@ AudioSource:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
-      time: 0.13333334
+      time: 0.12
       value: 1
-      inSlope: -7.5029984
-      outSlope: -7.5029984
+      inSlope: -8.336666
+      outSlope: -8.336666
       tangentMode: 0
       weightedMode: 0
       inWeight: 0
       outWeight: 0
     - serializedVersion: 3
-      time: 0.16125996
-      value: 0.82110626
-      inSlope: -5.39112
-      outSlope: -5.39112
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 0.26666668
-      value: 0.5
-      inSlope: -1.8757496
-      outSlope: -1.8757496
+      time: 0.21297668
+      value: 0.47790527
+      inSlope: -2.0841665
+      outSlope: -2.0841665
       tangentMode: 0
       weightedMode: 0
       inWeight: 0
       outWeight: 0
     - serializedVersion: 3
-      time: 0.53333336
-      value: 0.25
-      inSlope: -0.4689374
-      outSlope: -0.4689374
+      time: 0.42895934
+      value: 0.15281677
+      inSlope: -0.52104163
+      outSlope: -0.52104163
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.9329614
+      value: 0.027816772
+      inSlope: -0.13026041
+      outSlope: -0.13026041
       tangentMode: 0
       weightedMode: 0
       inWeight: 0
       outWeight: 0
     - serializedVersion: 3
       time: 1
-      value: 0.13333334
-      inSlope: -0.13338663
-      outSlope: -0.13338663
+      value: 0
+      inSlope: -0.12004785
+      outSlope: -0.12004785
       tangentMode: 0
       weightedMode: 0
       inWeight: 0

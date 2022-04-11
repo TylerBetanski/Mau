@@ -29,6 +29,8 @@ public class CrumblingTiles : MonoBehaviour
         if (!isRespawning && !isCrumbling)
         {
             isCrumbling = true;
+            gameObject.GetComponent<AudioSource>().Stop();
+            gameObject.GetComponent<AudioSource>().Play();
             for (int i = 0; i < crumblingSprites.Length; i++)
             {
                 yield return crumbleWait;
@@ -71,10 +73,11 @@ public class CrumblingTiles : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnCollisionStay2D(Collision2D collision)
     {
         //if (collision.gameObject.tag == "Player")
-        StartCoroutine(CrumbleTiles());
+        if (!isCrumbling)
+            StartCoroutine(CrumbleTiles());
     }
 
 }
