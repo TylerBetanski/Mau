@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Scarab
   - MovingPlatform
+  - Checkpoint
   layers:
   - Default
   - TransparentFX

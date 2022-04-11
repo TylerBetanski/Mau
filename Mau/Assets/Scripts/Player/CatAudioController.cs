@@ -8,6 +8,7 @@ public class CatAudioController : MonoBehaviour
     [SerializeField] AudioClip Hurt;
     [SerializeField] AudioClip Hiss;
     [SerializeField] AudioClip Purr;
+    [SerializeField] AudioClip Splash;
     [SerializeField] float volume;
     [SerializeField] int attackMeowDelay;
 
@@ -26,7 +27,12 @@ public class CatAudioController : MonoBehaviour
         {
             AS.Stop();
 
-            if (sound == "Attack") {
+            if (sound == "Purr")
+            {
+                AS.clip = Purr;
+                AS.Play();
+            }
+            else if (sound == "Attack") {
                 if (nextMeowCounter <= 0) { 
                     AudioClip meow = Meows[Random.Range(0, Meows.Length)];
                     if (meow != null) {
@@ -45,10 +51,12 @@ public class CatAudioController : MonoBehaviour
                 AS.clip = Hiss;
                 AS.Play();
             }
-            else if (sound == "Purr") {
-                AS.clip = Purr;
+            else if (sound == "Splash")
+            {
+                AS.clip = Splash;
                 AS.Play();
             }
+            
         }
     }
 }

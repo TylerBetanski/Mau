@@ -28,7 +28,7 @@ public class PlayerAttackScript : MonoBehaviour
             // Animate the Attack
             //
             //
-            CA.playSound("Attack");
+            
             Collider2D[] hitObjects = Physics2D.OverlapCircleAll(attackLocation.position, attackRadius, attackableLayers);
 
             foreach (Collider2D collider in hitObjects)
@@ -36,13 +36,16 @@ public class PlayerAttackScript : MonoBehaviour
                 InteractableObject interactableObj = collider.gameObject.GetComponent<InteractableObject>();
                 if (interactableObj != null)
                 {
+                    if (interactableObj.tag == "Checkpoint")
+                        CA.playSound("Purr");
                     interactableObj.Interact(gameObject);
 
                     if (!canHitMultiple)
                         break;
                 }
             }
-
+            if (!gameObject.GetComponent<AudioSource>().isPlaying)
+                CA.playSound("Attack");
             StartCoroutine(AttackCooldown());
         }
     }

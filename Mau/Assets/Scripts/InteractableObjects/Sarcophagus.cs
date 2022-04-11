@@ -14,6 +14,7 @@ public class Sarcophagus : InteractableObject
     [SerializeField] private float transitionTime;
     [SerializeField] private Transform lid;
     [SerializeField] private Transform activateObject;
+    [SerializeField] private AudioClip openSound;
 
     private bool isMoving;
     
@@ -29,7 +30,9 @@ public class Sarcophagus : InteractableObject
         deltaWait = new WaitForSeconds(Time.fixedDeltaTime);
         openWait = new WaitForSeconds(openTime);
 
-        if(lid == null)
+        gameObject.GetComponent<AudioSource>().clip = openSound;
+
+        if (lid == null)
         {
             lid = transform.Find("Lid");
         }
@@ -57,11 +60,12 @@ public class Sarcophagus : InteractableObject
     private IEnumerator OpenSarcophagus()
     {
         float time = 0;
-
+        gameObject.GetComponent<AudioSource>().Stop();
+        gameObject.GetComponent<AudioSource>().Play();
         while(time < transitionTime)
         {
             yield return deltaWait;
-            time += Time.fixedDeltaTime;
+            time += Time.fixedDeltaTime; 
 
             lid.position = Vector3.Lerp(lidStart, lidEnd, time / transitionTime);
         }
@@ -69,7 +73,7 @@ public class Sarcophagus : InteractableObject
         lid.position = lidEnd;
 
         activateObject.GetComponent<ISignalReciever>().RecieveSignal();
-
+        gameObject.GetComponent<AudioSource>().Stop();
         StartCoroutine(WaitOpen());
     }
 
