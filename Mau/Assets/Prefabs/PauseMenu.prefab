@@ -1556,6 +1556,8 @@ MonoBehaviour:
   - {fileID: 8060566004153138140}
   - {fileID: 8060566004300970428}
   ambientLight: {fileID: 0}
+  backgroundSound: {fileID: 0}
+  pauseMenuSound: {fileID: 8300000, guid: e5cbd92a7941d9d4ebebd9479a7451af, type: 3}
   brightnessText: {fileID: 1493748533006912868}
   slider: {fileID: 1493748531990197651}
 --- !u!1 &8060566004153138143

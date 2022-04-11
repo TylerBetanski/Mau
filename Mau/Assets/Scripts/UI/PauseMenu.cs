@@ -10,8 +10,12 @@ public class PauseMenu : MonoBehaviour
 
     [SerializeField] Image[] heartContainers;
     [SerializeField] GameObject ambientLight;
+    [SerializeField] AudioSource backgroundSound;
+    [SerializeField] AudioClip pauseMenuSound;
     [SerializeField] GameObject brightnessText;
     [SerializeField] Slider slider;
+
+    private AudioClip initialBGM;
 
     public void UpdateHeartContainers()
     {
@@ -42,10 +46,17 @@ public class PauseMenu : MonoBehaviour
     public void OpenPauseMenu()
     {
         gameObject.SetActive(true);
+        initialBGM = backgroundSound.clip;
+        backgroundSound.Stop();
+        backgroundSound.clip = pauseMenuSound;
+        backgroundSound.Play();
     }
     public void ClosePauseMenu()
     {
         gameObject.SetActive(false);
+        backgroundSound.Stop();
+        backgroundSound.clip = initialBGM;
+        backgroundSound.Play();
     }
 
 }
