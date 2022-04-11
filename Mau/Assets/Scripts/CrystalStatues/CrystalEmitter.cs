@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Experimental.Rendering.Universal;
 
 public class CrystalEmitter : MonoBehaviour
 {
@@ -12,35 +13,52 @@ public class CrystalEmitter : MonoBehaviour
     [SerializeField] private float rotationTime = 0.1f;
     [SerializeField] private ContactFilter2D filter;
 
+    private Transform VFX;
+
+    private LineRenderer lineRenderer;
+
     private CrystalReciever currentReciever;
 
     private void Awake() {
         filter.useLayerMask = true;
+        lineRenderer = GetComponent<LineRenderer>();
+        VFX = transform.parent.Find("HitFX");
+
+        if (active)
+            Activate();
+        else
+            Deactivate();
     }
 
 
     private void Update() {
         List<RaycastHit2D> hits = new List<RaycastHit2D>();
+        lineRenderer.SetPosition(1, transform.position);
         if (active && Physics2D.Raycast(transform.position, RayDirection, filter, hits, 1000) > 0) {
             foreach(RaycastHit2D hit in hits) {
-                if (hit.transform == transform.parent)
+                if (hit.transform == transform.parent
+                    || hit.transform == transform.parent.parent)
                     continue;
 
-                if(hit.transform.GetComponent<CrystalReciever>() == null) {
+                if(hit.transform.GetComponentInChildren<CrystalReciever>() == null) {
                     if(currentReciever != null) {
                         currentReciever.Disable();
                         currentReciever = null;
                     }
+                    lineRenderer.SetPosition(0, hit.point);
+                    VFX.position = hit.point;
                     break;
                 } else {
-                    if(currentReciever != null && currentReciever != hit.transform.GetComponent<CrystalReciever>()) {
+                    if(currentReciever != null && currentReciever != hit.transform.GetComponentInChildren<CrystalReciever>()) {
                         currentReciever.Disable();
-                        currentReciever = hit.transform.GetComponent<CrystalReciever>();
+                        currentReciever = hit.transform.GetComponentInChildren<CrystalReciever>();
                         currentReciever.Enable();
                     } else {
-                        currentReciever = hit.transform.GetComponent<CrystalReciever>();
+                        currentReciever = hit.transform.GetComponentInChildren<CrystalReciever>();
                         currentReciever.Enable();
                     }
+                    lineRenderer.SetPosition(0, hit.point);
+                    VFX.position = hit.point;
                     break;
                 }
             }
@@ -81,9 +99,20 @@ public class CrystalEmitter : MonoBehaviour
 
     public void Activate() {
         active = true;
+        lineRenderer.enabled = true;
+        VFX.GetComponent<ParticleSystem>().Play();
+        transform.GetComponent<ParticleSystem>().Play();
+        transform.GetComponent<Light2D>().enabled = true;
     }
 
     public void Deactivate() {
         active = false;
+        lineRenderer.enabled = false;
+        VFX.GetComponent<ParticleSystem>().Pause();
+        VFX.GetComponent<ParticleSystem>().Clear();
+
+        transform.GetComponent<ParticleSystem>().Pause();
+        transform.GetComponent<ParticleSystem>().Clear();
+        transform.GetComponent<Light2D>().enabled = false;
     }
 }
