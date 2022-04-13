@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2649484105495086738}
   - component: {fileID: 2649484105495086739}
   - component: {fileID: 2649484105495086748}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Button_Yellow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26,9 +26,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2649484105495086749}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -42.73, y: 6.29, z: 0}
-  m_LocalScale: {x: 3, y: 3, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 61.899998, y: -16, z: 0}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -49,10 +49,10 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
+  m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 005a2ddb7b4feb34e816f3625194003c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -73,7 +73,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 2058652086809625571, guid: 7e498f70c55488940ae6983607f32616, type: 3}
+  m_Sprite: {fileID: 51101026468135483, guid: 7e498f70c55488940ae6983607f32616, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -97,8 +97,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pushed: 0
-  button: {fileID: 2058652086809625571, guid: 7e498f70c55488940ae6983607f32616, type: 3}
-  pushedButton: {fileID: -7718160606330112255, guid: 7e498f70c55488940ae6983607f32616, type: 3}
+  button: {fileID: 51101026468135483, guid: 7e498f70c55488940ae6983607f32616, type: 3}
+  pushedButton: {fileID: -4406063498566180359, guid: 7e498f70c55488940ae6983607f32616, type: 3}
   lockedObject: {fileID: 0}
   lockNumber: 0
 --- !u!61 &2649484105495086748
@@ -111,19 +111,19 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.9311431}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.96, y: 0.17}
+    oldSize: {x: 2, y: 2}
     newSize: {x: 0.96, y: 0.17}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.96, y: 0.0425}
+  m_Size: {x: 2, y: 0.175}
   m_EdgeRadius: 0

@@ -10,24 +10,54 @@ public class Button : MonoBehaviour
     [SerializeField] LockableObject lockedObject;
     [SerializeField] int lockNumber;
 
+    private bool playerOn;
+    private bool scarabOn;
+
     private void Awake()
     {
         pushed = false;
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (!pushed)
-        {
-            GetComponent<SpriteRenderer>().sprite = pushedButton;
-            pushed = true;
-            if (lockedObject != null)
-                lockedObject.OpenLock(lockNumber);
+        if (!pushed) {
+            bool correctTrigger = false;
+            if (collision.gameObject.tag == "Player")
+            {
+                correctTrigger = true;
+                playerOn = true;
+            }
+
+            if ((collision.gameObject.tag == "Scarab") && (collision.gameObject.GetComponent<EnemyDamage>().isKnockedDown))
+            {
+                correctTrigger = true;
+                scarabOn = true;
+            }
+
+            if (correctTrigger)
+            {
+                GetComponent<SpriteRenderer>().sprite = pushedButton;
+                pushed = true;
+                if (lockedObject != null)
+                    lockedObject.OpenLock(lockNumber);
+            }
         }
     }
-    private void OnCollisionExit2D(Collision2D collision)
+
+
+    private void OnTriggerExit2D(Collider2D collision)
     {
-        if (pushed)
+        if (collision.gameObject.tag == "Player")
+        {
+            playerOn = false;
+        }
+
+        if ((collision.gameObject.tag == "Scarab") && (collision.gameObject.GetComponent<EnemyDamage>().isKnockedDown))
+        {
+            scarabOn = false;
+        }
+
+        if (pushed && !scarabOn && !playerOn)
         {
             GetComponent<SpriteRenderer>().sprite = button;
             pushed = false;
