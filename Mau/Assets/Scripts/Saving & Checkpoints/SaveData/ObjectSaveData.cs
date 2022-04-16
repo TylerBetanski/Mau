@@ -86,3 +86,13 @@ public class ObjectSaveData_Sarcophagus : ObjectSaveData
         shouldClose = sarc.ShouldClose;
     }
 }
+
+public class ObjectSavaData_CrystalEmitter : ObjectSaveData {
+    public bool active;
+    public float angle;
+    
+    public ObjectSavaData_CrystalEmitter(Transform transform, CrystalEmitter emitter) : base(transform) {
+        active = emitter.isActive();
+        angle = emitter.getAngle();
+    }
+}

@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class MovingPlatform : MonoBehaviour, ISignalReciever
 {
+    public bool Moving { get { return moving; } }
+
     [SerializeField] private bool alwaysMove = false;
     [SerializeField] private Transform platform;
     [SerializeField] private Transform endPoint;

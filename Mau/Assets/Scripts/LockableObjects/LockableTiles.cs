@@ -12,19 +12,17 @@ public class LockableTiles : LockableObject
     private Color tilesColor = Color.white;
     private WaitForSeconds delay;
 
-    private void Awake()
-    {
+    protected override void ChildAwake() {
         delay = new WaitForSeconds(Time.fixedDeltaTime);
-        if (Locked)
-        {
+        if (Locked) {
             tilesColor = backGround.color;
             lockChildren();
-        }
-        else { 
+        } else {
             tilesColor = ground.color;
             unlockChildren();
         }
     }
+
     protected override void Unlock()
     {
         StartCoroutine(unlockChildrenAnimation());

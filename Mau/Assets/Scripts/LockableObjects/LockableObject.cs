@@ -14,7 +14,15 @@ public abstract class LockableObject : MonoBehaviour
     [SerializeField] private bool reusable = true;
 
     private bool wasLocked = true;
-    
+
+    private void Awake() {
+        if (Locked)
+            wasLocked = true;
+        ChildAwake();
+    }
+
+    protected abstract void ChildAwake();
+
 
     public void OpenLock(int lockIndex)
     {

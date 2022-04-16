@@ -6,10 +6,12 @@ public class PlatformListener : MonoBehaviour
 {
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        GetComponent<SignalTransmitter>().TransmitSignal();
+        if (!transform.parent.GetComponent<MovingPlatform>().Moving) {
+            GetComponent<SignalTransmitter>().TransmitSignal();
 
-        if(collision.gameObject.tag == "Player") {
-            collision.gameObject.transform.parent = transform;
+            if (collision.gameObject.tag == "Player") {
+                collision.gameObject.transform.parent = transform;
+            }
         }
     }
 

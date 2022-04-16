@@ -13,11 +13,14 @@ public class CrystalEmitter : MonoBehaviour
     [SerializeField] private float rotationTime = 0.1f;
     [SerializeField] private ContactFilter2D filter;
 
+    private CrystalEmitter parentEmitter;
+
     private Transform VFX;
 
     private LineRenderer lineRenderer;
 
     private CrystalReciever currentReciever;
+    private bool disabling = false;
 
     private void Awake() {
         filter.useLayerMask = true;
@@ -34,7 +37,7 @@ public class CrystalEmitter : MonoBehaviour
     private void Update() {
         List<RaycastHit2D> hits = new List<RaycastHit2D>();
         lineRenderer.SetPosition(1, transform.position);
-        if (active && Physics2D.Raycast(transform.position, RayDirection, filter, hits, 1000) > 0) {
+        if ((active || disabling) && Physics2D.Raycast(transform.position, RayDirection, filter, hits, 1000) > 0) {
             foreach(RaycastHit2D hit in hits) {
                 if (hit.transform == transform.parent
                     || hit.transform == transform.parent.parent)
@@ -49,16 +52,28 @@ public class CrystalEmitter : MonoBehaviour
                     VFX.position = hit.point;
                     break;
                 } else {
+                    if (hit.transform.GetComponentInChildren<CrystalEmitter>() == parentEmitter)
+                        continue;
+
                     if(currentReciever != null && currentReciever != hit.transform.GetComponentInChildren<CrystalReciever>()) {
                         currentReciever.Disable();
+                        currentReciever.GetComponentInChildren<CrystalEmitter>().setParentEmitter(null);
                         currentReciever = hit.transform.GetComponentInChildren<CrystalReciever>();
                         currentReciever.Enable();
+                        currentReciever.GetComponentInChildren<CrystalEmitter>().setParentEmitter(this);
                     } else {
                         currentReciever = hit.transform.GetComponentInChildren<CrystalReciever>();
-                        currentReciever.Enable();
+                        if (!disabling) {
+                            currentReciever.Enable();
+                            currentReciever.GetComponentInChildren<CrystalEmitter>().setParentEmitter(this);
+                        } else {
+                            currentReciever.Disable();
+                            currentReciever.GetComponentInChildren<CrystalEmitter>().setParentEmitter(null);
+                        }
                     }
                     lineRenderer.SetPosition(0, hit.point);
                     VFX.position = hit.point;
+                    disabling = false;
                     break;
                 }
             }
@@ -114,5 +129,17 @@ public class CrystalEmitter : MonoBehaviour
         transform.GetComponent<ParticleSystem>().Pause();
         transform.GetComponent<ParticleSystem>().Clear();
         transform.GetComponent<Light2D>().enabled = false;
+
+        disabling = true;
     }
+
+    public void setParentEmitter(CrystalEmitter em) {
+        parentEmitter = em;
+    }
+
+    public bool isActive() { return active; }
+    public void setActive(bool ac) { active = ac; }
+
+    public float getAngle() { return angle; }
+    public void setAngle(float ang) { angle = ang; }
 }

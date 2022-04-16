@@ -18,8 +18,7 @@ public class Door : LockableObject
     private bool opening = false;
     private bool closing = false;
 
-    private void Awake()
-    {
+    protected override void ChildAwake() {
         doorTime = new WaitForSeconds(Time.fixedDeltaTime);
 
         collider = GetComponent<BoxCollider2D>();

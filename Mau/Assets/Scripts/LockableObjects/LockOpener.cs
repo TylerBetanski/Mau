@@ -1,11 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class LockOpener : MonoBehaviour, ISignalReciever
 {
-    [SerializeField] Door targetDoor;
+    [SerializeField] LockableObject target;
     [SerializeField] int lockNum;
+    [SerializeField] private bool open = true;
 
     private bool activated = false;
 
@@ -13,13 +12,19 @@ public class LockOpener : MonoBehaviour, ISignalReciever
     {
         activated = !activated;
 
-        if(targetDoor != null)
+        if(target != null)
         {
             if(activated)
             {
-                targetDoor.OpenLock(lockNum);
+                if (open)
+                    target.OpenLock(lockNum);
+                else
+                    target.CloseLock(lockNum);
             } else {
-                targetDoor.CloseLock(lockNum);
+                if (open)
+                    target.CloseLock(lockNum);
+                else
+                    target.OpenLock(lockNum);
             }
         }
     }
