@@ -31,8 +31,7 @@ public class MovingPlatform : MonoBehaviour, ISignalReciever
         fixedDeltaWait = new WaitForSeconds(Time.fixedDeltaTime);
         moveBackWait = new WaitForSeconds(moveBackDelay);
 
-        if (alwaysMove)
-            StartCoroutine(Move());
+
     }
 
     private IEnumerator Move()
@@ -85,5 +84,10 @@ public class MovingPlatform : MonoBehaviour, ISignalReciever
             Gizmos.color = Color.red;
             Gizmos.DrawLine(transform.position, endPoint.position);
         }
+    }
+
+    private void OnEnable() {
+        if (alwaysMove)
+            StartCoroutine(Move());
     }
 }
