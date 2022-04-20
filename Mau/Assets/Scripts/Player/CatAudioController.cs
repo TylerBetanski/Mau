@@ -29,7 +29,7 @@ public class CatAudioController : MonoBehaviour
 
             if (sound == "Purr")
             {
-                AS.volume = 5;
+                AS.volume = 6;
                 AS.clip = Purr;
                 AS.Play();
                 AS.volume = volume;
