@@ -702,7 +702,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e93a2216f8f3532488ff6da911a37bb6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 3
+  maxHealth: 1
   acceleration: 1
   jumpHeight: 8
   canHiss: 0
