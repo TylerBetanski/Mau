@@ -24,6 +24,10 @@ public class NewCrocodile : MonoBehaviour
         attackWait = new WaitForSeconds(1.33f);
     }
 
+    private void OnEnable() {
+        isTriggered = false;
+    }
+
     public void DetectCollision()
     {
         if (!isTriggered)
@@ -44,6 +48,7 @@ public class NewCrocodile : MonoBehaviour
         Collider2D playerCollider = Physics2D.OverlapCircle(attackPoint.position, attackRadius, playerLayers);
         if (playerCollider != null)
         {
+
             GameObject player = playerCollider.gameObject;
             player.GetComponent<CharacterController2D>().AddVelocity(new Vector2(0, 14));
             player.GetComponent<PlayerController>().DamageDelay(100, 1.2f);
@@ -51,8 +56,8 @@ public class NewCrocodile : MonoBehaviour
             yield return attackWait;
             CAC.PlayBite();
             player.GetComponent<CatAudioController>().playSound("Splash");
-            isTriggered = false;
         }
+        isTriggered = false;
     }
 
     private void OnDrawGizmosSelected()

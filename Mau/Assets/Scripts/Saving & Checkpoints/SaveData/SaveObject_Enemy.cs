@@ -25,7 +25,15 @@ public class SaveObject_Enemy : SaveObject
         transform.localRotation = Quaternion.Euler(saveData.GetRotation());
         transform.localScale = saveData.GetScale();
 
+        transform.rotation = Quaternion.Euler(0, 0, 0);
+
         em.MoveSpeed = ((ObjectSaveData_Enemy)saveData).moveSpeed;
+
+        em.enabled = true;
+
+        GetComponent<EnemyDamage>().isKnockedDown = false;
+
+        transform.GetComponentInChildren<Animator>().SetBool("Alive", true);
 
         if (removeOnLoad)
             Destroy(gameObject);

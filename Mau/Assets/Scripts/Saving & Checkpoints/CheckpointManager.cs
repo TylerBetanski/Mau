@@ -25,6 +25,14 @@ public class CheckpointManager : MonoBehaviour
     {
         ResetAllCheckpoints();
         player.transform.position = currentCheckpoint.gameObject.transform.position + new Vector3(0, 2.5f, 0);
+        StartCoroutine(MoveCamera(player));
+    }
+
+    private IEnumerator MoveCamera(GameObject player) {
+        Camera.main.gameObject.GetComponent<CameraFollow>().enabled = false;
+        yield return new WaitForSeconds(.25f);
+        Camera.main.gameObject.transform.position = player.transform.position - new Vector3(0, 0, 10);
+        Camera.main.gameObject.GetComponent<CameraFollow>().enabled = true;
     }
 
     private void CreateInstance()

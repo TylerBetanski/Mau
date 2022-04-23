@@ -79,7 +79,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   locks: 010000
   reusable: 1
-  doorHeight: 5
+  doorHeight: 7
   openTime: 2
   doorOpenSound: {fileID: 8300000, guid: b7a0aa0c6408ab34cb6048c8c98704a0, type: 3}
 --- !u!212 &3665976237496040820
@@ -150,7 +150,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 8.35, y: 12.51}
+    oldSize: {x: 10.4375, y: 15.6375}
     newSize: {x: 4.175, y: 6.255}
     adaptiveTilingThreshold: 0.5
     drawMode: 0

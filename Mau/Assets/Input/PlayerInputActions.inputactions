@@ -99,6 +99,17 @@
                     "action": "Jump",
                     "isComposite": false,
                     "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "2f27eacf-8777-41c6-84b6-a0185e719f3d",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         },
@@ -142,6 +153,14 @@
                     "name": "Enter",
                     "type": "Button",
                     "id": "025c55d7-531b-4158-b9e9-cf63d4ade16f",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Reset",
+                    "type": "Button",
+                    "id": "29655d02-769b-4668-8991-467872d83a4d",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
@@ -200,6 +219,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "Enter",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "874b9210-95ba-4c3f-87e7-84527b8c6ae4",
+                    "path": "<Keyboard>/r",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Reset",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

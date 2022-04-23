@@ -112,6 +112,17 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
                     ""action"": ""Jump"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""2f27eacf-8777-41c6-84b6-a0185e719f3d"",
+                    ""path"": ""<Keyboard>/w"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Jump"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         },
@@ -155,6 +166,14 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
                     ""name"": ""Enter"",
                     ""type"": ""Button"",
                     ""id"": ""025c55d7-531b-4158-b9e9-cf63d4ade16f"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""Reset"",
+                    ""type"": ""Button"",
+                    ""id"": ""29655d02-769b-4668-8991-467872d83a4d"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
@@ -215,6 +234,17 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
                     ""action"": ""Enter"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""874b9210-95ba-4c3f-87e7-84527b8c6ae4"",
+                    ""path"": ""<Keyboard>/r"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Reset"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -244,6 +274,7 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
         m_Actions_Hiss = m_Actions.FindAction("Hiss", throwIfNotFound: true);
         m_Actions_Pause = m_Actions.FindAction("Pause", throwIfNotFound: true);
         m_Actions_Enter = m_Actions.FindAction("Enter", throwIfNotFound: true);
+        m_Actions_Reset = m_Actions.FindAction("Reset", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -339,6 +370,7 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
     private readonly InputAction m_Actions_Hiss;
     private readonly InputAction m_Actions_Pause;
     private readonly InputAction m_Actions_Enter;
+    private readonly InputAction m_Actions_Reset;
     public struct ActionsActions
     {
         private @PlayerInputActions m_Wrapper;
@@ -348,6 +380,7 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
         public InputAction @Hiss => m_Wrapper.m_Actions_Hiss;
         public InputAction @Pause => m_Wrapper.m_Actions_Pause;
         public InputAction @Enter => m_Wrapper.m_Actions_Enter;
+        public InputAction @Reset => m_Wrapper.m_Actions_Reset;
         public InputActionMap Get() { return m_Wrapper.m_Actions; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -372,6 +405,9 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
                 @Enter.started -= m_Wrapper.m_ActionsActionsCallbackInterface.OnEnter;
                 @Enter.performed -= m_Wrapper.m_ActionsActionsCallbackInterface.OnEnter;
                 @Enter.canceled -= m_Wrapper.m_ActionsActionsCallbackInterface.OnEnter;
+                @Reset.started -= m_Wrapper.m_ActionsActionsCallbackInterface.OnReset;
+                @Reset.performed -= m_Wrapper.m_ActionsActionsCallbackInterface.OnReset;
+                @Reset.canceled -= m_Wrapper.m_ActionsActionsCallbackInterface.OnReset;
             }
             m_Wrapper.m_ActionsActionsCallbackInterface = instance;
             if (instance != null)
@@ -391,6 +427,9 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
                 @Enter.started += instance.OnEnter;
                 @Enter.performed += instance.OnEnter;
                 @Enter.canceled += instance.OnEnter;
+                @Reset.started += instance.OnReset;
+                @Reset.performed += instance.OnReset;
+                @Reset.canceled += instance.OnReset;
             }
         }
     }
@@ -416,5 +455,6 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
         void OnHiss(InputAction.CallbackContext context);
         void OnPause(InputAction.CallbackContext context);
         void OnEnter(InputAction.CallbackContext context);
+        void OnReset(InputAction.CallbackContext context);
     }
 }

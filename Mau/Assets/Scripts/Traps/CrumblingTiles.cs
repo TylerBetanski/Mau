@@ -75,9 +75,10 @@ public class CrumblingTiles : MonoBehaviour
 
     private void OnCollisionStay2D(Collision2D collision)
     {
-        //if (collision.gameObject.tag == "Player")
-        if (!isCrumbling)
-            StartCoroutine(CrumbleTiles());
+        if (collision.gameObject.tag == "Player") {
+            if (!isCrumbling)
+                StartCoroutine(CrumbleTiles());
+        }
     }
 
 }

@@ -15,6 +15,7 @@ public class MovingPlatform : MonoBehaviour, ISignalReciever
     private bool atStart = true;
     private bool atEnd = false;
     private bool moving = false;
+    private bool waiting = false;
 
     private WaitForSeconds fixedDeltaWait;
     private WaitForSeconds moveBackWait;
@@ -62,14 +63,16 @@ public class MovingPlatform : MonoBehaviour, ISignalReciever
             StartCoroutine(Move());
         else if(!alwaysMove && atEnd)
         {
+            waiting = true;
             yield return moveBackWait;
+            waiting = false;
             StartCoroutine(Move());
         }
     }
 
     public void RecieveSignal()
     {
-        if (!alwaysMove && !moving)
+        if (!alwaysMove && !moving && !waiting)
             StartCoroutine(Move());
     }
 

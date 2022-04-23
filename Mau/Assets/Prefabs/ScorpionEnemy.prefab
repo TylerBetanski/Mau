@@ -89,6 +89,7 @@ GameObject:
   - component: {fileID: 4230935911691027819}
   - component: {fileID: 4230935911691027821}
   - component: {fileID: 2939823274423244007}
+  - component: {fileID: 6681720016922523980}
   m_Layer: 8
   m_Name: ScorpionEnemy
   m_TagString: Untagged
@@ -225,6 +226,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _canInteract: 1
+--- !u!114 &6681720016922523980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4230935911691027814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 259523c0923569c4fb464b524ab12f79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4230935912909105838
 GameObject:
   m_ObjectHideFlags: 0
