@@ -229,7 +229,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _canInteract: 1
   room: {fileID: 0}
-  isStartingCheckpoint: 0
+  isStartingCheckpoint: 1
   activateSound: {fileID: 8300000, guid: a17f3c471c6a9db4ca0e5be9e1f1f15c, type: 3}
 --- !u!82 &-3373579837261146941
 AudioSource:
@@ -242,7 +242,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 0.1
   m_Pitch: 1
   Loop: 0
