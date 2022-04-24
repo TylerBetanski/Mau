@@ -1,7 +1,94 @@
 fileFormatVersion: 2
 guid: bfad9e74c2de1724fab94a3031c4c552
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -4114215474400141725
+    second: Ground Clutter Tile Sheet-01_0
+  - first:
+      213: -8734519442357777081
+    second: Ground Clutter Tile Sheet-01_1
+  - first:
+      213: 2406909978793131631
+    second: Ground Clutter Tile Sheet-01_2
+  - first:
+      213: -4756958820463920082
+    second: Ground Clutter Tile Sheet-01_3
+  - first:
+      213: -558614506226601434
+    second: Ground Clutter Tile Sheet-01_4
+  - first:
+      213: 1730871255431054779
+    second: Ground Clutter Tile Sheet-01_5
+  - first:
+      213: -9216623518430510410
+    second: Ground Clutter Tile Sheet-01_6
+  - first:
+      213: -2811862864559616462
+    second: Ground Clutter Tile Sheet-01_7
+  - first:
+      213: -5927716937074983854
+    second: Ground Clutter Tile Sheet-01_8
+  - first:
+      213: 1671383749642021168
+    second: Ground Clutter Tile Sheet-01_9
+  - first:
+      213: 2878067789436264252
+    second: Ground Clutter Tile Sheet-01_10
+  - first:
+      213: 2310982560012048747
+    second: Ground Clutter Tile Sheet-01_11
+  - first:
+      213: 3118158646546965004
+    second: Ground Clutter Tile Sheet-01_12
+  - first:
+      213: 4706008931725421898
+    second: Ground Clutter Tile Sheet-01_13
+  - first:
+      213: 5412082137171233267
+    second: Ground Clutter Tile Sheet-01_14
+  - first:
+      213: 8558751250809257192
+    second: Ground Clutter Tile Sheet-01_15
+  - first:
+      213: 2577570959685027086
+    second: Ground Clutter Tile Sheet-01_16
+  - first:
+      213: -6722994035952501304
+    second: Ground Clutter Tile Sheet-01_17
+  - first:
+      213: 4598131190396048694
+    second: Ground Clutter Tile Sheet-01_18
+  - first:
+      213: -1520085898889411033
+    second: Ground Clutter Tile Sheet-01_19
+  - first:
+      213: 1316219552440400315
+    second: Ground Clutter Tile Sheet-01_20
+  - first:
+      213: -3783384356850266214
+    second: Ground Clutter Tile Sheet-01_21
+  - first:
+      213: -5411944966772186874
+    second: Ground Clutter Tile Sheet-01_22
+  - first:
+      213: 1241253800385987032
+    second: Ground Clutter Tile Sheet-01_23
+  - first:
+      213: -5968964788731992257
+    second: Ground Clutter Tile Sheet-01_24
+  - first:
+      213: -6869214682896918114
+    second: Ground Clutter Tile Sheet-01_25
+  - first:
+      213: -7854603446029035054
+    second: Ground Clutter Tile Sheet-01_26
+  - first:
+      213: 4589359686631294572
+    second: Ground Clutter Tile Sheet-01_27
+  - first:
+      213: 7814929159670237182
+    second: Ground Clutter Tile Sheet-01_28
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -41,7 +128,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -89,7 +176,616 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Ground Clutter Tile Sheet-01_0
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 1800
+        width: 300
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36ed6f6f2de57e6c0800000000000000
+      internalID: -4114215474400141725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground Clutter Tile Sheet-01_1
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 1700
+        width: 200
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74d858a38d0c8c680800000000000000
+      internalID: -8734519442357777081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground Clutter Tile Sheet-01_2
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 1700
+        width: 62
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6ebe449fdf076120800000000000000
+      internalID: 2406909978793131631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground Clutter Tile Sheet-01_3
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 1700
+        width: 37
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2c361ff723ebfdb0800000000000000
+      internalID: -4756958820463920082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground Clutter Tile Sheet-01_4
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 1700
+        width: 37
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 622bbf5f0176f38f0800000000000000
+      internalID: -558614506226601434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground Clutter Tile Sheet-01_5
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 1600
+        width: 297
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb507eb7c3a450810800000000000000
+      internalID: 1730871255431054779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground Clutter Tile Sheet-01_6
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 1500
+        width: 100
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b24073edb9f71080800000000000000
+      internalID: -9216623518430510410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground Clutter Tile Sheet-01_7
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 1500
+        width: 98
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23ecfc06f914af8d0800000000000000
+      internalID: -2811862864559616462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground Clutter Tile Sheet-01_8
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 1500
+        width: 60
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25c34942ad48cbda0800000000000000
+      internalID: -5927716937074983854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground Clutter Tile Sheet-01_9
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 1500
+        width: 36
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 039e5c83aa2f13710800000000000000
+      internalID: 1671383749642021168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground Clutter Tile Sheet-01_10
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 1500
+        width: 36
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3f97d4e763f0f720800000000000000
+      internalID: 2878067789436264252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground Clutter Tile Sheet-01_11
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 1400
+        width: 97
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6914abe462421020800000000000000
+      internalID: 2310982560012048747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground Clutter Tile Sheet-01_12
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 1400
+        width: 90
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c02aeb0b4cce54b20800000000000000
+      internalID: 3118158646546965004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground Clutter Tile Sheet-01_13
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 1400
+        width: 56
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4d2f4d903a1f4140800000000000000
+      internalID: 4706008931725421898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground Clutter Tile Sheet-01_14
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 1400
+        width: 56
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f9045187049b1b40800000000000000
+      internalID: 5412082137171233267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground Clutter Tile Sheet-01_15
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 1400
+        width: 56
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ec7a699aeac6c670800000000000000
+      internalID: 8558751250809257192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground Clutter Tile Sheet-01_16
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 1200
+        width: 300
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e05836b912f55c320800000000000000
+      internalID: 2577570959685027086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground Clutter Tile Sheet-01_17
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 1100
+        width: 40
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cd3bf35b8023b2a0800000000000000
+      internalID: -6722994035952501304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground Clutter Tile Sheet-01_18
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 1100
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 635533aa4f7dfcf30800000000000000
+      internalID: 4598131190396048694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground Clutter Tile Sheet-01_19
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 1100
+        width: 40
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 726cd90cde197eae0800000000000000
+      internalID: -1520085898889411033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground Clutter Tile Sheet-01_20
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 1100
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb932a595b6244210800000000000000
+      internalID: 1316219552440400315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground Clutter Tile Sheet-01_21
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 1100
+        width: 40
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9f8b2109f7be7bc0800000000000000
+      internalID: -3783384356850266214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground Clutter Tile Sheet-01_22
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 1100
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 601a497f9b8e4e4b0800000000000000
+      internalID: -5411944966772186874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground Clutter Tile Sheet-01_23
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 1000
+        width: 34
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d14c1841c1d93110800000000000000
+      internalID: 1241253800385987032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground Clutter Tile Sheet-01_24
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 1000
+        width: 34
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f37a0da462af92da0800000000000000
+      internalID: -5968964788731992257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground Clutter Tile Sheet-01_25
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 1000
+        width: 34
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e99180cf3a5aba0a0800000000000000
+      internalID: -6869214682896918114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground Clutter Tile Sheet-01_26
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 900
+        width: 36
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d951e308c7def290800000000000000
+      internalID: -7854603446029035054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground Clutter Tile Sheet-01_27
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 900
+        width: 36
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c66082cc15ea0bf30800000000000000
+      internalID: 4589359686631294572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground Clutter Tile Sheet-01_28
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 900
+        width: 36
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef78cfa5aa4347c60800000000000000
+      internalID: 7814929159670237182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
