@@ -77,10 +77,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d970c40c584b3ec4fada5a19d77717ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locks: 010000
+  locks: 01
   reusable: 1
   doorHeight: 7
-  openTime: 2
+  openTime: 1
   doorOpenSound: {fileID: 8300000, guid: b7a0aa0c6408ab34cb6048c8c98704a0, type: 3}
 --- !u!212 &3665976237496040820
 SpriteRenderer:
@@ -169,7 +169,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: b7a0aa0c6408ab34cb6048c8c98704a0, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.1
   m_Pitch: 1
