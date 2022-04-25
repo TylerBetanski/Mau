@@ -4,33 +4,47 @@ using UnityEngine;
 
 public class BGMTrigger : MonoBehaviour
 {
-    [SerializeField] AudioClip BGM;
+    [SerializeField] AudioClip beginningBGM;
+    [SerializeField] AudioClip laterBGM;
+    [SerializeField] bool laterTrigger;
     [SerializeField] AudioSource BGAudioSource;
     [SerializeField] float newVolume;
 
-    bool changed;
     GameObject player;
-    private void Awake()
-    {
-        changed = false;
-    }
-
     private void OnTriggerEnter2D(Collider2D other)
     {
-
-        if ((other.tag == "Player") && !changed) {
-            ChangeBGM();
-            changed = true;
+        if ((other.gameObject.tag == "Player") && laterTrigger){
+            ChangeBGM(true);
+        }
+        else if ((other.gameObject.tag == "Player") && !laterTrigger) {
+            ChangeBGM(false);
         }
     }
 
-    private void ChangeBGM() {
+    private void ChangeBGM(bool isLater) {
 
         //can use the subroutines to make audio fade in and out
 
-        BGAudioSource.Stop();
-        BGAudioSource.clip = BGM;
-        BGAudioSource.volume = newVolume;
-        BGAudioSource.Play();
+        if (isLater)
+        {
+            if (BGAudioSource.clip.name == beginningBGM.name)
+            {
+                Debug.Log("We Gamin");
+                BGAudioSource.Stop();
+                BGAudioSource.clip = laterBGM;
+                BGAudioSource.volume = newVolume;
+                BGAudioSource.Play();
+            }
+        }
+        else
+        {
+            if (BGAudioSource.clip.name == laterBGM.name)
+            {
+                BGAudioSource.Stop();
+                BGAudioSource.clip = beginningBGM;
+                BGAudioSource.volume = newVolume;
+                BGAudioSource.Play();
+            }
+        }
     }
 }

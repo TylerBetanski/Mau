@@ -9,9 +9,9 @@ public class TextBar : MonoBehaviour
     [SerializeField] float duration;
     [SerializeField] float slideTime;
     [SerializeField] Transform textEndLoc;
+    [SerializeField] Transform textStartLoc;
 
     private bool isRunning;
-    private Vector2 textStartLoc;
     private GameObject currentRoomDisplaying;
     private void Awake()
     {
@@ -29,8 +29,9 @@ public class TextBar : MonoBehaviour
                 }
 
                 if ((currentRoomDisplaying == null) || (roomFromList != currentRoomDisplaying)) {
+                    if ((currentRoomDisplaying != null))
+                        StartCoroutine(MoveOut(currentRoomDisplaying, textStartLoc));
                     currentRoomDisplaying = roomFromList;
-                    textStartLoc = new Vector2(roomFromList.transform.position.x, roomFromList.transform.position.y);
                     StartCoroutine(MoveIn(roomFromList, textEndLoc));
                 }
             }
@@ -60,11 +61,11 @@ public class TextBar : MonoBehaviour
         }
     }
 
-    public IEnumerator MoveOut(GameObject room, Vector2 startLoc)
+    public IEnumerator MoveOut(GameObject room, Transform startLoc)
     {
-        float rateOfChange = (0.1f * (room.transform.position.x - startLoc.x)) / slideTime;
+        float rateOfChange = (0.1f * (room.transform.position.x - startLoc.position.x)) / slideTime;
 
-        while (room.transform.position.x > startLoc.x)
+        while (room.transform.position.x > startLoc.position.x)
         {
             room.transform.position = new Vector3(room.transform.position.x - rateOfChange, room.transform.position.y, 0);
             yield return new WaitForSeconds(0.01f);

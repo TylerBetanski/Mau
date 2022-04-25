@@ -122,5 +122,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f998987675d7a04da3c149fa322dd01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BGM: {fileID: 8300000, guid: fd1ee3ebc9d87ee4f96e1744fdc5f497, type: 3}
+  beginningBGM: {fileID: 8300000, guid: 5f636b643ece12847baee22dc9782183, type: 3}
+  laterBGM: {fileID: 8300000, guid: fd1ee3ebc9d87ee4f96e1744fdc5f497, type: 3}
+  laterTrigger: 1
   BGAudioSource: {fileID: 0}
+  newVolume: 0.445
