@@ -11,10 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Games/Game.unity
     guid: c91fe71cb6ca7394a8db7b647a411dc3
-  - enabled: 0
-    path: Assets/Scenes/MainLevel.unity
-    guid: f68a2cf5fad94ed44b6c06b7e15ccbc3
-  - enabled: 0
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Games/Credits.unity
+    guid: 6b0171a6ee7f0844a8c1e2aaea998e1e
+  - enabled: 1
+    path: Assets/Scenes/Games/Art Gallery.unity
+    guid: 3837c7225840398439f90976cbd828e3
   m_configObjects: {}

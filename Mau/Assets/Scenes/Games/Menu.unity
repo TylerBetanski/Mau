@@ -334,7 +334,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainLevel: Game
   credits: Credits
-  artGallery: ArtGallery
+  artGallery: Art Gallery
 --- !u!114 &459661288
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -672,8 +672,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainLevel: Game
-  credits: 
-  artGallery: 
+  credits: Credits
+  artGallery: Art Gallery
 --- !u!114 &966465121
 MonoBehaviour:
   m_ObjectHideFlags: 0

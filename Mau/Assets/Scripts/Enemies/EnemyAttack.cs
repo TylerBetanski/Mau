@@ -10,12 +10,23 @@ public class EnemyAttack : MonoBehaviour
     [SerializeField] float pissedDelay;
     [SerializeField] private ContactFilter2D filter = new ContactFilter2D();
     [SerializeField] private bool isCobra;
+    [SerializeField] public bool isKnockedDown;
     private bool attacking = false;
+
+    private void Awake()
+    {
+        isKnockedDown = false;
+    }
+
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Player" && !attacking) {
-            attacking = true;
-            StartCoroutine(Damage(collision.gameObject));
+        if (!isKnockedDown)
+        {
+            if (collision.gameObject.tag == "Player" && !attacking)
+            {
+                attacking = true;
+                StartCoroutine(Damage(collision.gameObject));
+            }
         }
     }
 

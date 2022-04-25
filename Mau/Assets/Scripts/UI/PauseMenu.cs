@@ -7,8 +7,12 @@ using UnityEngine.UI;
 public class PauseMenu : MonoBehaviour
 {
     int numOfHearts;
+    bool hasHiss;
+    bool hasDoubleJump;
 
     [SerializeField] Image[] heartContainers;
+    [SerializeField] Image hissCollectable;
+    [SerializeField] Image doubleJumpCollectable;
     [SerializeField] GameObject ambientLight;
     [SerializeField] GameObject optionsMenu;
     [SerializeField] AudioSource backgroundSound;
@@ -35,8 +39,28 @@ public class PauseMenu : MonoBehaviour
         }
     }
 
+    public void UpdateCollectables()
+    {
+        if (GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>().canHiss)
+        {
+            hissCollectable.enabled = true;
+        }
+        else {
+            hissCollectable.enabled = false;
+        }
+        if (GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>().canDoubleJump)
+        {
+            doubleJumpCollectable.enabled = true;
+        }
+        else
+        {
+            doubleJumpCollectable.enabled = false;
+        }
+    }
+
     public void OpenPauseMenu()
     {
+        UpdateCollectables();
         gameObject.SetActive(true);
         initialBGM = backgroundSound.clip;
         backgroundSound.Stop();

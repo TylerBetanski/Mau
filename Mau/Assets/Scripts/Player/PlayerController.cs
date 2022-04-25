@@ -10,8 +10,8 @@ public class PlayerController : MonoBehaviour {
     [SerializeField] int maxHealth;
     [SerializeField] float acceleration = 6.0f;
     [SerializeField] float jumpHeight = 3.0f;
-    [SerializeField] bool canHiss = false;
-    [SerializeField] bool canDoubleJump = false;
+    [SerializeField] public bool canHiss = false;
+    [SerializeField] public bool canDoubleJump = false;
     [SerializeField] GameObject pauseMenu;
     [SerializeField] Transform playerArt;
 
