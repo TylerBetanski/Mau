@@ -79,6 +79,11 @@ public class CrystalEmitter : MonoBehaviour
             }
         }
 
+        if(!active) {
+            VFX.GetComponent<ParticleSystem>().Stop();
+            GetComponent<ParticleSystem>().Stop();
+        }
+
     }
 
     private void OnValidate() {
@@ -123,10 +128,10 @@ public class CrystalEmitter : MonoBehaviour
     public void Deactivate() {
         active = false;
         lineRenderer.enabled = false;
-        VFX.GetComponent<ParticleSystem>().Pause();
+
         VFX.GetComponent<ParticleSystem>().Clear();
 
-        transform.GetComponent<ParticleSystem>().Pause();
+        transform.GetComponent<ParticleSystem>().Stop();
         transform.GetComponent<ParticleSystem>().Clear();
         transform.GetComponent<Light2D>().enabled = false;
 

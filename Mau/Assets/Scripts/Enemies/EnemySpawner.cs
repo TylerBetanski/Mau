@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour, ISignalReciever
 {
-    private static Queue<GameObject> enemyQueue = null;
+    public static Queue<GameObject> enemyQueue = null;
     private int enemyCount = 10;
 
     [SerializeField] GameObject enemyPrefab;
@@ -15,7 +15,7 @@ public class EnemySpawner : MonoBehaviour, ISignalReciever
     }
 
     private bool activated = false;
-    private int spawnChance = 100;
+    private int spawnChance = 30;
 
     public void RecieveSignal()
     {

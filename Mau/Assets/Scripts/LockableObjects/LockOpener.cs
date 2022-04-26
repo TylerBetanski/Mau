@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class LockOpener : MonoBehaviour, ISignalReciever
 {
-    [SerializeField] LockableObject target;
+    [SerializeField] WallScript target;
     [SerializeField] int lockNum;
     [SerializeField] private bool open = true;
 
@@ -17,14 +17,14 @@ public class LockOpener : MonoBehaviour, ISignalReciever
             if(activated)
             {
                 if (open)
-                    target.OpenLock(lockNum);
+                    target.setLock(lockNum, true);
                 else
-                    target.CloseLock(lockNum);
+                    target.setLock(lockNum, false);
             } else {
                 if (open)
-                    target.CloseLock(lockNum);
+                    target.setLock(lockNum, false);
                 else
-                    target.OpenLock(lockNum);
+                    target.setLock(lockNum, true);
             }
         }
     }

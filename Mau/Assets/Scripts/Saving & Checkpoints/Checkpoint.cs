@@ -11,7 +11,6 @@ public class Checkpoint : InteractableObject
 
     private CheckpointManager checkpointManager;
     private AudioSource checkpointAS;
-    
 
     private void Awake()
     {
@@ -39,6 +38,8 @@ public class Checkpoint : InteractableObject
         checkpointAS.Play();
         interactingObject.GetComponent<PlayerController>().Heal(interactingObject.GetComponent<PlayerController>().getMaxHealth());
 
+        StartCoroutine(GlowEyes());
+
         room.ReloadRoom();
         print(gameObject.name);
         checkpointManager.SetCurrentCheckpoint(this);
@@ -47,5 +48,21 @@ public class Checkpoint : InteractableObject
     public void Reload()
     {
         room.ReloadRoom();
+    }
+
+    IEnumerator GlowEyes() {
+        float glowAmount = 10;
+        Material mat = transform.Find("Art").GetComponent<SpriteRenderer>().material;
+        while(glowAmount < 100) {
+            glowAmount += 5;
+            mat.SetFloat("_em", glowAmount);
+            yield return new WaitForSeconds(Time.deltaTime);
+        }
+        yield return new WaitForSeconds(0.75f);
+        while (glowAmount > 10) {
+            glowAmount -= 5;
+            mat.SetFloat("_em", glowAmount);
+            yield return new WaitForSeconds(Time.deltaTime);
+        }
     }
 }

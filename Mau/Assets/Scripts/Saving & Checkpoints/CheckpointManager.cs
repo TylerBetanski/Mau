@@ -26,6 +26,7 @@ public class CheckpointManager : MonoBehaviour
         ResetAllCheckpoints();
         player.transform.position = currentCheckpoint.gameObject.transform.position + new Vector3(0, 2.5f, 0);
         StartCoroutine(MoveCamera(player));
+        if(EnemySpawner.enemyQueue != null) EnemySpawner.enemyQueue.Clear();
     }
 
     private IEnumerator MoveCamera(GameObject player) {
