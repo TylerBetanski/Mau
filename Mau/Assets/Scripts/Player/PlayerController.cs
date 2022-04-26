@@ -203,6 +203,7 @@ public class PlayerController : MonoBehaviour {
     public void Quit()
     {
         SceneManager.LoadScene("Menu");
+        Time.timeScale = 1;
     }
 
     private void FixedUpdate()
