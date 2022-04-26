@@ -5,6 +5,7 @@ public class LockOpener : MonoBehaviour, ISignalReciever
     [SerializeField] WallScript target;
     [SerializeField] int lockNum;
     [SerializeField] private bool open = true;
+    [SerializeField] private bool openAllThree = false;
 
     private bool activated = false;
 
@@ -14,17 +15,40 @@ public class LockOpener : MonoBehaviour, ISignalReciever
 
         if(target != null)
         {
+
             if(activated)
             {
-                if (open)
-                    target.setLock(lockNum, true);
-                else
-                    target.setLock(lockNum, false);
+                if (open) {
+                    if (openAllThree) {
+                        target.setLock(1, true);
+                        target.setLock(2, true);
+                        target.setLock(3, true);
+                    } else
+                        target.setLock(lockNum, true);
+                } else {
+                    if (openAllThree) {
+                        target.setLock(1, false);
+                        target.setLock(2, false);
+                        target.setLock(3, false);
+                    } else
+                        target.setLock(lockNum, false);
+                }
             } else {
-                if (open)
-                    target.setLock(lockNum, false);
-                else
-                    target.setLock(lockNum, true);
+                if (open) {
+                    if (openAllThree) {
+                        target.setLock(1, false);
+                        target.setLock(2, false);
+                        target.setLock(3, false);
+                    } else
+                        target.setLock(lockNum, false);
+                } else {
+                    if (openAllThree) {
+                        target.setLock(1, true);
+                        target.setLock(2, true);
+                        target.setLock(3, true);
+                    } else
+                        target.setLock(lockNum, true);
+                }
             }
         }
     }
