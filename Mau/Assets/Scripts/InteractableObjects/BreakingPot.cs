@@ -25,7 +25,7 @@ public class BreakingPot : MonoBehaviour
     private void Break()
     {
         GetComponent<AudioSource>().Stop();
-        GetComponent<AudioSource>().time = 0.25f;
+        //GetComponent<AudioSource>().time = 0.25f;
         GetComponent<AudioSource>().Play();
 
         gameObject.GetComponent<SpriteRenderer>().enabled = false;

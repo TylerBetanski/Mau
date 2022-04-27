@@ -32,6 +32,9 @@ public class RotatableObject : InteractableObject
 
 		animator.SetInteger("CurrentState", currentState);
 
+		gameObject.GetComponent<AudioSource>().Stop();
+		gameObject.GetComponent<AudioSource>().Play();
+
 		if (target != null)
 		{
 			if (currentState == targetState)

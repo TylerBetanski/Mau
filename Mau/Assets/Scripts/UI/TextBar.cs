@@ -59,6 +59,8 @@ public class TextBar : MonoBehaviour
             room.transform.position = new Vector3(room.transform.position.x + rateOfChange, room.transform.position.y, 0);
             yield return new WaitForSeconds(0.01f);   
         }
+        gameObject.GetComponent<AudioSource>().Stop();
+        gameObject.GetComponent<AudioSource>().Play();
     }
 
     public IEnumerator MoveOut(GameObject room, Transform startLoc)
