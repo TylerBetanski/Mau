@@ -32,6 +32,11 @@ public class SaveObject_Enemy : SaveObject
         em.enabled = true;
 
         GetComponent<EnemyDamage>().isKnockedDown = false;
+        if (GetComponent<EnemyAttack>())
+            GetComponent<EnemyAttack>().isKnockedDown = false;
+
+        GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Kinematic;
+        GetComponent<Rigidbody2D>().angularVelocity = 0f;
 
         transform.GetComponentInChildren<Animator>().SetBool("Alive", true);
 
