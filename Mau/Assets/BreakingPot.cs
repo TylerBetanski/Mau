@@ -24,6 +24,10 @@ public class BreakingPot : MonoBehaviour
 
     private void Break()
     {
+        GetComponent<AudioSource>().Stop();
+        GetComponent<AudioSource>().time = 0.25f;
+        GetComponent<AudioSource>().Play();
+
         gameObject.GetComponent<SpriteRenderer>().enabled = false;
         gameObject.GetComponent<PolygonCollider2D>().enabled = false;
 
@@ -36,9 +40,14 @@ public class BreakingPot : MonoBehaviour
             child.parent = transform.parent;
             child.GetComponent<PotChildScript>().StartFade();
         }
-        //GetComponent<SpriteRenderer>().enabled = true;
+        
+        StartCoroutine(Fade());
+    }
 
-            
+    private IEnumerator Fade()
+    {
+        yield return new WaitForSeconds(5f);
+        Destroy(gameObject);
     }
 
 
