@@ -30,6 +30,7 @@ public class PlayerController : MonoBehaviour {
     private bool canBeHurt = true;
     private bool paused = false;
     public bool dialog = false;
+    private bool canMove = true;
     bool secondJump = true;
     int health;
 
@@ -75,6 +76,10 @@ public class PlayerController : MonoBehaviour {
         maxHealth++;
     }
 
+    public void decreaseMaxHealth() {
+        maxHealth--;
+    }
+
     public void enableDoubleJump() {
         canDoubleJump = true;    
     }
@@ -93,6 +98,15 @@ public class PlayerController : MonoBehaviour {
         else {
             health += amount;
         }
+    }
+
+    public void EnableMovement() {
+        canMove = true;
+    }
+
+    public void DisableMovement() {
+        canMove = false;
+        animator.SetBool("Moving", false);
     }
 
     public void Damage(int amount)
@@ -134,7 +148,7 @@ public class PlayerController : MonoBehaviour {
 
     public void Jump()
     {
-        if (!dialog)
+        if (!dialog && canMove)
         {
             if (charController.Grounded)
             {
@@ -212,7 +226,7 @@ public class PlayerController : MonoBehaviour {
             secondJump = true;
         }
 
-        if (!dialog)
+        if (!dialog && canMove)
         {
             charController.AddVelocity(new Vector2(input.HorizontalAxis * acceleration, 0));
             if (animator != null)
