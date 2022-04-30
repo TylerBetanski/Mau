@@ -37,6 +37,10 @@ public class ColorAnimate : MonoBehaviour
         }
     }
 
+    private void OnDisable() {
+        StopAllCoroutines();
+    }
+
     private void OnEnable() {
         if (targetColors != null && targetColors.Count > 0) {
             spriteRenderer.color = targetColors[0];

@@ -34,7 +34,7 @@ public class CameraZoom : MonoBehaviour
             }
         }
     }
-    IEnumerator ZoomIn() {
+    public IEnumerator ZoomIn() {
         isZooming = true;
         float changeAmount = 0.5f;
 
@@ -56,5 +56,17 @@ public class CameraZoom : MonoBehaviour
             mainCamera.orthographicSize += changeAmount;
         }
         isZooming = false;
+    }
+
+    public IEnumerator ZoomTo(float size, float time) {
+        isZooming = true;
+        float oldSize = mainCamera.orthographicSize;
+        float t = 0;
+        while(t < time) {
+            yield return new WaitForSeconds(Time.deltaTime);
+            t += Time.deltaTime;
+            mainCamera.orthographicSize = Mathf.Lerp(oldSize, size, t / time);
+        }
+        mainCamera.orthographicSize = size;
     }
 }

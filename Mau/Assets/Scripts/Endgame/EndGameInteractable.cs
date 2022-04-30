@@ -8,6 +8,7 @@ public class EndGameInteractable : InteractableObject {
     private int hearts = 0;
     [SerializeField] private float heartsRadius = 5f;
     private List<GameObject> heartObjects;
+    private List<bool> doHeartAnim;
     ColorAnimate colAnim;
     new Light2D light;
 
@@ -18,12 +19,18 @@ public class EndGameInteractable : InteractableObject {
         colAnim = GetComponent<ColorAnimate>();
         light = GetComponent<Light2D>();
         heartObjects = new List<GameObject>();
+
+        doHeartAnim = new List<bool>();
     }
 
     public override void Interact(GameObject interactingObject) {
         if(interactingObject.tag == "Player") {
             PlayerController controller = interactingObject.GetComponent<PlayerController>();
-            controller.DisableMovement();
+            controller.gameObject.GetComponentInChildren<Light2D>().enabled = false;
+            //controller.DisableControls();
+            FindObjectOfType<PlayerInputController>().enabled = false;
+            CameraZoom cz = FindObjectOfType<CameraZoom>();
+            cz.StartCoroutine(cz.ZoomTo(25, 10));
             FindObjectOfType<CameraFollow>().SetTarget(gameObject);
             StartCoroutine(TakeHearts(controller));
         }
@@ -34,11 +41,7 @@ public class EndGameInteractable : InteractableObject {
             colAnim.enabled = true;
         }
 
-        for (int i = controller.getMaxHealth(); i > 1; --i) {
-            yield return new WaitForSeconds(2.5f);
-            AddHeart(controller);
-        }
-        if(hearts == 8) {
+        for (int i = controller.getMaxHealth(); i > 0; --i) {
             yield return new WaitForSeconds(2.5f);
             AddHeart(controller);
         }
@@ -46,8 +49,9 @@ public class EndGameInteractable : InteractableObject {
         if(hearts == 9) {
             StartCoroutine(EndGameGood());
         } else {
-            controller.EnableMovement();
-            FindObjectOfType<CameraFollow>().SetTarget(controller.gameObject);
+            StartCoroutine(EndGameBad());
+            //controller.EnableMovement();
+            //FindObjectOfType<CameraFollow>().SetTarget(controller.gameObject);
         }
     }
 
@@ -62,6 +66,7 @@ public class EndGameInteractable : InteractableObject {
         newHeart.SetActive(true);
         newHeart.GetComponent<Light2D>().enabled = true;
         heartObjects.Add(newHeart);
+        doHeartAnim.Add(true);
     }
 
 
@@ -69,18 +74,20 @@ public class EndGameInteractable : InteractableObject {
         currentAngle += (360f / rotTime) * Time.deltaTime;
         currentAngle %= 360f;
 
-        for(int i = 0; i < heartObjects.Count; ++i) {
-            GameObject current = heartObjects[i];
-            float thisAngle = currentAngle - ((360 / 9f) * i);
+        for (int i = 0; i < heartObjects.Count; ++i) {
+            if (doHeartAnim[i]) {
+                GameObject current = heartObjects[i];
+                float thisAngle = currentAngle - ((360 / 9f) * i);
 
-            float xPos = Mathf.Cos(thisAngle * Mathf.Deg2Rad) * heartsRadius;
-            float yPos = Mathf.Sin(thisAngle * Mathf.Deg2Rad) * heartsRadius;
+                float xPos = Mathf.Cos(thisAngle * Mathf.Deg2Rad) * heartsRadius;
+                float yPos = Mathf.Sin(thisAngle * Mathf.Deg2Rad) * heartsRadius;
 
-            Vector3 newPos = transform.position + new Vector3(xPos, yPos);
-            current.transform.position = newPos;
+                Vector3 newPos = transform.position + new Vector3(xPos, yPos);
+                current.transform.position = newPos;
+            }
         }
     }
-    List<Color> ogColors;
+    
     private IEnumerator EndGameGood() {
         //yield return new WaitForSeconds(5);
 
@@ -97,6 +104,7 @@ public class EndGameInteractable : InteractableObject {
             colAnim.transitionTime -= .01f;
             colAnim.transitionTime = Mathf.Clamp(colAnim.transitionTime, .01f, Mathf.Infinity);
         }
+        List<Color> ogColors;
         ogColors = new List<Color>();
 
         for (int i = 0; i < colAnim.targetColors.Count; ++i) {
@@ -120,5 +128,76 @@ public class EndGameInteractable : InteractableObject {
             yield return new WaitForSeconds(Time.deltaTime);
             light.intensity += 1;
         }
+    }
+
+    private IEnumerator EndGameBad() {
+
+        while (rotTime > 0.1f) {
+            yield return new WaitForSeconds(Time.deltaTime);
+            rotTime -= .01f;
+            rotTime = Mathf.Clamp(rotTime, 0.1f, 1000);
+        }
+        yield return new WaitForSeconds(3);
+
+        for(int i = 0; i < heartObjects.Count; ++i) {
+            yield return new WaitForSeconds(1);
+
+            GameObject obj = heartObjects[i];
+            doHeartAnim[i] = false;
+
+            colAnim.transitionTime += 1f;
+        }
+
+        colAnim.enabled = false;
+
+        float t = 0;
+        Color ogCol = GetComponent<SpriteRenderer>().color;
+        while(t < 3.0f) {
+            yield return new WaitForSeconds(Time.deltaTime);
+            t += Time.deltaTime;
+
+            Color newCol = Color.Lerp(ogCol, Color.black, t / 3.0f);
+
+            GetComponent<SpriteRenderer>().color = newCol;
+            light.color = newCol;
+
+        }
+
+        yield return new WaitForSeconds(1.5f);
+
+        GameObject L1 = transform.Find("Lights").Find("L1").gameObject;
+        L1.GetComponentInChildren<Light2D>().enabled = false;
+        foreach (ParticleSystem PS in L1.GetComponentsInChildren<ParticleSystem>()) {
+            PS.Stop();
+            PS.Clear();
+        }
+
+        yield return new WaitForSeconds(0.5f);
+
+        GameObject L2 = transform.Find("Lights").Find("L2").gameObject;
+        L2.GetComponentInChildren<Light2D>().enabled = false;
+        foreach (ParticleSystem PS in L2.GetComponentsInChildren<ParticleSystem>()) {
+            PS.Stop();
+            PS.Clear();
+        }
+
+        for (int i = 0; i < heartObjects.Count; ++i) {
+            yield return new WaitForSeconds(.2f);
+            StartCoroutine(HeartFall(heartObjects[i]));
+        }
+    }
+
+    private IEnumerator HeartFall(GameObject heart) {
+        float velocity = 0;
+
+        yield return new WaitForSeconds(1.5f);
+
+        while(velocity > -1000) {
+            yield return new WaitForSeconds(Time.deltaTime);
+            velocity -= .5f;
+            heart.transform.position += new Vector3(0, velocity) * Time.deltaTime;
+        }
+
+        Destroy(heart);
     }
 }

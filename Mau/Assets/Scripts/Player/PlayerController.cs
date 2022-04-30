@@ -30,7 +30,7 @@ public class PlayerController : MonoBehaviour {
     private bool canBeHurt = true;
     private bool paused = false;
     public bool dialog = false;
-    private bool canMove = true;
+    private bool controlsEnabled = true;
     bool secondJump = true;
     int health;
 
@@ -100,12 +100,12 @@ public class PlayerController : MonoBehaviour {
         }
     }
 
-    public void EnableMovement() {
-        canMove = true;
+    public void EnableControls() {
+        controlsEnabled = true;
     }
 
-    public void DisableMovement() {
-        canMove = false;
+    public void DisableControls() {
+        controlsEnabled = false;
         animator.SetBool("Moving", false);
     }
 
@@ -148,7 +148,7 @@ public class PlayerController : MonoBehaviour {
 
     public void Jump()
     {
-        if (!dialog && canMove)
+        if (!dialog && controlsEnabled)
         {
             if (charController.Grounded)
             {
@@ -166,7 +166,7 @@ public class PlayerController : MonoBehaviour {
 
     public void Attack()
     {
-        if (!dialog)
+        if (!dialog && controlsEnabled)
         {
             if (animator != null && attackScript.CanAttack)
                 animator.SetTrigger("Attacking");
@@ -177,7 +177,7 @@ public class PlayerController : MonoBehaviour {
 
     public void Hiss()
     {
-        if (!dialog)
+        if (!dialog && controlsEnabled)
         {
             if (canHiss)
             {
@@ -226,7 +226,7 @@ public class PlayerController : MonoBehaviour {
             secondJump = true;
         }
 
-        if (!dialog && canMove)
+        if (!dialog && controlsEnabled)
         {
             charController.AddVelocity(new Vector2(input.HorizontalAxis * acceleration, 0));
             if (animator != null)

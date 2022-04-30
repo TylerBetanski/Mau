@@ -22,6 +22,8 @@ public class RoomCull : MonoBehaviour
     private void OnTriggerStay2D(Collider2D other) {
         if(other.tag == "Player") {
             room.SetActive(true);
+            if (isDisabling)
+                isDisabling = false;
         }
     }
 
@@ -34,6 +36,7 @@ public class RoomCull : MonoBehaviour
 
     IEnumerator disableRoom() {
         isDisabling = true;
+
 
         yield return delay;
 
