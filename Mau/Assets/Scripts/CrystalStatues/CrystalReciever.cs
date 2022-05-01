@@ -18,8 +18,6 @@ public class CrystalReciever : InteractableObject
     public override void Interact(GameObject interactingObject) {
         if(emitter != null && emitLaser) {
             emitter.Rotate();
-            if(GetComponent<AudioSource>() != null)
-                GetComponent<AudioSource>().Play();
         }
     }
 

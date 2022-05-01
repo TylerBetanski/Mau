@@ -31,10 +31,8 @@ public class BreakingPot : MonoBehaviour
         gameObject.GetComponent<SpriteRenderer>().enabled = false;
         gameObject.GetComponent<PolygonCollider2D>().enabled = false;
 
-        print(transform.childCount);
         while (transform.childCount > 0) {
             Transform child = transform.GetChild(0);
-            print(child.name);
             child.GetComponent<Rigidbody2D>().simulated = true;
             child.GetComponent<Rigidbody2D>().AddForce( (child.position - transform.position).normalized * 75, ForceMode2D.Impulse);
             child.parent = transform.parent;

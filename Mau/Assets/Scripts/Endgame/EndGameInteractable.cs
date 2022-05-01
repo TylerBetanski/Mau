@@ -52,6 +52,9 @@ public class EndGameInteractable : InteractableObject {
             borderPanel.gameObject.SetActive(true);
 
             StartCoroutine(TakeHearts(controller));
+            crystalAudio.Stop();
+            crystalAudio.clip = interact;
+            crystalAudio.Play();
         }
     }
 
@@ -88,7 +91,9 @@ public class EndGameInteractable : InteractableObject {
             AddHeart(controller);
         }
 
-        if(hearts == 9) {
+        yield return new WaitForSeconds(1f);
+
+        if (hearts == 9) {
             StartCoroutine(EndGameGood());
         } else {
             StartCoroutine(EndGameBad());
@@ -140,19 +145,18 @@ public class EndGameInteractable : InteractableObject {
         crystalAudio.Stop();
         crystalAudio.loop = true;
         crystalAudio.clip = whirr;
+        crystalAudio.volume = 0f;
         crystalAudio.Play();
-
+       
         while (rotTime > 0.1f) {
             yield return new WaitForSeconds(Time.deltaTime);
             rotTime -= .01f;
             rotTime = Mathf.Clamp(rotTime, 0.1f, 1000);
-            crystalAudio.volume += 0.05f;
+            if (crystalAudio.volume < 1)
+                crystalAudio.volume += 0.0005f;
         }
-        crystalAudio.loop = false;
 
-        crystalAudio.Stop();
-        crystalAudio.clip = condense;
-        crystalAudio.Play();
+        
 
         while (heartsRadius > 0) {
             yield return new WaitForSeconds(Time.deltaTime);
@@ -162,9 +166,21 @@ public class EndGameInteractable : InteractableObject {
             colAnim.transitionTime = Mathf.Clamp(colAnim.transitionTime, .01f, Mathf.Infinity);
         }
 
+        //yield return new WaitForSeconds(1);
+
+        /*crystalAudio.Stop();
+        crystalAudio.clip = condense;
+        crystalAudio.time = 0.4f;
+        crystalAudio.Play();*/
+
+        yield return new WaitForSeconds(1f);
+        crystalAudio.volume = 1f;
+        crystalAudio.loop = false;
         crystalAudio.Stop();
         crystalAudio.clip = charge;
         crystalAudio.Play();
+
+        
 
         List<Color> ogColors;
         ogColors = new List<Color>();
@@ -187,6 +203,7 @@ public class EndGameInteractable : InteractableObject {
         }
 
         crystalAudio.Stop();
+        yield return new WaitForSeconds(2.4f);
         crystalAudio.clip = explosion;
         crystalAudio.Play();
 
@@ -202,16 +219,16 @@ public class EndGameInteractable : InteractableObject {
         crystalAudio.loop = true;
         crystalAudio.clip = whirr;
         crystalAudio.Play();
-        crystalAudio.volume = 0.05f;
+        crystalAudio.volume = 0f;
 
         while (rotTime > 0.1f) {
             yield return new WaitForSeconds(Time.deltaTime);
             rotTime -= .01f;
             rotTime = Mathf.Clamp(rotTime, 0.1f, 1000);
             if (crystalAudio.volume < 1)
-                crystalAudio.volume += 0.05f;
+                crystalAudio.volume += 0.0005f;
         }
-        crystalAudio.loop = false;
+        
         yield return new WaitForSeconds(3);
 
         for(int i = 0; i < heartObjects.Count; ++i) {
@@ -222,6 +239,9 @@ public class EndGameInteractable : InteractableObject {
 
             colAnim.transitionTime += 1f;
         }
+
+        crystalAudio.volume = 1f;
+        crystalAudio.loop = false;
         crystalAudio.Stop();
         crystalAudio.clip = heartStop;
         crystalAudio.Play();
@@ -243,6 +263,7 @@ public class EndGameInteractable : InteractableObject {
         }
 
         crystalAudio.Stop();
+        crystalAudio.volume = 0.8f;
         crystalAudio.clip = powerDown;
         crystalAudio.Play();
 

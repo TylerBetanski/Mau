@@ -12,6 +12,8 @@ public class CrystalEmitter : MonoBehaviour
     [SerializeField, Range(0, 90)] private int increment = 45;
     [SerializeField] private float rotationTime = 0.1f;
     [SerializeField] private ContactFilter2D filter;
+    [SerializeField] AudioClip interactSound;
+    [SerializeField] AudioClip activateSound;
 
     private CrystalEmitter parentEmitter;
 
@@ -94,6 +96,11 @@ public class CrystalEmitter : MonoBehaviour
         if (active) {
             float targetAngle = angle + increment;
             StartCoroutine(RotateBeam(targetAngle));
+            if (GetComponent<AudioSource>() != null)
+            {   
+                GetComponent<AudioSource>().clip = interactSound;
+                GetComponent<AudioSource>().Play();
+            }
         }
     }
 
@@ -118,6 +125,13 @@ public class CrystalEmitter : MonoBehaviour
     }
 
     public void Activate() {
+        if (!active)
+        {
+            gameObject.GetComponent<AudioSource>().Stop();
+            gameObject.GetComponent<AudioSource>().loop = false;
+            gameObject.GetComponent<AudioSource>().clip = activateSound;
+            gameObject.GetComponent<AudioSource>().Play();
+        }
         active = true;
         lineRenderer.enabled = true;
         VFX.GetComponent<ParticleSystem>().Play();
