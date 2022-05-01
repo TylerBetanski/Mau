@@ -4,9 +4,15 @@ using UnityEngine;
 
 public class StatueMoveSound : MonoBehaviour
 {
-    private void FixedUpdate()
+    private Rigidbody2D rigidBody;
+
+    private void Awake()
     {
-        if (gameObject.GetComponent<Rigidbody2D>().velocity != Vector2.zero)
+        rigidBody = gameObject.GetComponent<Rigidbody2D>();
+    }
+    private void Update()
+    {
+        if (Mathf.Abs(rigidBody.velocity.x) > 2)
         {
             if (!gameObject.GetComponent<AudioSource>().isPlaying)
                 gameObject.GetComponent<AudioSource>().Play();

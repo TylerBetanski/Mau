@@ -14,6 +14,17 @@ public class EndGameInteractable : InteractableObject {
     ColorAnimate colAnim;
     new Light2D light;
 
+    private AudioSource crystalAudio;
+    [SerializeField] AudioClip heartPop;
+    [SerializeField] AudioClip interact;
+    [SerializeField] AudioClip whirr;
+    [SerializeField] AudioClip condense;
+    [SerializeField] AudioClip charge;
+    [SerializeField] AudioClip explosion;
+    [SerializeField] AudioClip powerDown;
+    [SerializeField] AudioClip heartStop;
+
+
     private float currentAngle;
     [SerializeField] private float rotTime = 9;
 
@@ -21,6 +32,8 @@ public class EndGameInteractable : InteractableObject {
         colAnim = GetComponent<ColorAnimate>();
         light = GetComponent<Light2D>();
         heartObjects = new List<GameObject>();
+        crystalAudio = GetComponent<AudioSource>();
+        crystalAudio.loop = false;
 
         doHeartAnim = new List<bool>();
     }
@@ -90,6 +103,10 @@ public class EndGameInteractable : InteractableObject {
         colAnim.transitionTime -= .5f;
         light.intensity += (2f / 9f);
 
+        crystalAudio.Stop();
+        crystalAudio.clip = heartPop;
+        crystalAudio.Play();
+
         GameObject newHeart = Instantiate(transform.Find("Heart").gameObject);
         newHeart.transform.SetParent(transform);
         newHeart.SetActive(true);
@@ -119,20 +136,35 @@ public class EndGameInteractable : InteractableObject {
     
     private IEnumerator EndGameGood() {
         //yield return new WaitForSeconds(5);
+        
+        crystalAudio.Stop();
+        crystalAudio.loop = true;
+        crystalAudio.clip = whirr;
+        crystalAudio.Play();
 
-        while(rotTime > 0.1f) {
+        while (rotTime > 0.1f) {
             yield return new WaitForSeconds(Time.deltaTime);
             rotTime -= .01f;
             rotTime = Mathf.Clamp(rotTime, 0.1f, 1000);
+            crystalAudio.volume += 0.05f;
         }
+        crystalAudio.loop = false;
 
-        while(heartsRadius > 0) {
+        crystalAudio.Stop();
+        crystalAudio.clip = condense;
+        crystalAudio.Play();
+
+        while (heartsRadius > 0) {
             yield return new WaitForSeconds(Time.deltaTime);
             heartsRadius -= .1f;
             heartsRadius = Mathf.Clamp(heartsRadius, 0, 1000);
             colAnim.transitionTime -= .01f;
             colAnim.transitionTime = Mathf.Clamp(colAnim.transitionTime, .01f, Mathf.Infinity);
         }
+
+        crystalAudio.Stop();
+        crystalAudio.clip = charge;
+        crystalAudio.Play();
 
         List<Color> ogColors;
         ogColors = new List<Color>();
@@ -154,7 +186,11 @@ public class EndGameInteractable : InteractableObject {
             }
         }
 
-        while(light.intensity < 500) {
+        crystalAudio.Stop();
+        crystalAudio.clip = explosion;
+        crystalAudio.Play();
+
+        while (light.intensity < 200) {
             yield return new WaitForSeconds(Time.deltaTime);
             light.intensity += 1;
         }
@@ -162,11 +198,20 @@ public class EndGameInteractable : InteractableObject {
 
     private IEnumerator EndGameBad() {
 
+        crystalAudio.Stop();
+        crystalAudio.loop = true;
+        crystalAudio.clip = whirr;
+        crystalAudio.Play();
+        crystalAudio.volume = 0.05f;
+
         while (rotTime > 0.1f) {
             yield return new WaitForSeconds(Time.deltaTime);
             rotTime -= .01f;
             rotTime = Mathf.Clamp(rotTime, 0.1f, 1000);
+            if (crystalAudio.volume < 1)
+                crystalAudio.volume += 0.05f;
         }
+        crystalAudio.loop = false;
         yield return new WaitForSeconds(3);
 
         for(int i = 0; i < heartObjects.Count; ++i) {
@@ -177,6 +222,10 @@ public class EndGameInteractable : InteractableObject {
 
             colAnim.transitionTime += 1f;
         }
+        crystalAudio.Stop();
+        crystalAudio.clip = heartStop;
+        crystalAudio.Play();
+
 
         colAnim.enabled = false;
 
@@ -192,6 +241,10 @@ public class EndGameInteractable : InteractableObject {
             light.color = newCol;
 
         }
+
+        crystalAudio.Stop();
+        crystalAudio.clip = powerDown;
+        crystalAudio.Play();
 
         for (int i = 0; i < heartObjects.Count; ++i) {
             yield return new WaitForSeconds(.2f);

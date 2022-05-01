@@ -26,6 +26,7 @@ public class CatAudioController : MonoBehaviour
         if (!AS.isPlaying)
         {
             AS.Stop();
+            AS.volume = 0.9f;
 
             if (sound == "Purr")
             {
@@ -55,6 +56,7 @@ public class CatAudioController : MonoBehaviour
             }
             else if (sound == "Splash")
             {
+                AS.volume = 1;
                 AS.clip = Splash;
                 AS.Play();
             }
