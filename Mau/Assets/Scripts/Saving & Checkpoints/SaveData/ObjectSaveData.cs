@@ -96,3 +96,12 @@ public class ObjectSavaData_CrystalEmitter : ObjectSaveData {
         angle = emitter.getAngle();
     }
 }
+
+public class ObjectSaveData_Pot : ObjectSaveData {
+
+    public bool isPotDestroyed;
+
+    public ObjectSaveData_Pot(Transform transform, bool ipd) : base(transform) {
+        isPotDestroyed = ipd;
+    }
+}

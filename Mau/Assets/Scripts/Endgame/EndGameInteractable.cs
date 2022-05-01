@@ -7,6 +7,7 @@ public class EndGameInteractable : InteractableObject {
 
     private int hearts = 0;
     [SerializeField] private float heartsRadius = 5f;
+    [SerializeField] private Light2D mainLight;
     private List<GameObject> heartObjects;
     private List<bool> doHeartAnim;
     ColorAnimate colAnim;
@@ -27,11 +28,15 @@ public class EndGameInteractable : InteractableObject {
         if(interactingObject.tag == "Player") {
             PlayerController controller = interactingObject.GetComponent<PlayerController>();
             controller.gameObject.GetComponentInChildren<Light2D>().enabled = false;
-            //controller.DisableControls();
             FindObjectOfType<PlayerInputController>().enabled = false;
+
             CameraZoom cz = FindObjectOfType<CameraZoom>();
             cz.StartCoroutine(cz.ZoomTo(25, 10));
+
             FindObjectOfType<CameraFollow>().SetTarget(gameObject);
+
+            FindObjectOfType<Canvas>().gameObject.transform.Find("BorderPanel").gameObject.SetActive(true);
+
             StartCoroutine(TakeHearts(controller));
         }
     }
@@ -39,6 +44,29 @@ public class EndGameInteractable : InteractableObject {
     private IEnumerator TakeHearts(PlayerController controller) {
         if(controller.getMaxHealth() > 1 && hearts == 0) {
             colAnim.enabled = true;
+        }
+
+        while (mainLight.intensity > 0) {
+            yield return new WaitForSeconds(Time.deltaTime);
+            mainLight.intensity -= .001f;
+        }
+
+        yield return new WaitForSeconds(1.5f);
+
+        GameObject L1 = transform.Find("Lights").Find("L1").gameObject;
+        L1.GetComponentInChildren<Light2D>().enabled = false;
+        foreach (ParticleSystem PS in L1.GetComponentsInChildren<ParticleSystem>()) {
+            PS.Stop();
+            PS.Clear();
+        }
+
+        yield return new WaitForSeconds(0.5f);
+
+        GameObject L2 = transform.Find("Lights").Find("L2").gameObject;
+        L2.GetComponentInChildren<Light2D>().enabled = false;
+        foreach (ParticleSystem PS in L2.GetComponentsInChildren<ParticleSystem>()) {
+            PS.Stop();
+            PS.Clear();
         }
 
         for (int i = controller.getMaxHealth(); i > 0; --i) {
@@ -161,24 +189,6 @@ public class EndGameInteractable : InteractableObject {
             GetComponent<SpriteRenderer>().color = newCol;
             light.color = newCol;
 
-        }
-
-        yield return new WaitForSeconds(1.5f);
-
-        GameObject L1 = transform.Find("Lights").Find("L1").gameObject;
-        L1.GetComponentInChildren<Light2D>().enabled = false;
-        foreach (ParticleSystem PS in L1.GetComponentsInChildren<ParticleSystem>()) {
-            PS.Stop();
-            PS.Clear();
-        }
-
-        yield return new WaitForSeconds(0.5f);
-
-        GameObject L2 = transform.Find("Lights").Find("L2").gameObject;
-        L2.GetComponentInChildren<Light2D>().enabled = false;
-        foreach (ParticleSystem PS in L2.GetComponentsInChildren<ParticleSystem>()) {
-            PS.Stop();
-            PS.Clear();
         }
 
         for (int i = 0; i < heartObjects.Count; ++i) {

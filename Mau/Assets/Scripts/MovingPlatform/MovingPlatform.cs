@@ -31,8 +31,6 @@ public class MovingPlatform : MonoBehaviour, ISignalReciever
 
         fixedDeltaWait = new WaitForSeconds(Time.fixedDeltaTime);
         moveBackWait = new WaitForSeconds(moveBackDelay);
-
-
     }
 
     private IEnumerator Move()
@@ -87,6 +85,14 @@ public class MovingPlatform : MonoBehaviour, ISignalReciever
             Gizmos.color = Color.red;
             Gizmos.DrawLine(transform.position, endPoint.position);
         }
+    }
+
+    private void OnDisable() {
+        atEnd = false;
+        atStart = true;
+        moving = false;
+        waiting = false;
+        platform.position = transform.position;
     }
 
     private void OnEnable() {

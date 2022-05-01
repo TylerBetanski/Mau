@@ -103,6 +103,39 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
                     ""isPartOfComposite"": true
                 },
                 {
+                    ""name"": ""1D Axis"",
+                    ""id"": ""92ae20d0-e612-4cbf-b09f-84db604f6580"",
+                    ""path"": ""1DAxis"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Movement"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""negative"",
+                    ""id"": ""507215a6-1262-41e8-82c6-886cf948b636"",
+                    ""path"": ""<Gamepad>/leftStick/left"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Controller"",
+                    ""action"": ""Movement"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""positive"",
+                    ""id"": ""e6dd2f48-c8e1-46fe-b1a4-a57027c115a5"",
+                    ""path"": ""<Gamepad>/leftStick/right"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Controller"",
+                    ""action"": ""Movement"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
                     ""name"": """",
                     ""id"": ""f1c9dbb5-4a02-4c32-a36b-68a66355ea94"",
                     ""path"": ""<Keyboard>/space"",
@@ -120,6 +153,17 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
+                    ""action"": ""Jump"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""1d202ec1-4939-48b1-89eb-d1acb7ba83e2"",
+                    ""path"": ""<Gamepad>/buttonSouth"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Controller"",
                     ""action"": ""Jump"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -176,6 +220,14 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
                     ""id"": ""29655d02-769b-4668-8991-467872d83a4d"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
+                    ""interactions"": ""Hold(duration=1,pressPoint=0.5)""
+                },
+                {
+                    ""name"": ""SnyderMode"",
+                    ""type"": ""Button"",
+                    ""id"": ""1bdf4558-d6fe-4f46-9139-aa73f8823f10"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
                     ""interactions"": """"
                 }
             ],
@@ -193,8 +245,30 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
                 },
                 {
                     ""name"": """",
+                    ""id"": ""0af890db-9e6e-4ccb-8567-88671d5e582f"",
+                    ""path"": ""<Gamepad>/buttonWest"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Controller"",
+                    ""action"": ""Attack"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
                     ""id"": ""d7b606e0-1b1b-427c-b1ee-96bbb3b59a70"",
                     ""path"": ""<Keyboard>/f"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""CameraZoom"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""4b6563be-5cda-410b-8931-a9b27ecb8481"",
+                    ""path"": ""<Gamepad>/rightStickPress"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -215,11 +289,33 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
                 },
                 {
                     ""name"": """",
+                    ""id"": ""b82a4569-57b8-424c-bf00-11f54ab4abca"",
+                    ""path"": ""<Gamepad>/buttonNorth"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Controller"",
+                    ""action"": ""Hiss"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
                     ""id"": ""7fa9f4bf-a9ad-4b8f-a486-cde475320f79"",
                     ""path"": ""<Keyboard>/escape"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
+                    ""action"": ""Pause"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""bfb88030-3e4d-4a1c-8584-7adcb7620657"",
+                    ""path"": ""<Gamepad>/start"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Controller"",
                     ""action"": ""Pause"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -241,8 +337,41 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
                     ""path"": ""<Keyboard>/r"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": ""Keyboard"",
                     ""action"": ""Reset"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""2bbf0e1f-454f-4206-841a-35ff965d8ef4"",
+                    ""path"": ""<Gamepad>/buttonEast"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Controller"",
+                    ""action"": ""Reset"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""3e15242e-f1a2-4b9d-811f-6bcb57a5ce05"",
+                    ""path"": ""<Keyboard>/c"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""SnyderMode"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""48cd1b13-daba-4822-84eb-92a5be058ee4"",
+                    ""path"": ""<Gamepad>/select"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Controller"",
+                    ""action"": ""SnyderMode"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -256,6 +385,17 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
             ""devices"": [
                 {
                     ""devicePath"": ""<Keyboard>"",
+                    ""isOptional"": false,
+                    ""isOR"": false
+                }
+            ]
+        },
+        {
+            ""name"": ""Controller"",
+            ""bindingGroup"": ""Controller"",
+            ""devices"": [
+                {
+                    ""devicePath"": ""<Gamepad>"",
                     ""isOptional"": false,
                     ""isOR"": false
                 }
@@ -275,6 +415,7 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
         m_Actions_Pause = m_Actions.FindAction("Pause", throwIfNotFound: true);
         m_Actions_Enter = m_Actions.FindAction("Enter", throwIfNotFound: true);
         m_Actions_Reset = m_Actions.FindAction("Reset", throwIfNotFound: true);
+        m_Actions_SnyderMode = m_Actions.FindAction("SnyderMode", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -371,6 +512,7 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
     private readonly InputAction m_Actions_Pause;
     private readonly InputAction m_Actions_Enter;
     private readonly InputAction m_Actions_Reset;
+    private readonly InputAction m_Actions_SnyderMode;
     public struct ActionsActions
     {
         private @PlayerInputActions m_Wrapper;
@@ -381,6 +523,7 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
         public InputAction @Pause => m_Wrapper.m_Actions_Pause;
         public InputAction @Enter => m_Wrapper.m_Actions_Enter;
         public InputAction @Reset => m_Wrapper.m_Actions_Reset;
+        public InputAction @SnyderMode => m_Wrapper.m_Actions_SnyderMode;
         public InputActionMap Get() { return m_Wrapper.m_Actions; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -408,6 +551,9 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
                 @Reset.started -= m_Wrapper.m_ActionsActionsCallbackInterface.OnReset;
                 @Reset.performed -= m_Wrapper.m_ActionsActionsCallbackInterface.OnReset;
                 @Reset.canceled -= m_Wrapper.m_ActionsActionsCallbackInterface.OnReset;
+                @SnyderMode.started -= m_Wrapper.m_ActionsActionsCallbackInterface.OnSnyderMode;
+                @SnyderMode.performed -= m_Wrapper.m_ActionsActionsCallbackInterface.OnSnyderMode;
+                @SnyderMode.canceled -= m_Wrapper.m_ActionsActionsCallbackInterface.OnSnyderMode;
             }
             m_Wrapper.m_ActionsActionsCallbackInterface = instance;
             if (instance != null)
@@ -430,6 +576,9 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
                 @Reset.started += instance.OnReset;
                 @Reset.performed += instance.OnReset;
                 @Reset.canceled += instance.OnReset;
+                @SnyderMode.started += instance.OnSnyderMode;
+                @SnyderMode.performed += instance.OnSnyderMode;
+                @SnyderMode.canceled += instance.OnSnyderMode;
             }
         }
     }
@@ -441,6 +590,15 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
         {
             if (m_KeyboardSchemeIndex == -1) m_KeyboardSchemeIndex = asset.FindControlSchemeIndex("Keyboard");
             return asset.controlSchemes[m_KeyboardSchemeIndex];
+        }
+    }
+    private int m_ControllerSchemeIndex = -1;
+    public InputControlScheme ControllerScheme
+    {
+        get
+        {
+            if (m_ControllerSchemeIndex == -1) m_ControllerSchemeIndex = asset.FindControlSchemeIndex("Controller");
+            return asset.controlSchemes[m_ControllerSchemeIndex];
         }
     }
     public interface ILocomotionActions
@@ -456,5 +614,6 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
         void OnPause(InputAction.CallbackContext context);
         void OnEnter(InputAction.CallbackContext context);
         void OnReset(InputAction.CallbackContext context);
+        void OnSnyderMode(InputAction.CallbackContext context);
     }
 }

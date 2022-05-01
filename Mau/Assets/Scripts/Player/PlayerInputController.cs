@@ -15,12 +15,14 @@ public class PlayerInputController : MonoBehaviour
     private PlayerInputActions inputActions;
     private PlayerController controller;
     private CameraZoom cameraZoom;
+    SnyderMode snyderMode;
 
     private void Awake()
     {
         inputActions = new PlayerInputActions();
         controller = GetComponent<PlayerController>();
         cameraZoom = GetComponent<CameraZoom>();
+        snyderMode = GetComponent<SnyderMode>(); 
     }
 
     private void OnEnable()
@@ -35,6 +37,7 @@ public class PlayerInputController : MonoBehaviour
         inputActions.Actions.CameraZoom.performed += ctx => cameraZoom.changeZoom();
         inputActions.Actions.Enter.performed += ctx => controller.advanceDialog();
         inputActions.Actions.Reset.performed += ctx => FindObjectOfType<CheckpointManager>().ReloadWorld(gameObject);
+        inputActions.Actions.SnyderMode.performed += ctx => snyderMode.Toggle();
     }
 
     private void OnDisable()
