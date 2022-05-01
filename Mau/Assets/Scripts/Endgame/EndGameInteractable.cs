@@ -8,6 +8,7 @@ public class EndGameInteractable : InteractableObject {
     private int hearts = 0;
     [SerializeField] private float heartsRadius = 5f;
     [SerializeField] private Light2D mainLight;
+    [SerializeField] private GameObject borderPanel;
     private List<GameObject> heartObjects;
     private List<bool> doHeartAnim;
     ColorAnimate colAnim;
@@ -35,7 +36,7 @@ public class EndGameInteractable : InteractableObject {
 
             FindObjectOfType<CameraFollow>().SetTarget(gameObject);
 
-            FindObjectOfType<Canvas>().gameObject.transform.Find("BorderPanel").gameObject.SetActive(true);
+            borderPanel.gameObject.SetActive(true);
 
             StartCoroutine(TakeHearts(controller));
         }
@@ -132,6 +133,7 @@ public class EndGameInteractable : InteractableObject {
             colAnim.transitionTime -= .01f;
             colAnim.transitionTime = Mathf.Clamp(colAnim.transitionTime, .01f, Mathf.Infinity);
         }
+
         List<Color> ogColors;
         ogColors = new List<Color>();
 
@@ -152,7 +154,7 @@ public class EndGameInteractable : InteractableObject {
             }
         }
 
-        while(light.intensity < 200) {
+        while(light.intensity < 500) {
             yield return new WaitForSeconds(Time.deltaTime);
             light.intensity += 1;
         }

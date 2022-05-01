@@ -14,6 +14,7 @@ public class SpikeTrap : TrapObject
 
     protected override void TriggerTrap(GameObject obj)
     {
+        print(obj.name);
         if(obj.tag == "Player")
         {
             if (isWater)
@@ -25,7 +26,7 @@ public class SpikeTrap : TrapObject
 
         if (obj.tag == "Scarab")
         {
-            obj.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
+            obj.transform.parent.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
         }
     }
 }

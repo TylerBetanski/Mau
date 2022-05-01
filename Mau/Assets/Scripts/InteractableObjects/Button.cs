@@ -28,7 +28,7 @@ public class Button : MonoBehaviour
                 playerOn = true;
             }
 
-            if ((collision.gameObject.tag == "Scarab") && (collision.gameObject.GetComponent<EnemyDamage>().isKnockedDown))
+            if ((collision.gameObject.tag == "Scarab"))
             {
                 correctTrigger = true;
                 scarabOn = true;
@@ -52,7 +52,7 @@ public class Button : MonoBehaviour
             playerOn = false;
         }
 
-        if ((collision.gameObject.tag == "Scarab") && (collision.gameObject.GetComponent<EnemyDamage>().isKnockedDown))
+        if ((collision.gameObject.tag == "Scarab"))
         {
             scarabOn = false;
         }
