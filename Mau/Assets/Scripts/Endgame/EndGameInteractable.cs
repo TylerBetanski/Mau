@@ -9,6 +9,7 @@ public class EndGameInteractable : InteractableObject {
     [SerializeField] private float heartsRadius = 5f;
     [SerializeField] private Light2D mainLight;
     [SerializeField] private GameObject borderPanel;
+    [SerializeField] AudioSource backgroundMusic;
     private List<GameObject> heartObjects;
     private List<bool> doHeartAnim;
     ColorAnimate colAnim;
@@ -23,6 +24,8 @@ public class EndGameInteractable : InteractableObject {
     [SerializeField] AudioClip explosion;
     [SerializeField] AudioClip powerDown;
     [SerializeField] AudioClip heartStop;
+    [SerializeField] AudioClip GoodEnd;
+    [SerializeField] AudioClip BadEnd;
 
 
     private float currentAngle;
@@ -51,10 +54,18 @@ public class EndGameInteractable : InteractableObject {
 
             borderPanel.gameObject.SetActive(true);
 
-            StartCoroutine(TakeHearts(controller));
             crystalAudio.Stop();
             crystalAudio.clip = interact;
             crystalAudio.Play();
+
+            backgroundMusic.Stop();
+            if (controller.getMaxHealth() == 9)
+                backgroundMusic.clip = GoodEnd;
+            else
+                backgroundMusic.clip = BadEnd;
+            backgroundMusic.Play();
+
+            StartCoroutine(TakeHearts(controller));
         }
     }
 
@@ -140,8 +151,12 @@ public class EndGameInteractable : InteractableObject {
     }
     
     private IEnumerator EndGameGood() {
+
         //yield return new WaitForSeconds(5);
-        
+        backgroundMusic.Stop();
+        backgroundMusic.clip = GoodEnd;
+        backgroundMusic.Play();
+
         crystalAudio.Stop();
         crystalAudio.loop = true;
         crystalAudio.clip = whirr;
@@ -202,8 +217,8 @@ public class EndGameInteractable : InteractableObject {
             }
         }
 
-        crystalAudio.Stop();
         yield return new WaitForSeconds(2.4f);
+        crystalAudio.Stop();
         crystalAudio.clip = explosion;
         crystalAudio.Play();
 
@@ -214,6 +229,8 @@ public class EndGameInteractable : InteractableObject {
     }
 
     private IEnumerator EndGameBad() {
+
+        
 
         crystalAudio.Stop();
         crystalAudio.loop = true;
@@ -261,11 +278,6 @@ public class EndGameInteractable : InteractableObject {
             light.color = newCol;
 
         }
-
-        crystalAudio.Stop();
-        crystalAudio.volume = 0.8f;
-        crystalAudio.clip = powerDown;
-        crystalAudio.Play();
 
         for (int i = 0; i < heartObjects.Count; ++i) {
             yield return new WaitForSeconds(.2f);

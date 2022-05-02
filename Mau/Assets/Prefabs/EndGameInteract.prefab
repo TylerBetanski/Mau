@@ -295,6 +295,7 @@ MonoBehaviour:
   heartsRadius: 15
   mainLight: {fileID: 0}
   borderPanel: {fileID: 0}
+  backgroundMusic: {fileID: 0}
   heartPop: {fileID: 8300000, guid: fc32536a298902e42801aa960f39107e, type: 3}
   interact: {fileID: 8300000, guid: b5375b1e70d5bc74ab705609b4f8e899, type: 3}
   whirr: {fileID: 8300000, guid: d3f7568a39bf4df4bb652fe2e696e966, type: 3}
@@ -303,6 +304,8 @@ MonoBehaviour:
   explosion: {fileID: 8300000, guid: 731b534ebe20e6a4cb6eb68335e9f273, type: 3}
   powerDown: {fileID: 8300000, guid: 8720a6b83e93d12408922e3a196cb175, type: 3}
   heartStop: {fileID: 8300000, guid: 6874d31323ccd534a984074476e42672, type: 3}
+  GoodEnd: {fileID: 0}
+  BadEnd: {fileID: 0}
   rotTime: 9
 --- !u!61 &6390164575866463664
 BoxCollider2D:

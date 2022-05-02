@@ -29,7 +29,6 @@ public class BGMTrigger : MonoBehaviour
         {
             if (BGAudioSource.clip.name == beginningBGM.name)
             {
-                Debug.Log("We Gamin");
                 BGAudioSource.Stop();
                 BGAudioSource.clip = laterBGM;
                 BGAudioSource.volume = newVolume;
