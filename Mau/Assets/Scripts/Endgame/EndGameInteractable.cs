@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Experimental.Rendering.Universal;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class EndGameInteractable : InteractableObject {
 
@@ -228,6 +230,16 @@ public class EndGameInteractable : InteractableObject {
             yield return new WaitForSeconds(Time.deltaTime);
             light.intensity += 1;
         }
+
+        RawImage im = borderPanel.transform.parent.Find("Good").GetComponent<RawImage>();
+        im.gameObject.SetActive(true);
+        while (im.color.a < 1) {
+            yield return new WaitForSeconds(Time.deltaTime);
+            im.color = new Color(im.color.r, im.color.g, im.color.b, im.color.a + 0.01f);
+        }
+
+        yield return new WaitForSeconds(5f);
+        SceneManager.LoadScene("Credits");
     }
 
     private IEnumerator EndGameBad() {
@@ -303,6 +315,16 @@ public class EndGameInteractable : InteractableObject {
             ammitEye.GetComponent<SpriteRenderer>().material.SetFloat("_em",
                 ammitEye.GetComponent<SpriteRenderer>().material.GetFloat("_em") - .1f);
         }
+
+        RawImage im = borderPanel.transform.parent.Find("Bad").GetComponent<RawImage>();
+        im.gameObject.SetActive(true);
+        while(im.color.a < 1) {
+            yield return new WaitForSeconds(Time.deltaTime);
+            im.color = new Color(im.color.r, im.color.g, im.color.b, im.color.a + 0.01f);
+        }
+
+        yield return new WaitForSeconds(5f);
+        SceneManager.LoadScene("Credits");
     }
 
     private IEnumerator HeartFall(GameObject heart) {
