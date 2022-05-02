@@ -1326,7 +1326,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &8060566004024850140
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1362,7 +1362,7 @@ Canvas:
   m_GameObject: {fileID: 8060566004024850128}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_Camera: {fileID: 0}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
@@ -1371,7 +1371,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
-  m_SortingLayerID: 0
+  m_SortingLayerID: 353611173
   m_SortingOrder: 0
   m_TargetDisplay: 0
 --- !u!114 &8060566004024850142
@@ -1442,7 +1442,7 @@ MonoBehaviour:
   optionsMenu: {fileID: 0}
   backgroundSound: {fileID: 0}
   pauseMenuSound: {fileID: 8300000, guid: e5cbd92a7941d9d4ebebd9479a7451af, type: 3}
-  volume: 0.1
+  volume: 0.35
 --- !u!1 &8060566004153138143
 GameObject:
   m_ObjectHideFlags: 0
