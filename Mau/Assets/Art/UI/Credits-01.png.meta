@@ -8,6 +8,12 @@ TextureImporter:
   - first:
       213: 8407979142434461020
     second: Credits-01_1
+  - first:
+      213: 2124838265161101882
+    second: Credits-01_2
+  - first:
+      213: 3939874321124882200
+    second: Credits-01_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -105,7 +111,7 @@ TextureImporter:
         width: 1920
         height: 1301
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -124,9 +130,9 @@ TextureImporter:
         x: 0
         y: 953
         width: 1920
-        height: 1399
+        height: 414
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -134,6 +140,48 @@ TextureImporter:
       bones: []
       spriteID: c5513bf8b742fa470800000000000000
       internalID: 8407979142434461020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Credits-01_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1916
+        width: 1920
+        height: 480
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a32b510f421fc7d10800000000000000
+      internalID: 2124838265161101882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Credits-01_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1475
+        width: 1920
+        height: 403
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 817f45a12de3da630800000000000000
+      internalID: 3939874321124882200
       vertices: []
       indices: 
       edges: []
