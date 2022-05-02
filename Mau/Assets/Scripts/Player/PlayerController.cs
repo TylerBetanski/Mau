@@ -201,6 +201,7 @@ public class PlayerController : MonoBehaviour {
     {
         if (!paused)
         {
+            Cursor.lockState = CursorLockMode.None;
             pauseMenu.GetComponent<PauseMenu>().UpdateHeartContainers();
             Time.timeScale = 0;
             pauseMenu.GetComponent<PauseMenu>().OpenPauseMenu();
@@ -208,6 +209,7 @@ public class PlayerController : MonoBehaviour {
         }
         else if (paused)
         {
+            Cursor.lockState = CursorLockMode.Locked;
             Time.timeScale = 1;
             pauseMenu.GetComponent<PauseMenu>().ClosePauseMenu();
             paused = false;

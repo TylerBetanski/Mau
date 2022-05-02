@@ -767,7 +767,7 @@
     },
     "m_Name": "EmissionStrength",
     "m_DefaultReferenceName": "Vector1_53666068f6a74c0288ebb811dd217b69",
-    "m_OverrideReferenceName": "",
+    "m_OverrideReferenceName": "_em",
     "m_GeneratePropertyBlock": true,
     "m_Precision": 0,
     "overrideHLSLDeclaration": false,

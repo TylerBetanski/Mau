@@ -26,6 +26,8 @@ public class EndGameInteractable : InteractableObject {
     [SerializeField] AudioClip heartStop;
     [SerializeField] AudioClip GoodEnd;
     [SerializeField] AudioClip BadEnd;
+    [SerializeField] private GameObject ammit;
+    [SerializeField] private GameObject ammitEye;
 
 
     private float currentAngle;
@@ -167,7 +169,7 @@ public class EndGameInteractable : InteractableObject {
             yield return new WaitForSeconds(Time.deltaTime);
             rotTime -= .01f;
             rotTime = Mathf.Clamp(rotTime, 0.1f, 1000);
-            if (crystalAudio.volume < 1)
+            if (crystalAudio.volume < .6f)
                 crystalAudio.volume += 0.0005f;
         }
 
@@ -212,7 +214,7 @@ public class EndGameInteractable : InteractableObject {
                 colAnim.targetColors[i] = Color.Lerp(ogColors[i], Color.white, satVal);
             }
             for(int i = 0; i < heartObjects.Count; ++i) {
-                heartObjects[i].GetComponent<SpriteRenderer>().color = GetComponent<SpriteRenderer>().color;
+                heartObjects[i].GetComponent<SpriteRenderer>().color = Color.white;
                 heartObjects[i].GetComponent<Light2D>().color = GetComponent<Light2D>().color;
             }
         }
@@ -229,9 +231,6 @@ public class EndGameInteractable : InteractableObject {
     }
 
     private IEnumerator EndGameBad() {
-
-        
-
         crystalAudio.Stop();
         crystalAudio.loop = true;
         crystalAudio.clip = whirr;
@@ -242,7 +241,7 @@ public class EndGameInteractable : InteractableObject {
             yield return new WaitForSeconds(Time.deltaTime);
             rotTime -= .01f;
             rotTime = Mathf.Clamp(rotTime, 0.1f, 1000);
-            if (crystalAudio.volume < 1)
+            if (crystalAudio.volume < .6f)
                 crystalAudio.volume += 0.0005f;
         }
         
@@ -278,10 +277,31 @@ public class EndGameInteractable : InteractableObject {
             light.color = newCol;
 
         }
+        ammit.SetActive(true);
+        bool isAttack = false;
+        while(ammit.transform.position.y < 430) {
+            yield return new WaitForSeconds(Time.deltaTime);
+            if(ammit.transform.position.y > 350 && !isAttack) {
+                isAttack = true;
+                ammit.GetComponent<Animator>().SetTrigger("Attack");
+            }
+            ammit.transform.position += new Vector3(0, 0.65f);
+        }
+        
+        //yield return new WaitForSeconds(1.5f);
 
         for (int i = 0; i < heartObjects.Count; ++i) {
             yield return new WaitForSeconds(.2f);
             StartCoroutine(HeartFall(heartObjects[i]));
+        }
+
+        yield return new WaitForSeconds(5.0f);
+
+        while(ammit.transform.GetComponentInChildren<Light2D>().intensity > 0) {
+            yield return new WaitForSeconds(Time.deltaTime);
+            ammit.transform.GetComponentInChildren<Light2D>().intensity -= 0.01f;
+            ammitEye.GetComponent<SpriteRenderer>().material.SetFloat("_em",
+                ammitEye.GetComponent<SpriteRenderer>().material.GetFloat("_em") - .1f);
         }
     }
 

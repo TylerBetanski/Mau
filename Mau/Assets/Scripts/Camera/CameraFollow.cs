@@ -21,6 +21,10 @@ public class CameraFollow : MonoBehaviour
         }
     }
 
+    private void Awake() {
+        Cursor.lockState = CursorLockMode.Locked;
+    }
+
     public void SetTarget(GameObject newTarget) {
         target = newTarget.transform;
     }
