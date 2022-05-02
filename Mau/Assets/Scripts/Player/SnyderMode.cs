@@ -5,23 +5,31 @@ using UnityEngine.Rendering;
 
 public class SnyderMode : MonoBehaviour
 {
-    [SerializeField] GameObject borderPanel;
-    [SerializeField] Volume normalVolume;
-    [SerializeField] Volume snyderVolume;
+    [SerializeField] public GameObject borderPanel;
+    [SerializeField] public Volume normalVolume;
+    [SerializeField] public  Volume snyderVolume;
 
-    bool inSnyderMode = false;
+    public bool inSnyderMode = false;
 
     public void Toggle() {
         if(inSnyderMode) {
-            snyderVolume.enabled = false;
-            normalVolume.enabled = true;
-            borderPanel.SetActive(false);
+
         } else {
-            snyderVolume.enabled = true;
-            normalVolume.enabled = false;
-            borderPanel.SetActive(true);
+
         }
 
         inSnyderMode = !inSnyderMode;
+    }
+
+    public void StartSnyderMode() {
+        snyderVolume.enabled = true;
+        normalVolume.enabled = false;
+        borderPanel.SetActive(true);
+    }
+
+    public void StopSnyderMode() {
+        snyderVolume.enabled = false;
+        normalVolume.enabled = true;
+        borderPanel.SetActive(false);
     }
 }

@@ -22,6 +22,7 @@ public class PlayerController : MonoBehaviour {
     PlayerAttackScript attackScript;
     PlayerHiss hissScript;
     CatAudioController CA;
+    SnyderMode snyderMode;
     [SerializeField] Animator animator;
     [SerializeField] private float invulnerabilityTime = 0.8f;
 
@@ -30,6 +31,7 @@ public class PlayerController : MonoBehaviour {
     private bool canBeHurt = true;
     private bool paused = false;
     public bool dialog = false;
+    private bool inSnyderMode = false;
     private bool controlsEnabled = true;
     bool secondJump = true;
     int health;
@@ -43,6 +45,7 @@ public class PlayerController : MonoBehaviour {
         hissScript = GetComponent<PlayerHiss>();
         if (animator == null)
             animator = GetComponentInChildren<Animator>();
+        snyderMode = GetComponent<SnyderMode>();
 
         health = maxHealth;
 
@@ -201,6 +204,9 @@ public class PlayerController : MonoBehaviour {
     {
         if (!paused)
         {
+            if (inSnyderMode)
+                snyderMode.StopSnyderMode();
+
             Cursor.lockState = CursorLockMode.None;
             pauseMenu.GetComponent<PauseMenu>().UpdateHeartContainers();
             Time.timeScale = 0;
@@ -209,6 +215,9 @@ public class PlayerController : MonoBehaviour {
         }
         else if (paused)
         {
+            if (inSnyderMode)
+                snyderMode.StartSnyderMode();
+
             Cursor.lockState = CursorLockMode.Locked;
             Time.timeScale = 1;
             pauseMenu.GetComponent<PauseMenu>().ClosePauseMenu();
@@ -244,6 +253,18 @@ public class PlayerController : MonoBehaviour {
             }
         }
         animator.SetBool("Grounded", charController.Grounded);
+    }
+
+    public void ToggleSnyderMode() {
+        if(!paused) {
+            if(inSnyderMode) {
+                snyderMode.StopSnyderMode();
+                inSnyderMode = false;
+            } else {
+                snyderMode.StartSnyderMode();
+                inSnyderMode = true;
+            }
+        }
     }
 
 }

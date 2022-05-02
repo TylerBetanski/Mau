@@ -37,7 +37,7 @@ public class PlayerInputController : MonoBehaviour
         inputActions.Actions.CameraZoom.performed += ctx => cameraZoom.changeZoom();
         inputActions.Actions.Enter.performed += ctx => controller.advanceDialog();
         inputActions.Actions.Reset.performed += ctx => FindObjectOfType<CheckpointManager>().ReloadWorld(gameObject);
-        inputActions.Actions.SnyderMode.performed += ctx => snyderMode.Toggle();
+        inputActions.Actions.SnyderMode.performed += ctx => controller.ToggleSnyderMode();
     }
 
     private void OnDisable()
