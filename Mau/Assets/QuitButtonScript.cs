@@ -6,6 +6,12 @@ using UnityEngine.SceneManagement;
 public class QuitButtonScript : MonoBehaviour
 {
     // Start is called before the first frame update
+
+    private void Awake()
+    {
+        Cursor.lockState = CursorLockMode.None;
+    }
+
     public void Quit()
     {
         SceneManager.LoadScene("Menu");
