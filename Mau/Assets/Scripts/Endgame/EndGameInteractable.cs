@@ -220,13 +220,16 @@ public class EndGameInteractable : InteractableObject {
                 heartObjects[i].GetComponent<Light2D>().color = GetComponent<Light2D>().color;
             }
         }
+        for (int i = 0; i < colAnim.targetColors.Count; ++i) {
+            colAnim.targetColors[i] = Color.white;
+        }
 
         yield return new WaitForSeconds(2.4f);
         crystalAudio.Stop();
         crystalAudio.clip = explosion;
         crystalAudio.Play();
 
-        while (light.intensity < 200) {
+        while (light.intensity < 300) {
             yield return new WaitForSeconds(Time.deltaTime);
             light.intensity += 1;
         }

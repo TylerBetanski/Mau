@@ -38,6 +38,7 @@ public class PlayerAttackScript : MonoBehaviour
                 {
                     if (interactableObj.tag == "Checkpoint")
                         CA.playSound("Purr");
+                    
                     interactableObj.Interact(gameObject);
 
                     if (!canHitMultiple)
